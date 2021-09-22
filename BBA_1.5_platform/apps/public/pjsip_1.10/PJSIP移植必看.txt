@@ -1,0 +1,4 @@
+要添加新的机型，必须配置与交叉编译工具链相适应的环境变量，步骤如下：
+1. 在project_model目录下创建该机型的MODEL（即编译时 make MODEL=XXX  XXX）为名称的目录，譬如TD-VG3631V1的对应到“VG3631V1”目录。
+2. 然后在所创建的目录下创建modelEnv.mak和cc-auto.mak文件，定制相关的变量的值，可参考VG3631V1/modelEnv.mak和VG3631V1/cc-auto.mak。
+3. 确保所创建的目录和文件对于当前系统用户来说至少具有“读 ”和“可执行”权限。

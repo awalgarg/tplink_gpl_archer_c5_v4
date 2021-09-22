@@ -1,0 +1,50 @@
+menu "TPLINK Model"
+
+choice
+       prompt "TP-LINK Product MODEL"
+       default TP_MODEL_C20V4
+
+config TP_MODEL_C50V3
+       bool "Build ArcherC50 V3"
+
+config TP_MODEL_C20V4
+       bool "Build ArcherC20 V4"
+
+config TP_MODEL_C5V4
+       bool "Build ArcherC5 V4"
+	   
+config TP_MODEL_WR850NV2
+       bool "Build TL-WR850NV2"
+
+config TP_MODEL_WR850NV3
+       bool "Build TL-WR850NV3"
+
+config TP_MODEL_EN020_F5V1
+       bool "Build EN020-F5V1"
+	   
+endchoice
+
+config TP_USB_SYSFS
+        bool "Support USB sysfs"
+        default y
+
+config TPLINK_DRIVER_DEBUG
+        bool "Support forwarding packet from one driver to another."
+        default n
+
+config TPLINK_QOS_FOR_IPTV
+        bool "Support QoS for RU IPTV."
+        default n
+
+config TP_CONFIG_RESET
+       bool "For Option 66 function: Reset to TP config by pressing reset button."
+	   
+config ISP_2ND_RESET
+       bool "For Option 66 function: Reset to ISP config when press more than 5s and less then 30s, reset to TP config when press more than 30s."
+	   
+config ISP_CONFIG_OFFSET
+       hex "For Option 66 function: Offset of ISP config in flash."
+	   default 0x7e0000
+	   
+endmenu
+

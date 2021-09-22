@@ -1,0 +1,9 @@
+ctrl_interface=/mtd_rwarea
+update_config=1
+device_name=YIWEI_PC_P2P
+device_type=1-0050F204-3
+config_methods=virtual_display virtual_push_button keypad
+Country=US
+p2p_oper_reg_class=116
+p2p_oper_channel=36
+#p2p_listen_channel=1

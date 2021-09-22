@@ -1,0 +1,1525 @@
+Archive member included because of file (symbol)
+
+lib_mips/libmips.a(board.o)   (__u_boot_cmd_rf)
+lib_mips/libmips.a(time.o)    lib_mips/libmips.a(board.o) (timer_init)
+net/libnet.a(net.o)           lib_mips/libmips.a(board.o) (copy_filename)
+net/libnet.a(tftp.o)          net/libnet.a(net.o) (TftpSend)
+net/libnet.a(eth.o)           lib_mips/libmips.a(board.o) (eth_initialize)
+drivers/libdrivers.a(rt2880_eth.o)
+                              net/libnet.a(net.o) (rt2880_free_buf_entry_dequeue)
+drivers/libdrivers.a(mii_mgr.o)
+                              drivers/libdrivers.a(rt2880_eth.o) (mii_mgr_write)
+drivers/libdrivers.a(spi_rt6855A_flash.o)
+                              (__u_boot_cmd_spi)
+common/libcommon.a(main.o)    lib_mips/libmips.a(board.o) (run_command)
+common/libcommon.a(cmd_boot.o)
+                              (__u_boot_cmd_go)
+common/libcommon.a(cmd_bootm.o)
+                              (__u_boot_cmd_reset)
+common/libcommon.a(cmd_console.o)
+                              (__u_boot_cmd_coninfo)
+common/libcommon.a(cmd_load.o)
+                              (__u_boot_cmd_loadb)
+common/libcommon.a(cmd_net.o)
+                              (__u_boot_cmd_rarpboot)
+common/libcommon.a(cmd_mem.o)
+                              (__u_boot_cmd_mtest)
+common/libcommon.a(cmd_nvedit.o)
+                              (__u_boot_cmd_saveenv)
+common/libcommon.a(command.o)
+                              (__u_boot_cmd_question_mark)
+common/libcommon.a(console.o)
+                              lib_mips/libmips.a(board.o) (printf)
+common/libcommon.a(devices.o)
+                              common/libcommon.a(cmd_console.o) (stdio_names)
+common/libcommon.a(dlmalloc.o)
+                              lib_mips/libmips.a(board.o) (malloc_bin_reloc)
+common/libcommon.a(env_common.o)
+                              common/libcommon.a(cmd_nvedit.o) (env_get_char)
+common/libcommon.a(exports.o)
+                              lib_mips/libmips.a(board.o) (jumptable_init)
+common/libcommon.a(lists.o)   common/libcommon.a(devices.o) (ListCreate)
+common/libcommon.a(env_spi.o)
+                              common/libcommon.a(env_common.o) (env_ptr)
+common/libcommon.a(environment.o)
+                              common/libcommon.a(env_spi.o) (environment)
+lib_generic/libgeneric.a(crc32.o)
+                              common/libcommon.a(cmd_mem.o) (crc32)
+lib_generic/libgeneric.a(display_options.o)
+                              lib_mips/libmips.a(board.o) (print_size)
+lib_generic/libgeneric.a(string.o)
+                              common/libcommon.a(command.o) (strchr)
+lib_generic/libgeneric.a(vsprintf.o)
+                              lib_mips/libmips.a(board.o) (simple_strtoul)
+lib_generic/libgeneric.a(LzmaDecode.o)
+                              common/libcommon.a(cmd_bootm.o) (lzmaBuffToBuffDecompress)
+lib_generic/libgeneric.a(ctype.o)
+                              lib_generic/libgeneric.a(vsprintf.o) (_ctype)
+board/rt2880/librt2880.a(rt2880.o)
+                              lib_mips/libmips.a(board.o) (initdram)
+board/rt2880/librt2880.a(serial.o)
+                              common/libcommon.a(cmd_load.o) (serial_setbrg)
+cpu/ralink_soc/libralink_soc.a(cpu.o)
+                              lib_mips/libmips.a(board.o) (do_reset)
+lib_mips/libmips.a(mips_linux.o)
+                              common/libcommon.a(cmd_bootm.o) (do_bootm_linux)
+
+Allocating common symbols
+Common symbol       size              file
+
+dp_last_size        0x4               common/libcommon.a(cmd_mem.o)
+console_buffer      0x100             drivers/libdrivers.a(rt2880_eth.o)
+NetArpWaitTry       0x4               net/libnet.a(net.o)
+NetArpWaitPacketMAC
+                    0x4               net/libnet.a(net.o)
+NetOurEther         0x6               net/libnet.a(net.o)
+NetOurIP            0x4               net/libnet.a(net.o)
+NetServerIP         0x4               net/libnet.a(net.o)
+monitor_flash_len   0x4               lib_mips/libmips.a(board.o)
+Pkt_Buf_Pool        0x17440           net/libnet.a(net.o)
+___strtok           0x4               lib_generic/libgeneric.a(string.o)
+NetArpWaitTxPacketSize
+                    0x4               net/libnet.a(net.o)
+NetArpWaitReplyIP   0x4               net/libnet.a(net.o)
+NetRxPackets        0xf0              net/libnet.a(net.o)
+NetArpWaitTxPacket  0x4               net/libnet.a(net.o)
+rt2880_free_buf_list
+                    0x8               drivers/libdrivers.a(rt2880_eth.o)
+PKT_HEADER_Buf      0x4               drivers/libdrivers.a(rt2880_eth.o)
+NetArpWaitPacketIP  0x4               net/libnet.a(net.o)
+NetState            0x4               net/libnet.a(net.o)
+BootFile            0x80              net/libnet.a(net.o)
+rt2880_pdev         0x4               drivers/libdrivers.a(rt2880_eth.o)
+dp_last_addr        0x4               common/libcommon.a(cmd_mem.o)
+his_pad_char        0x1               common/libcommon.a(cmd_load.o)
+os_data_count       0x4               common/libcommon.a(cmd_load.o)
+mm_last_size        0x4               common/libcommon.a(cmd_mem.o)
+os_data_init        0x4               common/libcommon.a(cmd_load.o)
+mips_bus_feq        0x4               lib_mips/libmips.a(board.o)
+mm_last_addr        0x4               common/libcommon.a(cmd_mem.o)
+rt2880_busing_buf_list
+                    0x8               drivers/libdrivers.a(rt2880_eth.o)
+NetIPID             0x4               net/libnet.a(net.o)
+send_ptr            0x4               common/libcommon.a(cmd_load.o)
+mips_cpu_feq        0x4               lib_mips/libmips.a(board.o)
+NetRxPkt            0x4               net/libnet.a(net.o)
+os_data_header      0x20              common/libcommon.a(cmd_load.o)
+os_data_char        0x4               common/libcommon.a(cmd_load.o)
+gd_data             0x24              lib_mips/libmips.a(board.o)
+NetArpWaitPacketBuf
+                    0x640             net/libnet.a(net.o)
+TftpStarted         0x4               net/libnet.a(tftp.o)
+his_eol             0x1               common/libcommon.a(cmd_load.o)
+header              0x40              common/libcommon.a(cmd_bootm.o)
+NetRxPktLen         0x4               net/libnet.a(net.o)
+his_quote           0x1               common/libcommon.a(cmd_load.o)
+NetBootFileXferSize
+                    0x4               net/libnet.a(net.o)
+console_history     0xa00             common/libcommon.a(main.o)
+PktBuf              0x4               net/libnet.a(net.o)
+send_parms          0x14              common/libcommon.a(cmd_load.o)
+load_addr_str       0x9               lib_mips/libmips.a(board.o)
+his_pad_count       0x4               common/libcommon.a(cmd_load.o)
+NetArpWaitTimerStart
+                    0x4               net/libnet.a(net.o)
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+*default*        0x0000000000000000 0xffffffffffffffff
+
+Linker script and memory map
+
+                0x0000000000000000                . = 0x0
+                0x0000000000000000                . = ALIGN (0x4)
+
+.text           0x00000000bc000000    0x13d30
+ *(.text)
+ .text          0x00000000bc000000     0x1050 cpu/ralink_soc/start.o
+                0x00000000bc000ec8                DDR2_CFG0_TBL
+                0x00000000bc000b98                relocate_code
+                0x00000000bc001018                fill_icache
+                0x00000000bc000dc0                SDR_CFG0_TBL
+                0x00000000bc000fd8                unlock_dcache
+                0x00000000bc000e28                DDR1_CFG1_TBL
+                0x00000000bc000000                _start
+                0x00000000bc000e00                DDR1_CFG0_TBL
+                0x00000000bc000ee8                DDR2_CFG1_TBL
+                0x00000000bc000f68                lock_dcache
+                0x00000000bc000c64                init_cpu_pll
+                0x00000000bc000de0                SDR_CFG1_TBL
+ .text          0x00000000bc001050     0x2780 lib_mips/libmips.a(board.o)
+                0x00000000bc00263c                do_rw_rf
+                0x00000000bc002510                hang
+                0x00000000bc002540                rw_rf_reg
+                0x00000000bc001968                board_init_r
+                0x00000000bc001378                OperationSelect
+                0x00000000bc001050                sbrk
+                0x00000000bc001930                disable_pcie
+                0x00000000bc0010a0                board_init_f
+                0x00000000bc001438                tftp_config
+                0x00000000bc0018f8                config_usb_ehciohci
+                0x00000000bc0018f0                trigger_hw_reset
+                0x00000000bc00277c                dram_cali
+ .text          0x00000000bc0037d0      0x140 lib_mips/libmips.a(time.o)
+                0x00000000bc0038c0                mdelay
+                0x00000000bc0037ec                get_timer
+                0x00000000bc0037d8                timer_init
+                0x00000000bc003830                udelay
+ .text          0x00000000bc003910     0x1520 net/libnet.a(net.o)
+                0x00000000bc0048fc                getenv_IPaddr
+                0x00000000bc004100                NetCksumOk
+                0x00000000bc003b20                NetSetTimeout
+                0x00000000bc004744                copy_filename
+                0x00000000bc00473c                NetEthHdrSize
+                0x00000000bc0047b8                ip_to_string
+                0x00000000bc003c90                ArpTimeoutCheck
+                0x00000000bc004140                NetReceive
+                0x00000000bc004838                string_to_ip
+                0x00000000bc003f34                NetSendUDPPacket
+                0x00000000bc004de4                print_IPaddr
+                0x00000000bc003910                NetSetEther
+                0x00000000bc004938                NetLoop
+                0x00000000bc003990                ArpRequest
+                0x00000000bc003d78                NetCksum
+                0x00000000bc003dc0                NetSetIP
+                0x00000000bc003b9c                NetStartAgain
+                0x00000000bc003b84                NetSetHandler
+                0x00000000bc003d60                NetSendPacket
+ .text          0x00000000bc004e30      0x990 net/libnet.a(tftp.o)
+                0x00000000bc004e30                TftpSend
+                0x00000000bc005510                TftpStart
+ .text          0x00000000bc0057c0      0x510 net/libnet.a(eth.o)
+                0x00000000bc005c08                eth_halt
+                0x00000000bc005860                eth_register
+                0x00000000bc0057c0                eth_parse_enetaddr
+                0x00000000bc005b20                eth_try_another
+                0x00000000bc0058cc                eth_initialize
+                0x00000000bc005c98                eth_rx
+                0x00000000bc005b58                eth_init
+                0x00000000bc005c60                eth_send
+ .text          0x00000000bc005cd0     0x1490 drivers/libdrivers.a(rt2880_eth.o)
+                0x00000000bc005e4c                rt2880_eth_initialize
+                0x00000000bc005d98                rt2880_free_buf_entry_dequeue
+                0x00000000bc006464                disableEthForward
+                0x00000000bc006750                rt305x_esw_init
+                0x00000000bc006dec                readline
+                0x00000000bc0070d0                input_value
+                0x00000000bc005d30                STOP_ETH
+                0x00000000bc006494                mt7628_ephy_init
+                0x00000000bc00609c                LANWANPartition
+                0x00000000bc006430                enableEthForward
+                0x00000000bc0060a4                isDMABusy
+                0x00000000bc005cd0                START_ETH
+                0x00000000bc006c7c                rt2880_eth_halt
+ .text          0x00000000bc007160      0x900 drivers/libdrivers.a(mii_mgr.o)
+                0x00000000bc0073fc                dump_phy_reg
+                0x00000000bc0072b4                mii_mgr_write
+                0x00000000bc007168                mii_mgr_read
+                0x00000000bc007160                enable_mdio
+                0x00000000bc0075b0                rt2880_mdio_access
+ .text          0x00000000bc007a60     0x24b0 drivers/libdrivers.a(spi_rt6855A_flash.o)
+                0x00000000bc008a24                raspi_read
+                0x00000000bc007af4                spic_init
+                0x00000000bc0092d4                do_mem_cp
+                0x00000000bc0098fc                ralink_spi_command
+                0x00000000bc0087cc                raspi_init
+                0x00000000bc0094e8                do_flerase
+                0x00000000bc00868c                chip_prob
+                0x00000000bc008814                raspi_erase
+                0x00000000bc008ba8                raspi_write
+                0x00000000bc008ee4                raspi_erase_write
+ .text          0x00000000bc009f10      0x610 common/libcommon.a(main.o)
+                0x00000000bc009f10                run_command
+                0x00000000bc00a414                main_loop
+ .text          0x00000000bc00a520       0xe0 common/libcommon.a(cmd_boot.o)
+                0x00000000bc00a520                do_go
+ .text          0x00000000bc00a600      0x750 common/libcommon.a(cmd_bootm.o)
+                0x00000000bc00a998                print_image_hdr
+                0x00000000bc00a748                do_bootm
+                0x00000000bc00a600                fake_image_header
+ .text          0x00000000bc00ad50      0x140 common/libcommon.a(cmd_console.o)
+                0x00000000bc00ad50                do_coninfo
+ .text          0x00000000bc00ae90      0xce0 common/libcommon.a(cmd_load.o)
+                0x00000000bc00b150                k_data_init
+                0x00000000bc00af5c                s1_sendpacket
+                0x00000000bc00b2b4                handle_send_packet
+                0x00000000bc00b1c0                k_data_restore
+                0x00000000bc00b048                send_nack
+                0x00000000bc00b514                do_load_serial_bin
+                0x00000000bc00b210                k_data_char
+                0x00000000bc00af24                chk1
+                0x00000000bc00b170                k_data_save
+                0x00000000bc00aee8                ktrans
+                0x00000000bc00ae90                send_pad
+                0x00000000bc00afbc                send_ack
+ .text          0x00000000bc00bb70      0x480 common/libcommon.a(cmd_net.o)
+                0x00000000bc00bf8c                do_rarpb
+                0x00000000bc00bfac                do_tftpb
+                0x00000000bc00bfcc                do_bootp
+ .text          0x00000000bc00bff0      0xb10 common/libcommon.a(cmd_mem.o)
+                0x00000000bc00c378                do_mem_base
+                0x00000000bc00c9cc                do_mem_crc
+                0x00000000bc00c93c                do_mem_nm
+                0x00000000bc00c984                do_mem_mm
+                0x00000000bc00c56c                do_mem_mtest
+                0x00000000bc00bff0                cmd_get_data_size
+                0x00000000bc00c3e4                do_mem_loop
+                0x00000000bc00c0a8                do_mem_md
+ .text          0x00000000bc00cb00      0xc00 common/libcommon.a(cmd_nvedit.o)
+                0x00000000bc00d5cc                getenv
+                0x00000000bc00ce14                _do_setenv
+                0x00000000bc00cba4                do_printenv
+                0x00000000bc00d504                setenv
+                0x00000000bc00d6a4                do_saveenv
+                0x00000000bc00d558                do_setenv
+ .text          0x00000000bc00d700      0x3f0 common/libcommon.a(command.o)
+                0x00000000bc00d740                find_cmd
+                0x00000000bc00d860                do_help
+                0x00000000bc00d700                do_version
+ .text          0x00000000bc00daf0      0x7c0 common/libcommon.a(console.o)
+                0x00000000bc00e13c                console_init_r
+                0x00000000bc00de8c                printf
+                0x00000000bc00e010                console_assign
+                0x00000000bc00dd84                getc
+                0x00000000bc00de4c                puts
+                0x00000000bc00e000                dbg
+                0x00000000bc00dbd8                serial_printf
+                0x00000000bc00dc68                ftstc
+                0x00000000bc00dd24                fprintf
+                0x00000000bc00ddc4                tstc
+                0x00000000bc00dee4                vprintf
+                0x00000000bc00df30                ctrlc
+                0x00000000bc00de04                putc
+                0x00000000bc00dfb4                disable_ctrlc
+                0x00000000bc00dc30                fgetc
+                0x00000000bc00dfd0                had_ctrlc
+                0x00000000bc00dca0                fputc
+                0x00000000bc00e12c                console_init_f
+                0x00000000bc00dfe8                clear_ctrlc
+                0x00000000bc00dce4                fputs
+ .text          0x00000000bc00e2b0      0x180 common/libcommon.a(devices.o)
+                0x00000000bc00e2b0                device_register
+                0x00000000bc00e3f0                devices_done
+                0x00000000bc00e2f4                devices_init
+ .text          0x00000000bc00e430     0x14b0 common/libcommon.a(dlmalloc.o)
+                0x00000000bc00e82c                malloc
+                0x00000000bc00f6a0                pvalloc
+                0x00000000bc00f6c4                calloc
+                0x00000000bc00f7f0                malloc_usable_size
+                0x00000000bc00ef78                realloc
+                0x00000000bc00e490                malloc_trim
+                0x00000000bc00e430                malloc_bin_reloc
+                0x00000000bc00f848                mallopt
+                0x00000000bc00f4ec                memalign
+                0x00000000bc00f7d8                cfree
+                0x00000000bc00f684                valloc
+                0x00000000bc00e5b8                free
+ .text          0x00000000bc00f8e0      0x1f0 common/libcommon.a(env_common.o)
+                0x00000000bc00f9b0                env_get_addr
+                0x00000000bc00f9e0                env_relocate
+                0x00000000bc00f8e0                env_crc_update
+                0x00000000bc00f97c                env_get_char_memory
+ .text          0x00000000bc00fad0       0xb0 common/libcommon.a(exports.o)
+                0x00000000bc00fae0                jumptable_init
+                0x00000000bc00fad8                get_version
+ .text          0x00000000bc00fb80      0x510 common/libcommon.a(lists.o)
+                0x00000000bc00fc2c                DisposeHandle
+                0x00000000bc00fdc8                ListDispose
+                0x00000000bc00fde0                ListInsertItems
+                0x00000000bc00fb80                NewHandle
+                0x00000000bc00fc90                SetHandleSize
+                0x00000000bc01002c                ListInsertItem
+                0x00000000bc00fc88                GetHandleSize
+                0x00000000bc010084                ListNumItems
+                0x00000000bc010044                ListGetPtrToItem
+                0x00000000bc00fd58                ListCreate
+ .text          0x00000000bc010090       0x80 common/libcommon.a(env_spi.o)
+                0x00000000bc0100fc                env_relocate_spec
+                0x00000000bc0100f4                saveenv
+                0x00000000bc010090                env_get_char_spec
+                0x00000000bc0100c4                spi_env_init
+                0x00000000bc0100a0                env_init
+ .text          0x00000000bc010110     0x1010 common/libcommon.a(environment.o)
+                0x00000000bc010114                environment
+                0x00000000bc010110                env_size
+ .text          0x00000000bc011120      0x220 lib_generic/libgeneric.a(crc32.o)
+                0x00000000bc011120                crc32
+ .text          0x00000000bc011340      0x150 lib_generic/libgeneric.a(display_options.o)
+                0x00000000bc011340                display_options
+                0x00000000bc011380                print_size
+ .text          0x00000000bc011490      0x220 lib_generic/libgeneric.a(string.o)
+                0x00000000bc011600                memmove
+                0x00000000bc0115d0                memcpy
+                0x00000000bc011568                strnlen
+                0x00000000bc0114f0                strrchr
+                0x00000000bc01167c                memcmp
+                0x00000000bc0115a4                memset
+                0x00000000bc0114cc                strlen
+                0x00000000bc011490                strchr
+ .text          0x00000000bc0116b0      0x9b0 lib_generic/libgeneric.a(vsprintf.o)
+                0x00000000bc011ac8                vsprintf
+                0x00000000bc0117a4                simple_strtol
+                0x00000000bc012024                sprintf
+                0x00000000bc0116b0                simple_strtoul
+ .text          0x00000000bc012060      0xc80 lib_generic/libgeneric.a(LzmaDecode.o)
+                0x00000000bc012094                RangeDecoderInit
+                0x00000000bc012acc                lzmaBuffToBuffDecompress
+                0x00000000bc01211c                RangeDecoderDecodeDirectBits
+                0x00000000bc0122ec                RangeDecoderBitTreeDecode
+                0x00000000bc012424                LzmaLiteralDecode
+                0x00000000bc0121d8                RangeDecoderBitDecode
+                0x00000000bc012380                RangeDecoderReverseBitTreeDecode
+                0x00000000bc01256c                LzmaLenDecode
+                0x00000000bc012658                LzmaDecode
+                0x00000000bc012060                RangeDecoderReadByte
+                0x00000000bc012494                LzmaLiteralDecodeMatch
+ .text          0x00000000bc012ce0      0x560 board/rt2880/librt2880.a(rt2880.o)
+                0x00000000bc012ce0                get_ram_size
+                0x00000000bc012fa4                initTpProduct
+                0x00000000bc013204                getGpioData
+                0x00000000bc012e50                checkboard
+                0x00000000bc012e14                initdram
+                0x00000000bc012e8c                setGpioData
+ .text          0x00000000bc013240      0x180 board/rt2880/librt2880.a(serial.o)
+                0x00000000bc013240                serial_setbrg
+                0x00000000bc013330                serial_tstc
+                0x00000000bc0132dc                serial_putc
+                0x00000000bc0132a4                serial_init
+                0x00000000bc013368                serial_puts
+                0x00000000bc013344                serial_getc
+ .text          0x00000000bc0133c0       0x60 cpu/ralink_soc/libralink_soc.a(cpu.o)
+                0x00000000bc0133d8                flush_cache
+                0x00000000bc0133c0                do_reset
+                0x00000000bc0133e0                write_one_tlb
+ .text          0x00000000bc013420      0x910 lib_mips/libmips.a(mips_linux.o)
+                0x00000000bc013548                do_bootm_linux
+                0x00000000bc013d30                . = ALIGN (0x4)
+
+.rodata         0x00000000bc013d30      0x260
+ *(.rodata)
+ .rodata        0x00000000bc013d30       0x30 lib_mips/libmips.a(board.o)
+                0x00000000bc013d30                version_string
+ .rodata        0x00000000bc013d60       0x10 net/libnet.a(net.o)
+ .rodata        0x00000000bc013d70       0x30 net/libnet.a(tftp.o)
+ .rodata        0x00000000bc013da0       0x10 net/libnet.a(eth.o)
+ .rodata        0x00000000bc013db0       0xf0 drivers/libdrivers.a(spi_rt6855A_flash.o)
+ .rodata        0x00000000bc013ea0       0xc0 common/libcommon.a(cmd_bootm.o)
+ .rodata        0x00000000bc013f60       0x20 common/libcommon.a(cmd_nvedit.o)
+ .rodata        0x00000000bc013f80       0x10 lib_generic/libgeneric.a(crc32.o)
+
+.reginfo        0x00000000bc013f90       0x18
+ .reginfo       0x00000000bc013f90       0x18 cpu/ralink_soc/start.o
+
+.rodata.str1.4  0x00000000bc013fa8     0x3034
+ .rodata.str1.4
+                0x00000000bc013fa8      0x8f9 lib_mips/libmips.a(board.o)
+                                        0x924 (size before relaxing)
+ *fill*         0x00000000bc0148a1        0x3 00
+ .rodata.str1.4
+                0x00000000bc0148a4      0x355 net/libnet.a(net.o)
+                                        0x374 (size before relaxing)
+ *fill*         0x00000000bc014bf9        0x3 00
+ .rodata.str1.4
+                0x00000000bc014bfc      0x1f3 net/libnet.a(tftp.o)
+                                        0x204 (size before relaxing)
+ *fill*         0x00000000bc014def        0x1 00
+ .rodata.str1.4
+                0x00000000bc014df0       0x8e net/libnet.a(eth.o)
+                                         0x94 (size before relaxing)
+ *fill*         0x00000000bc014e7e        0x2 00
+ .rodata.str1.4
+                0x00000000bc014e80      0x1a0 drivers/libdrivers.a(rt2880_eth.o)
+ .rodata.str1.4
+                0x00000000bc015020      0x293 drivers/libdrivers.a(mii_mgr.o)
+                                        0x2a4 (size before relaxing)
+ *fill*         0x00000000bc0152b3        0x1 00
+ .rodata.str1.4
+                0x00000000bc0152b4      0x859 drivers/libdrivers.a(spi_rt6855A_flash.o)
+                                        0x870 (size before relaxing)
+ *fill*         0x00000000bc015b0d        0x3 00
+ .rodata.str1.4
+                0x00000000bc015b10       0x7d common/libcommon.a(main.o)
+                                         0x98 (size before relaxing)
+ *fill*         0x00000000bc015b8d        0x3 00
+ .rodata.str1.4
+                0x00000000bc015b90       0xdf common/libcommon.a(cmd_boot.o)
+                                         0xec (size before relaxing)
+ *fill*         0x00000000bc015c6f        0x1 00
+ .rodata.str1.4
+                0x00000000bc015c70      0x409 common/libcommon.a(cmd_bootm.o)
+                                        0x418 (size before relaxing)
+ *fill*         0x00000000bc016079        0x3 00
+ .rodata.str1.4
+                0x00000000bc01607c       0x70 common/libcommon.a(cmd_console.o)
+                                         0x74 (size before relaxing)
+ .rodata.str1.4
+                0x00000000bc0160ec      0x1bc common/libcommon.a(cmd_load.o)
+                                        0x1d4 (size before relaxing)
+ .rodata.str1.4
+                0x00000000bc0162a8      0x171 common/libcommon.a(cmd_net.o)
+                                        0x1d0 (size before relaxing)
+ *fill*         0x00000000bc016419        0x3 00
+ .rodata.str1.4
+                0x00000000bc01641c      0x40d common/libcommon.a(cmd_mem.o)
+                                        0x420 (size before relaxing)
+ *fill*         0x00000000bc016829        0x3 00
+ .rodata.str1.4
+                0x00000000bc01682c      0x2ad common/libcommon.a(cmd_nvedit.o)
+                                        0x318 (size before relaxing)
+ *fill*         0x00000000bc016ad9        0x3 00
+ .rodata.str1.4
+                0x00000000bc016adc      0x211 common/libcommon.a(command.o)
+                                        0x21c (size before relaxing)
+ *fill*         0x00000000bc016ced        0x3 00
+ .rodata.str1.4
+                0x00000000bc016cf0       0x2f common/libcommon.a(devices.o)
+                                         0x48 (size before relaxing)
+ *fill*         0x00000000bc016d1f        0x1 00
+ .rodata.str1.4
+                0x00000000bc016d20       0x33 common/libcommon.a(env_common.o)
+                                         0x34 (size before relaxing)
+ *fill*         0x00000000bc016d53        0x1 00
+ .rodata.str1.4
+                0x00000000bc016d54        0xa common/libcommon.a(env_spi.o)
+                                          0xc (size before relaxing)
+ *fill*         0x00000000bc016d5e        0x2 00
+ .rodata.str1.4
+                0x00000000bc016d60       0x17 lib_generic/libgeneric.a(display_options.o)
+                                         0x20 (size before relaxing)
+ *fill*         0x00000000bc016d77        0x1 00
+ .rodata.str1.4
+                0x00000000bc016d78       0x57 lib_generic/libgeneric.a(vsprintf.o)
+                                         0x58 (size before relaxing)
+ *fill*         0x00000000bc016dcf        0x1 00
+ .rodata.str1.4
+                0x00000000bc016dd0       0x8d board/rt2880/librt2880.a(rt2880.o)
+                                         0x90 (size before relaxing)
+ *fill*         0x00000000bc016e5d        0x3 00
+ .rodata.str1.4
+                0x00000000bc016e60      0x17c lib_mips/libmips.a(mips_linux.o)
+                                        0x188 (size before relaxing)
+                0x00000000bc016fdc                . = ALIGN (0x4)
+
+.data           0x00000000bc016fe0      0x230
+ *(.data)
+ .data          0x00000000bc016fe0       0x10 net/libnet.a(net.o)
+                0x00000000bc016fe0                NetBcastAddr
+ .data          0x00000000bc016ff0       0x10 net/libnet.a(tftp.o)
+                0x00000000bc016ff0                fileNotFoundCounter
+ .data          0x00000000bc017000       0x10 drivers/libdrivers.a(rt2880_eth.o)
+ .data          0x00000000bc017010       0x40 drivers/libdrivers.a(spi_rt6855A_flash.o)
+                0x00000000bc017010                stm_opcodes
+ .data          0x00000000bc017050       0x10 common/libcommon.a(cmd_bootm.o)
+                0x00000000bc017050                load_addr
+ .data          0x00000000bc017060       0x10 common/libcommon.a(cmd_mem.o)
+                0x00000000bc017060                dp_last_length
+ .data          0x00000000bc017070       0x10 common/libcommon.a(dlmalloc.o)
+ .data          0x00000000bc017080       0x80 common/libcommon.a(env_common.o)
+                0x00000000bc017080                default_environment
+ .data          0x00000000bc017100       0x10 lib_generic/libgeneric.a(crc32.o)
+ .data          0x00000000bc017110      0x100 lib_generic/libgeneric.a(ctype.o)
+                0x00000000bc017110                _ctype
+
+.data.rel.local
+                0x00000000bc017210      0x7ac
+ .data.rel.local
+                0x00000000bc017210      0x390 drivers/libdrivers.a(spi_rt6855A_flash.o)
+ .data.rel.local
+                0x00000000bc0175a0        0xc common/libcommon.a(devices.o)
+                0x00000000bc0175a0                stdio_names
+ .data.rel.local
+                0x00000000bc0175ac      0x408 common/libcommon.a(dlmalloc.o)
+ .data.rel.local
+                0x00000000bc0179b4        0x4 common/libcommon.a(env_common.o)
+                0x00000000bc0179b4                env_get_char
+ .data.rel.local
+                0x00000000bc0179b8        0x4 common/libcommon.a(env_spi.o)
+                0x00000000bc0179b8                env_name_spec
+
+.data.rel       0x00000000bc0179bc        0x4
+ .data.rel      0x00000000bc0179bc        0x4 common/libcommon.a(env_spi.o)
+                0x00000000bc0179bc                env_ptr
+                0x00000000bc0179c0                . = ALIGN (0x4)
+
+.sdata
+ *(.sdata)
+ *(.sdata)
+                0x00000000bc0179c0                _gp = ALIGN (0x10)
+
+.got            0x00000000bc0179c0      0x43c
+                0x00000000bc0179c0                __got_start = .
+ *(.got)
+ .got           0x00000000bc0179c0      0x43c cpu/ralink_soc/start.o
+                0x00000000bc0179c0                _GLOBAL_OFFSET_TABLE_
+                0x00000000bc017dfc                __got_end = .
+                0x00000000bc017dfc                __u_boot_cmd_start = .
+
+.u_boot_cmd     0x00000000bc017dfc      0x258
+ *(.u_boot_cmd)
+ .u_boot_cmd    0x00000000bc017dfc       0x18 lib_mips/libmips.a(board.o)
+                0x00000000bc017dfc                __u_boot_cmd_rf
+ .u_boot_cmd    0x00000000bc017e14       0x48 drivers/libdrivers.a(spi_rt6855A_flash.o)
+                0x00000000bc017e2c                __u_boot_cmd_erase
+                0x00000000bc017e14                __u_boot_cmd_spi
+                0x00000000bc017e44                __u_boot_cmd_cp
+ .u_boot_cmd    0x00000000bc017e5c       0x18 common/libcommon.a(cmd_boot.o)
+                0x00000000bc017e5c                __u_boot_cmd_go
+ .u_boot_cmd    0x00000000bc017e74       0x30 common/libcommon.a(cmd_bootm.o)
+                0x00000000bc017e8c                __u_boot_cmd_bootm
+                0x00000000bc017e74                __u_boot_cmd_reset
+ .u_boot_cmd    0x00000000bc017ea4       0x18 common/libcommon.a(cmd_console.o)
+                0x00000000bc017ea4                __u_boot_cmd_coninfo
+ .u_boot_cmd    0x00000000bc017ebc       0x18 common/libcommon.a(cmd_load.o)
+                0x00000000bc017ebc                __u_boot_cmd_loadb
+ .u_boot_cmd    0x00000000bc017ed4       0x48 common/libcommon.a(cmd_net.o)
+                0x00000000bc017ed4                __u_boot_cmd_rarpboot
+                0x00000000bc017eec                __u_boot_cmd_tftpboot
+                0x00000000bc017f04                __u_boot_cmd_bootp
+ .u_boot_cmd    0x00000000bc017f1c       0xa8 common/libcommon.a(cmd_mem.o)
+                0x00000000bc017fac                __u_boot_cmd_md
+                0x00000000bc017f34                __u_boot_cmd_loop
+                0x00000000bc017f4c                __u_boot_cmd_base
+                0x00000000bc017f94                __u_boot_cmd_mm
+                0x00000000bc017f64                __u_boot_cmd_crc32
+                0x00000000bc017f7c                __u_boot_cmd_nm
+                0x00000000bc017f1c                __u_boot_cmd_mtest
+ .u_boot_cmd    0x00000000bc017fc4       0x48 common/libcommon.a(cmd_nvedit.o)
+                0x00000000bc017fc4                __u_boot_cmd_saveenv
+                0x00000000bc017ff4                __u_boot_cmd_printenv
+                0x00000000bc017fdc                __u_boot_cmd_setenv
+ .u_boot_cmd    0x00000000bc01800c       0x48 common/libcommon.a(command.o)
+                0x00000000bc01800c                __u_boot_cmd_question_mark
+                0x00000000bc01803c                __u_boot_cmd_version
+                0x00000000bc018024                __u_boot_cmd_help
+                0x00000000bc018054                __u_boot_cmd_end = .
+                0x00000000bc018054                uboot_end_data = .
+                0x000000000000010f                num_got_entries = ((__got_end - __got_start) >> 0x2)
+                0x00000000bc018054                . = ALIGN (0x4)
+
+.sbss
+ *(.sbss)
+
+.bss            0x00000000bc018060    0x2fd54
+ *(.bss)
+ .bss           0x00000000bc018060       0xa0 lib_mips/libmips.a(board.o)
+                0x00000000bc018060                modifies
+ .bss           0x00000000bc018100       0xb0 net/libnet.a(net.o)
+                0x00000000bc018174                NetOurNISDomain
+                0x00000000bc01810c                NetServerEther
+                0x00000000bc01819c                NetOurSubnetMask
+                0x00000000bc018112                NetBootFileSize
+                0x00000000bc018154                NetOurHostName
+                0x00000000bc018198                NetOurGatewayIP
+                0x00000000bc018104                NetEtherNullAddr
+                0x00000000bc018100                NetTxPacket
+                0x00000000bc018194                NetOurDNSIP
+                0x00000000bc018114                NetOurRootPath
+ .bss           0x00000000bc0181b0       0x40 net/libnet.a(tftp.o)
+ .bss           0x00000000bc0181f0       0x10 net/libnet.a(eth.o)
+ .bss           0x00000000bc018200    0x16e40 drivers/libdrivers.a(rt2880_eth.o)
+ .bss           0x00000000bc02f040       0x10 drivers/libdrivers.a(spi_rt6855A_flash.o)
+                0x00000000bc02f040                spi_chip_info
+ .bss           0x00000000bc02f050      0x100 common/libcommon.a(main.o)
+ .bss           0x00000000bc02f150       0x40 common/libcommon.a(cmd_load.o)
+ .bss           0x00000000bc02f190       0x10 common/libcommon.a(cmd_mem.o)
+ .bss           0x00000000bc02f1a0       0x10 common/libcommon.a(console.o)
+ .bss           0x00000000bc02f1b0       0x10 common/libcommon.a(devices.o)
+                0x00000000bc02f1bc                devlist
+                0x00000000bc02f1b0                stdio_devices
+ .bss           0x00000000bc02f1c0       0x40 common/libcommon.a(dlmalloc.o)
+ .bss           0x00000000bc02f200      0x400 lib_generic/libgeneric.a(crc32.o)
+ .bss           0x00000000bc02f600       0x20 lib_mips/libmips.a(mips_linux.o)
+ COMMON         0x00000000bc02f620       0x2d lib_mips/libmips.a(board.o)
+                0x00000000bc02f620                gd_data
+                0x00000000bc02f644                load_addr_str
+ *fill*         0x00000000bc02f64d        0x3 00
+ COMMON         0x00000000bc02f650    0x17bf0 net/libnet.a(net.o)
+                0x00000000bc02f650                Pkt_Buf_Pool
+                0x00000000bc046a90                NetRxPackets
+                0x00000000bc046b80                BootFile
+                0x00000000bc046c00                NetArpWaitPacketBuf
+ COMMON         0x00000000bc047240      0x100 drivers/libdrivers.a(rt2880_eth.o)
+                0x00000000bc047240                console_buffer
+ COMMON         0x00000000bc047340      0xa00 common/libcommon.a(main.o)
+                0x00000000bc047340                console_history
+ COMMON         0x00000000bc047d40       0x40 common/libcommon.a(cmd_bootm.o)
+                0x00000000bc047d40                header
+ COMMON         0x00000000bc047d80       0x34 common/libcommon.a(cmd_load.o)
+                0x00000000bc047d80                os_data_header
+                0x00000000bc047da0                send_parms
+                0x00000000bc047db4                uboot_end = .
+
+.scommon        0x00000000bc047db4       0x9c
+ .scommon       0x00000000bc047db4        0xc lib_mips/libmips.a(board.o)
+                0x00000000bc047db4                monitor_flash_len
+                0x00000000bc047db8                mips_bus_feq
+                0x00000000bc047dbc                mips_cpu_feq
+ .scommon       0x00000000bc047dc0       0x44 net/libnet.a(net.o)
+                0x00000000bc047dc0                NetArpWaitTry
+                0x00000000bc047dc4                NetArpWaitPacketMAC
+                0x00000000bc047dc8                NetOurEther
+                0x00000000bc047dd0                NetOurIP
+                0x00000000bc047dd4                NetServerIP
+                0x00000000bc047dd8                NetArpWaitTxPacketSize
+                0x00000000bc047ddc                NetArpWaitReplyIP
+                0x00000000bc047de0                NetArpWaitTxPacket
+                0x00000000bc047de4                NetArpWaitPacketIP
+                0x00000000bc047de8                NetState
+                0x00000000bc047dec                NetIPID
+                0x00000000bc047df0                NetRxPkt
+                0x00000000bc047df4                NetRxPktLen
+                0x00000000bc047df8                NetBootFileXferSize
+                0x00000000bc047dfc                PktBuf
+                0x00000000bc047e00                NetArpWaitTimerStart
+ .scommon       0x00000000bc047e04        0x4 net/libnet.a(tftp.o)
+                0x00000000bc047e04                TftpStarted
+ .scommon       0x00000000bc047e08       0x18 drivers/libdrivers.a(rt2880_eth.o)
+                0x00000000bc047e08                rt2880_free_buf_list
+                0x00000000bc047e10                PKT_HEADER_Buf
+                0x00000000bc047e14                rt2880_pdev
+                0x00000000bc047e18                rt2880_busing_buf_list
+ .scommon       0x00000000bc047e20       0x1c common/libcommon.a(cmd_load.o)
+                0x00000000bc047e20                his_pad_char
+                0x00000000bc047e24                os_data_count
+                0x00000000bc047e28                os_data_init
+                0x00000000bc047e2c                send_ptr
+                0x00000000bc047e30                os_data_char
+                0x00000000bc047e34                his_eol
+                0x00000000bc047e35                his_quote
+                0x00000000bc047e38                his_pad_count
+ .scommon       0x00000000bc047e3c       0x10 common/libcommon.a(cmd_mem.o)
+                0x00000000bc047e3c                dp_last_size
+                0x00000000bc047e40                dp_last_addr
+                0x00000000bc047e44                mm_last_size
+                0x00000000bc047e48                mm_last_addr
+ .scommon       0x00000000bc047e4c        0x4 lib_generic/libgeneric.a(string.o)
+                0x00000000bc047e4c                ___strtok
+
+.rel.dyn        0x00000000bc047e50        0x0
+Address of section .text set to 0xbc000000
+LOAD cpu/ralink_soc/start.o
+START GROUP
+LOAD lib_generic/libgeneric.a
+LOAD board/rt2880/librt2880.a
+LOAD cpu/ralink_soc/libralink_soc.a
+LOAD lib_mips/libmips.a
+LOAD net/libnet.a
+LOAD drivers/libdrivers.a
+LOAD common/libcommon.a
+END GROUP
+OUTPUT(u-boot elf32-tradlittlemips)
+
+.pdr            0x0000000000000000     0x1f40
+ .pdr           0x0000000000000000       0xa0 cpu/ralink_soc/start.o
+ .pdr           0x00000000000000a0      0x180 lib_mips/libmips.a(board.o)
+ .pdr           0x0000000000000220       0xa0 lib_mips/libmips.a(time.o)
+ .pdr           0x00000000000002c0      0x2a0 net/libnet.a(net.o)
+ .pdr           0x0000000000000560       0x80 net/libnet.a(tftp.o)
+ .pdr           0x00000000000005e0      0x100 net/libnet.a(eth.o)
+ .pdr           0x00000000000006e0      0x240 drivers/libdrivers.a(rt2880_eth.o)
+ .pdr           0x0000000000000920       0xa0 drivers/libdrivers.a(mii_mgr.o)
+ .pdr           0x00000000000009c0      0x280 drivers/libdrivers.a(spi_rt6855A_flash.o)
+ .pdr           0x0000000000000c40       0x40 common/libcommon.a(main.o)
+ .pdr           0x0000000000000c80       0x20 common/libcommon.a(cmd_boot.o)
+ .pdr           0x0000000000000ca0       0x60 common/libcommon.a(cmd_bootm.o)
+ .pdr           0x0000000000000d00       0x20 common/libcommon.a(cmd_console.o)
+ .pdr           0x0000000000000d20      0x1c0 common/libcommon.a(cmd_load.o)
+ .pdr           0x0000000000000ee0       0x80 common/libcommon.a(cmd_net.o)
+ .pdr           0x0000000000000f60      0x120 common/libcommon.a(cmd_mem.o)
+ .pdr           0x0000000000001080       0xe0 common/libcommon.a(cmd_nvedit.o)
+ .pdr           0x0000000000001160       0x60 common/libcommon.a(command.o)
+ .pdr           0x00000000000011c0      0x2a0 common/libcommon.a(console.o)
+ .pdr           0x0000000000001460       0x60 common/libcommon.a(devices.o)
+ .pdr           0x00000000000014c0      0x200 common/libcommon.a(dlmalloc.o)
+ .pdr           0x00000000000016c0       0xa0 common/libcommon.a(env_common.o)
+ .pdr           0x0000000000001760       0x60 common/libcommon.a(exports.o)
+ .pdr           0x00000000000017c0      0x140 common/libcommon.a(lists.o)
+ .pdr           0x0000000000001900       0xa0 common/libcommon.a(env_spi.o)
+ .pdr           0x00000000000019a0       0x20 lib_generic/libgeneric.a(crc32.o)
+ .pdr           0x00000000000019c0       0x40 lib_generic/libgeneric.a(display_options.o)
+ .pdr           0x0000000000001a00      0x100 lib_generic/libgeneric.a(string.o)
+ .pdr           0x0000000000001b00       0xc0 lib_generic/libgeneric.a(vsprintf.o)
+ .pdr           0x0000000000001bc0      0x160 lib_generic/libgeneric.a(LzmaDecode.o)
+ .pdr           0x0000000000001d20       0xc0 board/rt2880/librt2880.a(rt2880.o)
+ .pdr           0x0000000000001de0       0xc0 board/rt2880/librt2880.a(serial.o)
+ .pdr           0x0000000000001ea0       0x60 cpu/ralink_soc/libralink_soc.a(cpu.o)
+ .pdr           0x0000000000001f00       0x40 lib_mips/libmips.a(mips_linux.o)
+
+.stab           0x0000000000000000     0x22bc
+ .stab          0x0000000000000000     0x22b0 cpu/ralink_soc/start.o
+ .stab          0x00000000000022b0        0xc common/libcommon.a(environment.o)
+                                         0x18 (size before relaxing)
+
+.stabstr        0x0000000000000000       0xa8
+ .stabstr       0x0000000000000000       0xa8 cpu/ralink_soc/start.o
+
+.mdebug.abi32   0x0000000000000000        0x0
+
+.debug_abbrev   0x0000000000000000      0x30a
+ .debug_abbrev  0x0000000000000000      0x30a lib_mips/libmips.a(board.o)
+
+.debug_info     0x0000000000000000     0x1533
+ .debug_info    0x0000000000000000     0x1533 lib_mips/libmips.a(board.o)
+
+.debug_line     0x0000000000000000      0x76d
+ .debug_line    0x0000000000000000      0x76d lib_mips/libmips.a(board.o)
+
+.debug_frame    0x0000000000000000     0x1c18
+ .debug_frame   0x0000000000000000      0x16c lib_mips/libmips.a(board.o)
+ .debug_frame   0x000000000000016c       0x88 lib_mips/libmips.a(time.o)
+ .debug_frame   0x00000000000001f4      0x23c net/libnet.a(net.o)
+ .debug_frame   0x0000000000000430       0x94 net/libnet.a(tftp.o)
+ .debug_frame   0x00000000000004c4       0xd8 net/libnet.a(eth.o)
+ .debug_frame   0x000000000000059c      0x220 drivers/libdrivers.a(rt2880_eth.o)
+ .debug_frame   0x00000000000007bc       0xa8 drivers/libdrivers.a(mii_mgr.o)
+ .debug_frame   0x0000000000000864      0x2b0 drivers/libdrivers.a(spi_rt6855A_flash.o)
+ .debug_frame   0x0000000000000b14       0x60 common/libcommon.a(main.o)
+ .debug_frame   0x0000000000000b74       0x30 common/libcommon.a(cmd_boot.o)
+ .debug_frame   0x0000000000000ba4       0x88 common/libcommon.a(cmd_bootm.o)
+ .debug_frame   0x0000000000000c2c       0x38 common/libcommon.a(cmd_console.o)
+ .debug_frame   0x0000000000000c64      0x174 common/libcommon.a(cmd_load.o)
+ .debug_frame   0x0000000000000dd8       0x68 common/libcommon.a(cmd_net.o)
+ .debug_frame   0x0000000000000e40      0x14c common/libcommon.a(cmd_mem.o)
+ .debug_frame   0x0000000000000f8c      0x104 common/libcommon.a(cmd_nvedit.o)
+ .debug_frame   0x0000000000001090       0x84 common/libcommon.a(command.o)
+ .debug_frame   0x0000000000001114      0x1cc common/libcommon.a(console.o)
+ .debug_frame   0x00000000000012e0       0x58 common/libcommon.a(devices.o)
+ .debug_frame   0x0000000000001338      0x194 common/libcommon.a(dlmalloc.o)
+ .debug_frame   0x00000000000014cc       0x80 common/libcommon.a(env_common.o)
+ .debug_frame   0x000000000000154c       0x48 common/libcommon.a(exports.o)
+ .debug_frame   0x0000000000001594      0x104 common/libcommon.a(lists.o)
+ .debug_frame   0x0000000000001698       0x60 common/libcommon.a(env_spi.o)
+ .debug_frame   0x00000000000016f8       0x20 lib_generic/libgeneric.a(crc32.o)
+ .debug_frame   0x0000000000001718       0x48 lib_generic/libgeneric.a(display_options.o)
+ .debug_frame   0x0000000000001760       0xa0 lib_generic/libgeneric.a(string.o)
+ .debug_frame   0x0000000000001800       0xa0 lib_generic/libgeneric.a(vsprintf.o)
+ .debug_frame   0x00000000000018a0      0x1ac lib_generic/libgeneric.a(LzmaDecode.o)
+ .debug_frame   0x0000000000001a4c       0xa0 board/rt2880/librt2880.a(rt2880.o)
+ .debug_frame   0x0000000000001aec       0x84 board/rt2880/librt2880.a(serial.o)
+ .debug_frame   0x0000000000001b70       0x40 cpu/ralink_soc/libralink_soc.a(cpu.o)
+ .debug_frame   0x0000000000001bb0       0x68 lib_mips/libmips.a(mips_linux.o)
+
+.debug_pubnames
+                0x0000000000000000     0x1731
+ .debug_pubnames
+                0x0000000000000000      0x15b lib_mips/libmips.a(board.o)
+ .debug_pubnames
+                0x000000000000015b       0x45 lib_mips/libmips.a(time.o)
+ .debug_pubnames
+                0x00000000000001a0      0x38e net/libnet.a(net.o)
+ .debug_pubnames
+                0x000000000000052e       0x55 net/libnet.a(tftp.o)
+ .debug_pubnames
+                0x0000000000000583       0x93 net/libnet.a(eth.o)
+ .debug_pubnames
+                0x0000000000000616      0x17a drivers/libdrivers.a(rt2880_eth.o)
+ .debug_pubnames
+                0x0000000000000790       0x6d drivers/libdrivers.a(mii_mgr.o)
+ .debug_pubnames
+                0x00000000000007fd      0x118 drivers/libdrivers.a(spi_rt6855A_flash.o)
+ .debug_pubnames
+                0x0000000000000915       0x44 common/libcommon.a(main.o)
+ .debug_pubnames
+                0x0000000000000959       0x30 common/libcommon.a(cmd_boot.o)
+ .debug_pubnames
+                0x0000000000000989       0x90 common/libcommon.a(cmd_bootm.o)
+ .debug_pubnames
+                0x0000000000000a19       0x3a common/libcommon.a(cmd_console.o)
+ .debug_pubnames
+                0x0000000000000a53      0x188 common/libcommon.a(cmd_load.o)
+ .debug_pubnames
+                0x0000000000000bdb       0x84 common/libcommon.a(cmd_net.o)
+ .debug_pubnames
+                0x0000000000000c5f      0x17f common/libcommon.a(cmd_mem.o)
+ .debug_pubnames
+                0x0000000000000dde       0xaf common/libcommon.a(cmd_nvedit.o)
+ .debug_pubnames
+                0x0000000000000e8d       0x88 common/libcommon.a(command.o)
+ .debug_pubnames
+                0x0000000000000f15      0x10e common/libcommon.a(console.o)
+ .debug_pubnames
+                0x0000000000001023       0x76 common/libcommon.a(devices.o)
+ .debug_pubnames
+                0x0000000000001099       0xb3 common/libcommon.a(dlmalloc.o)
+ .debug_pubnames
+                0x000000000000114c       0x88 common/libcommon.a(env_common.o)
+ .debug_pubnames
+                0x00000000000011d4       0x35 common/libcommon.a(exports.o)
+ .debug_pubnames
+                0x0000000000001209       0xc2 common/libcommon.a(lists.o)
+ .debug_pubnames
+                0x00000000000012cb       0x86 common/libcommon.a(env_spi.o)
+ .debug_pubnames
+                0x0000000000001351       0x2f common/libcommon.a(environment.o)
+ .debug_pubnames
+                0x0000000000001380       0x1c lib_generic/libgeneric.a(crc32.o)
+ .debug_pubnames
+                0x000000000000139c       0x35 lib_generic/libgeneric.a(display_options.o)
+ .debug_pubnames
+                0x00000000000013d1       0x7b lib_generic/libgeneric.a(string.o)
+ .debug_pubnames
+                0x000000000000144c       0x50 lib_generic/libgeneric.a(vsprintf.o)
+ .debug_pubnames
+                0x000000000000149c      0x12d lib_generic/libgeneric.a(LzmaDecode.o)
+ .debug_pubnames
+                0x00000000000015c9       0x1d lib_generic/libgeneric.a(ctype.o)
+ .debug_pubnames
+                0x00000000000015e6       0x71 board/rt2880/librt2880.a(rt2880.o)
+ .debug_pubnames
+                0x0000000000001657       0x74 board/rt2880/librt2880.a(serial.o)
+ .debug_pubnames
+                0x00000000000016cb       0x41 cpu/ralink_soc/libralink_soc.a(cpu.o)
+ .debug_pubnames
+                0x000000000000170c       0x25 lib_mips/libmips.a(mips_linux.o)
+
+.debug_aranges  0x0000000000000000       0x20
+ .debug_aranges
+                0x0000000000000000       0x20 lib_mips/libmips.a(board.o)
+
+.debug_ranges   0x0000000000000000      0x720
+ .debug_ranges  0x0000000000000000      0x138 lib_mips/libmips.a(board.o)
+ .debug_ranges  0x0000000000000138       0x48 net/libnet.a(net.o)
+ .debug_ranges  0x0000000000000180       0x38 net/libnet.a(tftp.o)
+ .debug_ranges  0x00000000000001b8       0x30 net/libnet.a(eth.o)
+ .debug_ranges  0x00000000000001e8       0x20 drivers/libdrivers.a(rt2880_eth.o)
+ .debug_ranges  0x0000000000000208      0x1e8 drivers/libdrivers.a(spi_rt6855A_flash.o)
+ .debug_ranges  0x00000000000003f0       0x30 common/libcommon.a(main.o)
+ .debug_ranges  0x0000000000000420       0x18 common/libcommon.a(cmd_bootm.o)
+ .debug_ranges  0x0000000000000438       0x18 common/libcommon.a(cmd_console.o)
+ .debug_ranges  0x0000000000000450       0x28 common/libcommon.a(cmd_load.o)
+ .debug_ranges  0x0000000000000478       0x18 common/libcommon.a(cmd_mem.o)
+ .debug_ranges  0x0000000000000490       0xf0 common/libcommon.a(cmd_nvedit.o)
+ .debug_ranges  0x0000000000000580       0x38 common/libcommon.a(command.o)
+ .debug_ranges  0x00000000000005b8       0x38 common/libcommon.a(console.o)
+ .debug_ranges  0x00000000000005f0       0x50 common/libcommon.a(dlmalloc.o)
+ .debug_ranges  0x0000000000000640       0x20 lib_generic/libgeneric.a(vsprintf.o)
+ .debug_ranges  0x0000000000000660       0x78 lib_generic/libgeneric.a(LzmaDecode.o)
+ .debug_ranges  0x00000000000006d8       0x48 lib_mips/libmips.a(mips_linux.o)
+
+.debug_str      0x0000000000000000     0x2ff6
+ .debug_str     0x0000000000000000      0x891 lib_mips/libmips.a(board.o)
+                                        0x9bc (size before relaxing)
+ .debug_str     0x0000000000000891       0x63 lib_mips/libmips.a(time.o)
+                                        0x14d (size before relaxing)
+ .debug_str     0x00000000000008f4      0x56c net/libnet.a(net.o)
+                                        0x751 (size before relaxing)
+ .debug_str     0x0000000000000e60      0x11c net/libnet.a(tftp.o)
+                                        0x2cf (size before relaxing)
+ .debug_str     0x0000000000000f7c       0xd0 net/libnet.a(eth.o)
+                                        0x2ad (size before relaxing)
+ .debug_str     0x000000000000104c      0x537 drivers/libdrivers.a(rt2880_eth.o)
+                                        0x790 (size before relaxing)
+ .debug_str     0x0000000000001583       0xa0 drivers/libdrivers.a(mii_mgr.o)
+                                        0x1d9 (size before relaxing)
+ .debug_str     0x0000000000001623      0x30d drivers/libdrivers.a(spi_rt6855A_flash.o)
+                                        0x5ba (size before relaxing)
+ .debug_str     0x0000000000001930      0x133 common/libcommon.a(main.o)
+                                        0x253 (size before relaxing)
+ .debug_str     0x0000000000001a63       0x21 common/libcommon.a(cmd_boot.o)
+                                        0x142 (size before relaxing)
+ .debug_str     0x0000000000001a84      0x22a common/libcommon.a(cmd_bootm.o)
+                                        0x3c1 (size before relaxing)
+ .debug_str     0x0000000000001cae       0xc0 common/libcommon.a(cmd_console.o)
+                                        0x1f4 (size before relaxing)
+ .debug_str     0x0000000000001d6e      0x25a common/libcommon.a(cmd_load.o)
+                                        0x4bc (size before relaxing)
+ .debug_str     0x0000000000001fc8       0x91 common/libcommon.a(cmd_net.o)
+                                        0x264 (size before relaxing)
+ .debug_str     0x0000000000002059      0x19f common/libcommon.a(cmd_mem.o)
+                                        0x2ed (size before relaxing)
+ .debug_str     0x00000000000021f8       0xbb common/libcommon.a(cmd_nvedit.o)
+                                        0x325 (size before relaxing)
+ .debug_str     0x00000000000022b3       0x95 common/libcommon.a(command.o)
+                                        0x21c (size before relaxing)
+ .debug_str     0x0000000000002348       0xee common/libcommon.a(console.o)
+                                        0x3b2 (size before relaxing)
+ .debug_str     0x0000000000002436       0x56 common/libcommon.a(devices.o)
+                                        0x2d9 (size before relaxing)
+ .debug_str     0x000000000000248c      0x2eb common/libcommon.a(dlmalloc.o)
+                                        0x50f (size before relaxing)
+ .debug_str     0x0000000000002777       0x8c common/libcommon.a(env_common.o)
+                                        0x250 (size before relaxing)
+ .debug_str     0x0000000000002803       0x2b common/libcommon.a(exports.o)
+                                        0x1d1 (size before relaxing)
+ .debug_str     0x000000000000282e      0x150 common/libcommon.a(lists.o)
+                                        0x28c (size before relaxing)
+ .debug_str     0x000000000000297e       0x3b common/libcommon.a(env_spi.o)
+                                        0x24d (size before relaxing)
+ .debug_str     0x00000000000029b9       0x17 common/libcommon.a(environment.o)
+                                         0xa4 (size before relaxing)
+ .debug_str     0x00000000000029d0       0x75 lib_generic/libgeneric.a(crc32.o)
+                                        0x122 (size before relaxing)
+ .debug_str     0x0000000000002a45       0x2d lib_generic/libgeneric.a(display_options.o)
+                                        0x110 (size before relaxing)
+ .debug_str     0x0000000000002a72       0x4e lib_generic/libgeneric.a(string.o)
+                                        0x140 (size before relaxing)
+ .debug_str     0x0000000000002ac0       0x70 lib_generic/libgeneric.a(vsprintf.o)
+                                        0x196 (size before relaxing)
+ .debug_str     0x0000000000002b30      0x28a lib_generic/libgeneric.a(LzmaDecode.o)
+                                        0x38a (size before relaxing)
+ .debug_str     0x0000000000002dba        0x8 lib_generic/libgeneric.a(ctype.o)
+                                         0x6a (size before relaxing)
+ .debug_str     0x0000000000002dc2       0x9c board/rt2880/librt2880.a(rt2880.o)
+                                        0x176 (size before relaxing)
+ .debug_str     0x0000000000002e5e       0x61 board/rt2880/librt2880.a(serial.o)
+                                        0x12b (size before relaxing)
+ .debug_str     0x0000000000002ebf       0x70 cpu/ralink_soc/libralink_soc.a(cpu.o)
+                                        0x170 (size before relaxing)
+ .debug_str     0x0000000000002f2f       0xc7 lib_mips/libmips.a(mips_linux.o)
+                                        0x3c0 (size before relaxing)
+
+.comment        0x0000000000000000      0x276
+ .comment       0x0000000000000000       0x12 lib_mips/libmips.a(board.o)
+ .comment       0x0000000000000012       0x12 lib_mips/libmips.a(time.o)
+ .comment       0x0000000000000024       0x12 net/libnet.a(net.o)
+ .comment       0x0000000000000036       0x12 net/libnet.a(tftp.o)
+ .comment       0x0000000000000048       0x12 net/libnet.a(eth.o)
+ .comment       0x000000000000005a       0x12 drivers/libdrivers.a(rt2880_eth.o)
+ .comment       0x000000000000006c       0x12 drivers/libdrivers.a(mii_mgr.o)
+ .comment       0x000000000000007e       0x12 drivers/libdrivers.a(spi_rt6855A_flash.o)
+ .comment       0x0000000000000090       0x12 common/libcommon.a(main.o)
+ .comment       0x00000000000000a2       0x12 common/libcommon.a(cmd_boot.o)
+ .comment       0x00000000000000b4       0x12 common/libcommon.a(cmd_bootm.o)
+ .comment       0x00000000000000c6       0x12 common/libcommon.a(cmd_console.o)
+ .comment       0x00000000000000d8       0x12 common/libcommon.a(cmd_load.o)
+ .comment       0x00000000000000ea       0x12 common/libcommon.a(cmd_net.o)
+ .comment       0x00000000000000fc       0x12 common/libcommon.a(cmd_mem.o)
+ .comment       0x000000000000010e       0x12 common/libcommon.a(cmd_nvedit.o)
+ .comment       0x0000000000000120       0x12 common/libcommon.a(command.o)
+ .comment       0x0000000000000132       0x12 common/libcommon.a(console.o)
+ .comment       0x0000000000000144       0x12 common/libcommon.a(devices.o)
+ .comment       0x0000000000000156       0x12 common/libcommon.a(dlmalloc.o)
+ .comment       0x0000000000000168       0x12 common/libcommon.a(env_common.o)
+ .comment       0x000000000000017a       0x12 common/libcommon.a(exports.o)
+ .comment       0x000000000000018c       0x12 common/libcommon.a(lists.o)
+ .comment       0x000000000000019e       0x12 common/libcommon.a(env_spi.o)
+ .comment       0x00000000000001b0       0x12 common/libcommon.a(environment.o)
+ .comment       0x00000000000001c2       0x12 lib_generic/libgeneric.a(crc32.o)
+ .comment       0x00000000000001d4       0x12 lib_generic/libgeneric.a(display_options.o)
+ .comment       0x00000000000001e6       0x12 lib_generic/libgeneric.a(string.o)
+ .comment       0x00000000000001f8       0x12 lib_generic/libgeneric.a(vsprintf.o)
+ .comment       0x000000000000020a       0x12 lib_generic/libgeneric.a(LzmaDecode.o)
+ .comment       0x000000000000021c       0x12 lib_generic/libgeneric.a(ctype.o)
+ .comment       0x000000000000022e       0x12 board/rt2880/librt2880.a(rt2880.o)
+ .comment       0x0000000000000240       0x12 board/rt2880/librt2880.a(serial.o)
+ .comment       0x0000000000000252       0x12 cpu/ralink_soc/libralink_soc.a(cpu.o)
+ .comment       0x0000000000000264       0x12 lib_mips/libmips.a(mips_linux.o)
+
+.debug_abbrev.1
+                0x0000000000000000      0x111
+ .debug_abbrev  0x0000000000000000      0x111 lib_mips/libmips.a(time.o)
+
+.debug_info.2   0x0000000000000000      0x1de
+ .debug_info    0x0000000000000000      0x1de lib_mips/libmips.a(time.o)
+
+.debug_line.3   0x0000000000000000       0xce
+ .debug_line    0x0000000000000000       0xce lib_mips/libmips.a(time.o)
+
+.debug_aranges.4
+                0x0000000000000000       0x20
+ .debug_aranges
+                0x0000000000000000       0x20 lib_mips/libmips.a(time.o)
+
+.debug_abbrev.5
+                0x0000000000000000      0x334
+ .debug_abbrev  0x0000000000000000      0x334 net/libnet.a(net.o)
+
+.debug_info.6   0x0000000000000000     0x1372
+ .debug_info    0x0000000000000000     0x1372 net/libnet.a(net.o)
+
+.debug_line.7   0x0000000000000000      0x59f
+ .debug_line    0x0000000000000000      0x59f net/libnet.a(net.o)
+
+.debug_aranges.8
+                0x0000000000000000       0x20
+ .debug_aranges
+                0x0000000000000000       0x20 net/libnet.a(net.o)
+
+.debug_abbrev.9
+                0x0000000000000000      0x20d
+ .debug_abbrev  0x0000000000000000      0x20d net/libnet.a(tftp.o)
+
+.debug_info.10  0x0000000000000000      0x638
+ .debug_info    0x0000000000000000      0x638 net/libnet.a(tftp.o)
+
+.debug_line.11  0x0000000000000000      0x30a
+ .debug_line    0x0000000000000000      0x30a net/libnet.a(tftp.o)
+
+.debug_aranges.12
+                0x0000000000000000       0x20
+ .debug_aranges
+                0x0000000000000000       0x20 net/libnet.a(tftp.o)
+
+.debug_abbrev.13
+                0x0000000000000000      0x226
+ .debug_abbrev  0x0000000000000000      0x226 net/libnet.a(eth.o)
+
+.debug_info.14  0x0000000000000000      0x501
+ .debug_info    0x0000000000000000      0x501 net/libnet.a(eth.o)
+
+.debug_line.15  0x0000000000000000      0x173
+ .debug_line    0x0000000000000000      0x173 net/libnet.a(eth.o)
+
+.debug_aranges.16
+                0x0000000000000000       0x20
+ .debug_aranges
+                0x0000000000000000       0x20 net/libnet.a(eth.o)
+
+.debug_abbrev.17
+                0x0000000000000000      0x2a2
+ .debug_abbrev  0x0000000000000000      0x2a2 drivers/libdrivers.a(rt2880_eth.o)
+
+.debug_info.18  0x0000000000000000      0xfe6
+ .debug_info    0x0000000000000000      0xfe6 drivers/libdrivers.a(rt2880_eth.o)
+
+.debug_line.19  0x0000000000000000      0x40c
+ .debug_line    0x0000000000000000      0x40c drivers/libdrivers.a(rt2880_eth.o)
+
+.debug_aranges.20
+                0x0000000000000000       0x20
+ .debug_aranges
+                0x0000000000000000       0x20 drivers/libdrivers.a(rt2880_eth.o)
+
+.debug_abbrev.21
+                0x0000000000000000      0x155
+ .debug_abbrev  0x0000000000000000      0x155 drivers/libdrivers.a(mii_mgr.o)
+
+.debug_info.22  0x0000000000000000      0x375
+ .debug_info    0x0000000000000000      0x375 drivers/libdrivers.a(mii_mgr.o)
+
+.debug_line.23  0x0000000000000000      0x1c6
+ .debug_line    0x0000000000000000      0x1c6 drivers/libdrivers.a(mii_mgr.o)
+
+.debug_aranges.24
+                0x0000000000000000       0x20
+ .debug_aranges
+                0x0000000000000000       0x20 drivers/libdrivers.a(mii_mgr.o)
+
+.debug_abbrev.25
+                0x0000000000000000      0x2b9
+ .debug_abbrev  0x0000000000000000      0x2b9 drivers/libdrivers.a(spi_rt6855A_flash.o)
+
+.debug_info.26  0x0000000000000000     0x159c
+ .debug_info    0x0000000000000000     0x159c drivers/libdrivers.a(spi_rt6855A_flash.o)
+
+.debug_line.27  0x0000000000000000      0x6c9
+ .debug_line    0x0000000000000000      0x6c9 drivers/libdrivers.a(spi_rt6855A_flash.o)
+
+.debug_aranges.28
+                0x0000000000000000       0x20
+ .debug_aranges
+                0x0000000000000000       0x20 drivers/libdrivers.a(spi_rt6855A_flash.o)
+
+.debug_abbrev.29
+                0x0000000000000000      0x213
+ .debug_abbrev  0x0000000000000000      0x213 common/libcommon.a(main.o)
+
+.debug_info.30  0x0000000000000000      0x4ff
+ .debug_info    0x0000000000000000      0x4ff common/libcommon.a(main.o)
+
+.debug_line.31  0x0000000000000000      0x1b1
+ .debug_line    0x0000000000000000      0x1b1 common/libcommon.a(main.o)
+
+.debug_aranges.32
+                0x0000000000000000       0x20
+ .debug_aranges
+                0x0000000000000000       0x20 common/libcommon.a(main.o)
+
+.debug_abbrev.33
+                0x0000000000000000       0xd9
+ .debug_abbrev  0x0000000000000000       0xd9 common/libcommon.a(cmd_boot.o)
+
+.debug_info.34  0x0000000000000000      0x1ba
+ .debug_info    0x0000000000000000      0x1ba common/libcommon.a(cmd_boot.o)
+
+.debug_line.35  0x0000000000000000       0xda
+ .debug_line    0x0000000000000000       0xda common/libcommon.a(cmd_boot.o)
+
+.debug_aranges.36
+                0x0000000000000000       0x20
+ .debug_aranges
+                0x0000000000000000       0x20 common/libcommon.a(cmd_boot.o)
+
+.debug_abbrev.37
+                0x0000000000000000      0x208
+ .debug_abbrev  0x0000000000000000      0x208 common/libcommon.a(cmd_bootm.o)
+
+.debug_info.38  0x0000000000000000      0x7c3
+ .debug_info    0x0000000000000000      0x7c3 common/libcommon.a(cmd_bootm.o)
+
+.debug_line.39  0x0000000000000000      0x2df
+ .debug_line    0x0000000000000000      0x2df common/libcommon.a(cmd_bootm.o)
+
+.debug_aranges.40
+                0x0000000000000000       0x20
+ .debug_aranges
+                0x0000000000000000       0x20 common/libcommon.a(cmd_bootm.o)
+
+.debug_abbrev.41
+                0x0000000000000000      0x139
+ .debug_abbrev  0x0000000000000000      0x139 common/libcommon.a(cmd_console.o)
+
+.debug_info.42  0x0000000000000000      0x378
+ .debug_info    0x0000000000000000      0x378 common/libcommon.a(cmd_console.o)
+
+.debug_line.43  0x0000000000000000       0xb2
+ .debug_line    0x0000000000000000       0xb2 common/libcommon.a(cmd_console.o)
+
+.debug_aranges.44
+                0x0000000000000000       0x20
+ .debug_aranges
+                0x0000000000000000       0x20 common/libcommon.a(cmd_console.o)
+
+.debug_abbrev.45
+                0x0000000000000000      0x241
+ .debug_abbrev  0x0000000000000000      0x241 common/libcommon.a(cmd_load.o)
+
+.debug_info.46  0x0000000000000000      0x97e
+ .debug_info    0x0000000000000000      0x97e common/libcommon.a(cmd_load.o)
+
+.debug_line.47  0x0000000000000000      0x2f5
+ .debug_line    0x0000000000000000      0x2f5 common/libcommon.a(cmd_load.o)
+
+.debug_aranges.48
+                0x0000000000000000       0x20
+ .debug_aranges
+                0x0000000000000000       0x20 common/libcommon.a(cmd_load.o)
+
+.debug_abbrev.49
+                0x0000000000000000      0x1a3
+ .debug_abbrev  0x0000000000000000      0x1a3 common/libcommon.a(cmd_net.o)
+
+.debug_info.50  0x0000000000000000      0x498
+ .debug_info    0x0000000000000000      0x498 common/libcommon.a(cmd_net.o)
+
+.debug_line.51  0x0000000000000000      0x18d
+ .debug_line    0x0000000000000000      0x18d common/libcommon.a(cmd_net.o)
+
+.debug_aranges.52
+                0x0000000000000000       0x20
+ .debug_aranges
+                0x0000000000000000       0x20 common/libcommon.a(cmd_net.o)
+
+.debug_abbrev.53
+                0x0000000000000000      0x1c6
+ .debug_abbrev  0x0000000000000000      0x1c6 common/libcommon.a(cmd_mem.o)
+
+.debug_info.54  0x0000000000000000      0x7a1
+ .debug_info    0x0000000000000000      0x7a1 common/libcommon.a(cmd_mem.o)
+
+.debug_line.55  0x0000000000000000      0x23b
+ .debug_line    0x0000000000000000      0x23b common/libcommon.a(cmd_mem.o)
+
+.debug_aranges.56
+                0x0000000000000000       0x20
+ .debug_aranges
+                0x0000000000000000       0x20 common/libcommon.a(cmd_mem.o)
+
+.debug_abbrev.57
+                0x0000000000000000      0x252
+ .debug_abbrev  0x0000000000000000      0x252 common/libcommon.a(cmd_nvedit.o)
+
+.debug_info.58  0x0000000000000000      0x964
+ .debug_info    0x0000000000000000      0x964 common/libcommon.a(cmd_nvedit.o)
+
+.debug_line.59  0x0000000000000000      0x346
+ .debug_line    0x0000000000000000      0x346 common/libcommon.a(cmd_nvedit.o)
+
+.debug_aranges.60
+                0x0000000000000000       0x20
+ .debug_aranges
+                0x0000000000000000       0x20 common/libcommon.a(cmd_nvedit.o)
+
+.debug_abbrev.61
+                0x0000000000000000      0x1f2
+ .debug_abbrev  0x0000000000000000      0x1f2 common/libcommon.a(command.o)
+
+.debug_info.62  0x0000000000000000      0x44d
+ .debug_info    0x0000000000000000      0x44d common/libcommon.a(command.o)
+
+.debug_line.63  0x0000000000000000      0x199
+ .debug_line    0x0000000000000000      0x199 common/libcommon.a(command.o)
+
+.debug_aranges.64
+                0x0000000000000000       0x20
+ .debug_aranges
+                0x0000000000000000       0x20 common/libcommon.a(command.o)
+
+.debug_abbrev.65
+                0x0000000000000000      0x27b
+ .debug_abbrev  0x0000000000000000      0x27b common/libcommon.a(console.o)
+
+.debug_info.66  0x0000000000000000      0x94a
+ .debug_info    0x0000000000000000      0x94a common/libcommon.a(console.o)
+
+.debug_line.67  0x0000000000000000      0x280
+ .debug_line    0x0000000000000000      0x280 common/libcommon.a(console.o)
+
+.debug_aranges.68
+                0x0000000000000000       0x20
+ .debug_aranges
+                0x0000000000000000       0x20 common/libcommon.a(console.o)
+
+.debug_abbrev.69
+                0x0000000000000000      0x1a8
+ .debug_abbrev  0x0000000000000000      0x1a8 common/libcommon.a(devices.o)
+
+.debug_info.70  0x0000000000000000      0x4f5
+ .debug_info    0x0000000000000000      0x4f5 common/libcommon.a(devices.o)
+
+.debug_line.71  0x0000000000000000      0x14f
+ .debug_line    0x0000000000000000      0x14f common/libcommon.a(devices.o)
+
+.debug_aranges.72
+                0x0000000000000000       0x20
+ .debug_aranges
+                0x0000000000000000       0x20 common/libcommon.a(devices.o)
+
+.debug_abbrev.73
+                0x0000000000000000      0x1de
+ .debug_abbrev  0x0000000000000000      0x1de common/libcommon.a(dlmalloc.o)
+
+.debug_info.74  0x0000000000000000      0xc2c
+ .debug_info    0x0000000000000000      0xc2c common/libcommon.a(dlmalloc.o)
+
+.debug_line.75  0x0000000000000000      0x3a9
+ .debug_line    0x0000000000000000      0x3a9 common/libcommon.a(dlmalloc.o)
+
+.debug_aranges.76
+                0x0000000000000000       0x20
+ .debug_aranges
+                0x0000000000000000       0x20 common/libcommon.a(dlmalloc.o)
+
+.debug_abbrev.77
+                0x0000000000000000      0x15f
+ .debug_abbrev  0x0000000000000000      0x15f common/libcommon.a(env_common.o)
+
+.debug_info.78  0x0000000000000000      0x383
+ .debug_info    0x0000000000000000      0x383 common/libcommon.a(env_common.o)
+
+.debug_line.79  0x0000000000000000      0x119
+ .debug_line    0x0000000000000000      0x119 common/libcommon.a(env_common.o)
+
+.debug_aranges.80
+                0x0000000000000000       0x20
+ .debug_aranges
+                0x0000000000000000       0x20 common/libcommon.a(env_common.o)
+
+.debug_abbrev.81
+                0x0000000000000000       0xe6
+ .debug_abbrev  0x0000000000000000       0xe6 common/libcommon.a(exports.o)
+
+.debug_info.82  0x0000000000000000      0x23f
+ .debug_info    0x0000000000000000      0x23f common/libcommon.a(exports.o)
+
+.debug_line.83  0x0000000000000000       0x9d
+ .debug_line    0x0000000000000000       0x9d common/libcommon.a(exports.o)
+
+.debug_aranges.84
+                0x0000000000000000       0x20
+ .debug_aranges
+                0x0000000000000000       0x20 common/libcommon.a(exports.o)
+
+.debug_abbrev.85
+                0x0000000000000000      0x183
+ .debug_abbrev  0x0000000000000000      0x183 common/libcommon.a(lists.o)
+
+.debug_info.86  0x0000000000000000      0x421
+ .debug_info    0x0000000000000000      0x421 common/libcommon.a(lists.o)
+
+.debug_line.87  0x0000000000000000      0x105
+ .debug_line    0x0000000000000000      0x105 common/libcommon.a(lists.o)
+
+.debug_aranges.88
+                0x0000000000000000       0x20
+ .debug_aranges
+                0x0000000000000000       0x20 common/libcommon.a(lists.o)
+
+.debug_abbrev.89
+                0x0000000000000000      0x13c
+ .debug_abbrev  0x0000000000000000      0x13c common/libcommon.a(env_spi.o)
+
+.debug_info.90  0x0000000000000000      0x345
+ .debug_info    0x0000000000000000      0x345 common/libcommon.a(env_spi.o)
+
+.debug_line.91  0x0000000000000000       0xe4
+ .debug_line    0x0000000000000000       0xe4 common/libcommon.a(env_spi.o)
+
+.debug_aranges.92
+                0x0000000000000000       0x20
+ .debug_aranges
+                0x0000000000000000       0x20 common/libcommon.a(env_spi.o)
+
+.debug_abbrev.93
+                0x0000000000000000       0x7c
+ .debug_abbrev  0x0000000000000000       0x7c common/libcommon.a(environment.o)
+
+.debug_info.94  0x0000000000000000       0xa5
+ .debug_info    0x0000000000000000       0xa5 common/libcommon.a(environment.o)
+
+.debug_line.95  0x0000000000000000       0x6c
+ .debug_line    0x0000000000000000       0x6c common/libcommon.a(environment.o)
+
+.debug_abbrev.96
+                0x0000000000000000       0xdb
+ .debug_abbrev  0x0000000000000000       0xdb lib_generic/libgeneric.a(crc32.o)
+
+.debug_info.97  0x0000000000000000      0x1dc
+ .debug_info    0x0000000000000000      0x1dc lib_generic/libgeneric.a(crc32.o)
+
+.debug_line.98  0x0000000000000000       0x98
+ .debug_line    0x0000000000000000       0x98 lib_generic/libgeneric.a(crc32.o)
+
+.debug_aranges.99
+                0x0000000000000000       0x20
+ .debug_aranges
+                0x0000000000000000       0x20 lib_generic/libgeneric.a(crc32.o)
+
+.debug_abbrev.100
+                0x0000000000000000       0xc4
+ .debug_abbrev  0x0000000000000000       0xc4 lib_generic/libgeneric.a(display_options.o)
+
+.debug_info.101
+                0x0000000000000000      0x123
+ .debug_info    0x0000000000000000      0x123 lib_generic/libgeneric.a(display_options.o)
+
+.debug_line.102
+                0x0000000000000000       0xa5
+ .debug_line    0x0000000000000000       0xa5 lib_generic/libgeneric.a(display_options.o)
+
+.debug_aranges.103
+                0x0000000000000000       0x20
+ .debug_aranges
+                0x0000000000000000       0x20 lib_generic/libgeneric.a(display_options.o)
+
+.debug_abbrev.104
+                0x0000000000000000      0x101
+ .debug_abbrev  0x0000000000000000      0x101 lib_generic/libgeneric.a(string.o)
+
+.debug_info.105
+                0x0000000000000000      0x361
+ .debug_info    0x0000000000000000      0x361 lib_generic/libgeneric.a(string.o)
+
+.debug_line.106
+                0x0000000000000000      0x10b
+ .debug_line    0x0000000000000000      0x10b lib_generic/libgeneric.a(string.o)
+
+.debug_aranges.107
+                0x0000000000000000       0x20
+ .debug_aranges
+                0x0000000000000000       0x20 lib_generic/libgeneric.a(string.o)
+
+.debug_abbrev.108
+                0x0000000000000000      0x16f
+ .debug_abbrev  0x0000000000000000      0x16f lib_generic/libgeneric.a(vsprintf.o)
+
+.debug_info.109
+                0x0000000000000000      0x3ac
+ .debug_info    0x0000000000000000      0x3ac lib_generic/libgeneric.a(vsprintf.o)
+
+.debug_line.110
+                0x0000000000000000      0x1e6
+ .debug_line    0x0000000000000000      0x1e6 lib_generic/libgeneric.a(vsprintf.o)
+
+.debug_aranges.111
+                0x0000000000000000       0x20
+ .debug_aranges
+                0x0000000000000000       0x20 lib_generic/libgeneric.a(vsprintf.o)
+
+.debug_abbrev.112
+                0x0000000000000000      0x17d
+ .debug_abbrev  0x0000000000000000      0x17d lib_generic/libgeneric.a(LzmaDecode.o)
+
+.debug_info.113
+                0x0000000000000000      0x756
+ .debug_info    0x0000000000000000      0x756 lib_generic/libgeneric.a(LzmaDecode.o)
+
+.debug_line.114
+                0x0000000000000000      0x21a
+ .debug_line    0x0000000000000000      0x21a lib_generic/libgeneric.a(LzmaDecode.o)
+
+.debug_aranges.115
+                0x0000000000000000       0x20
+ .debug_aranges
+                0x0000000000000000       0x20 lib_generic/libgeneric.a(LzmaDecode.o)
+
+.debug_abbrev.116
+                0x0000000000000000       0x42
+ .debug_abbrev  0x0000000000000000       0x42 lib_generic/libgeneric.a(ctype.o)
+
+.debug_info.117
+                0x0000000000000000       0x56
+ .debug_info    0x0000000000000000       0x56 lib_generic/libgeneric.a(ctype.o)
+
+.debug_line.118
+                0x0000000000000000       0x28
+ .debug_line    0x0000000000000000       0x28 lib_generic/libgeneric.a(ctype.o)
+
+.debug_abbrev.119
+                0x0000000000000000      0x11b
+ .debug_abbrev  0x0000000000000000      0x11b board/rt2880/librt2880.a(rt2880.o)
+
+.debug_info.120
+                0x0000000000000000      0x29f
+ .debug_info    0x0000000000000000      0x29f board/rt2880/librt2880.a(rt2880.o)
+
+.debug_line.121
+                0x0000000000000000      0x147
+ .debug_line    0x0000000000000000      0x147 board/rt2880/librt2880.a(rt2880.o)
+
+.debug_aranges.122
+                0x0000000000000000       0x20
+ .debug_aranges
+                0x0000000000000000       0x20 board/rt2880/librt2880.a(rt2880.o)
+
+.debug_abbrev.123
+                0x0000000000000000       0xcf
+ .debug_abbrev  0x0000000000000000       0xcf board/rt2880/librt2880.a(serial.o)
+
+.debug_info.124
+                0x0000000000000000      0x151
+ .debug_info    0x0000000000000000      0x151 board/rt2880/librt2880.a(serial.o)
+
+.debug_line.125
+                0x0000000000000000       0x6e
+ .debug_line    0x0000000000000000       0x6e board/rt2880/librt2880.a(serial.o)
+
+.debug_aranges.126
+                0x0000000000000000       0x20
+ .debug_aranges
+                0x0000000000000000       0x20 board/rt2880/librt2880.a(serial.o)
+
+.debug_abbrev.127
+                0x0000000000000000       0xf8
+ .debug_abbrev  0x0000000000000000       0xf8 cpu/ralink_soc/libralink_soc.a(cpu.o)
+
+.debug_info.128
+                0x0000000000000000      0x21b
+ .debug_info    0x0000000000000000      0x21b cpu/ralink_soc/libralink_soc.a(cpu.o)
+
+.debug_line.129
+                0x0000000000000000       0xf6
+ .debug_line    0x0000000000000000       0xf6 cpu/ralink_soc/libralink_soc.a(cpu.o)
+
+.debug_aranges.130
+                0x0000000000000000       0x20
+ .debug_aranges
+                0x0000000000000000       0x20 cpu/ralink_soc/libralink_soc.a(cpu.o)
+
+.debug_abbrev.131
+                0x0000000000000000      0x1ee
+ .debug_abbrev  0x0000000000000000      0x1ee lib_mips/libmips.a(mips_linux.o)
+
+.debug_info.132
+                0x0000000000000000      0x7c5
+ .debug_info    0x0000000000000000      0x7c5 lib_mips/libmips.a(mips_linux.o)
+
+.debug_line.133
+                0x0000000000000000      0x30e
+ .debug_line    0x0000000000000000      0x30e lib_mips/libmips.a(mips_linux.o)
+
+.debug_aranges.134
+                0x0000000000000000       0x20
+ .debug_aranges
+                0x0000000000000000       0x20 lib_mips/libmips.a(mips_linux.o)

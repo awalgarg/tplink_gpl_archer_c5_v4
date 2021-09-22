@@ -1,0 +1,6 @@
+mainmenu "SDK Configuration"
+
+config SUPPLIER_SDK 
+    string "Please specify SDK folder"
+		default ""
+	

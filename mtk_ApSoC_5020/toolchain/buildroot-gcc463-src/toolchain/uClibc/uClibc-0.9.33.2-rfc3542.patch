@@ -1,0 +1,609 @@
+diff -ruN uClibc-0.9.33.2.orig/extra/Configs/Config.in uClibc-0.9.33.2/extra/Configs/Config.in
+--- uClibc-0.9.33.2.orig/extra/Configs/Config.in	2012-05-15 15:20:09.000000000 +0800
++++ uClibc-0.9.33.2/extra/Configs/Config.in	2013-04-01 20:12:10.381648388 +0800
+@@ -1233,6 +1233,33 @@
+ 
+ 	  Most people should answer N.
+ 
++config UCLIBC_HAS_ADVANCED_INET6
++	bool "IPv6 Advanced Sockets API support (RFC3542)"
++	depends on UCLIBC_HAS_IPV6
++	default n
++	help
++	  This option group includes the functions specified by RFC 3542,
++	  "Advanced Sockets Application Program Interface (API) for IPv6".
++	  If you want to include support for it then answer Y.
++	  
++	  This option group includes the following functions:
++
++	    inet6_opt_append
++	    inet6_opt_find
++	    inet6_opt_finish
++	    inet6_opt_get_val
++	    inet6_opt_init
++	    inet6_opt_next
++	    inet6_opt_set_val
++	    inet6_rth_add
++	    inet6_rth_getaddr
++	    inet6_rth_init
++	    inet6_rth_reverse
++	    inet6_rth_segments
++	    inet6_rth_space
++	  
++	  Most people should answer N.
++
+ config UCLIBC_HAS_RPC
+ 	bool "Remote Procedure Call (RPC) support"
+ 	# RPC+socket-ipvX doesn't currently work.
+diff -ruN uClibc-0.9.33.2.orig/include/netinet/in.h uClibc-0.9.33.2/include/netinet/in.h
+--- uClibc-0.9.33.2.orig/include/netinet/in.h	2012-05-15 15:20:09.000000000 +0800
++++ uClibc-0.9.33.2/include/netinet/in.h	2013-04-01 20:12:10.381648388 +0800
+@@ -525,8 +525,9 @@
+ extern int inet6_option_find (__const struct cmsghdr *__cmsg,
+ 			      uint8_t **__tptrp, int __type)
+      __THROW __attribute_deprecated__;
++#  endif
+ 
+-
++#  if defined __UCLIBC_HAS_ADVANCED_INET6__
+ /* Hop-by-Hop and Destination Options Processing (RFC 3542).  */
+ extern int inet6_opt_init (void *__extbuf, socklen_t __extlen) __THROW;
+ extern int inet6_opt_append (void *__extbuf, socklen_t __extlen, int __offset,
+diff -ruN uClibc-0.9.33.2.orig/include/netinet/ip6.h uClibc-0.9.33.2/include/netinet/ip6.h
+--- uClibc-0.9.33.2.orig/include/netinet/ip6.h	2012-05-15 15:20:09.000000000 +0800
++++ uClibc-0.9.33.2/include/netinet/ip6.h	2013-04-01 20:12:10.381648388 +0800
+@@ -139,6 +139,12 @@
+ #define IP6OPT_TUNNEL_LIMIT	0x04
+ #define IP6OPT_ROUTER_ALERT	0x05
+ 
++#define IP6OPT_RTALERT_LEN	4
++#define IP6OPT_RTALERT_MLD	0	/* Datagram contains an MLD message */
++#define IP6OPT_RTALERT_RSVP	1	/* Datagram contains an RSVP message */
++#define IP6OPT_RTALERT_ACTNET	2	/* contains an Active Networks msg */
++#define IP6OPT_MINLEN		2
++
+ /* Jumbo Payload Option */
+ struct ip6_opt_jumbo
+   {
+diff -ruN uClibc-0.9.33.2.orig/libc/inet/inet6_opt.c uClibc-0.9.33.2/libc/inet/inet6_opt.c
+--- uClibc-0.9.33.2.orig/libc/inet/inet6_opt.c	1970-01-01 08:00:00.000000000 +0800
++++ uClibc-0.9.33.2/libc/inet/inet6_opt.c	2013-04-01 20:12:10.385633078 +0800
+@@ -0,0 +1,304 @@
++/* Copyright (C) 2006, 2007, 2008 Free Software Foundation, Inc.
++   This file is part of the GNU C Library.
++   Contributed by Ulrich Drepper <drepper@redhat.com>, 2006.
++
++   The GNU C Library is free software; you can redistribute it and/or
++   modify it under the terms of the GNU Lesser General Public
++   License as published by the Free Software Foundation; either
++   version 2.1 of the License, or (at your option) any later version.
++
++   The GNU C Library is distributed in the hope that it will be useful,
++   but WITHOUT ANY WARRANTY; without even the implied warranty of
++   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
++   Lesser General Public License for more details.
++
++   You should have received a copy of the GNU Lesser General Public
++   License along with the GNU C Library; if not, write to the Free
++   Software Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA
++   02111-1307 USA.  */
++
++#define __FORCE_GLIBC
++#include <features.h>
++#include <string.h>
++#include <netinet/in.h>
++#include <netinet/ip6.h>
++
++libc_hidden_proto(memcpy)
++libc_hidden_proto(memset)
++
++#if __UCLIBC_HAS_ADVANCED_INET6__
++
++/* RFC 3542, 10.1
++
++   This function returns the number of bytes needed for the empty
++   extension header i.e., without any options.  If EXTBUF is not NULL it
++   also initializes the extension header to have the correct length
++   field.  In that case if the EXTLEN value is not a positive (i.e.,
++   non-zero) multiple of 8 the function fails and returns -1.  */
++libc_hidden_proto(inet6_opt_init)
++int
++inet6_opt_init (void *extbuf, socklen_t extlen)
++{
++  if (extbuf != NULL)
++    {
++      if (extlen <= 0 || (extlen % 8) != 0 || extlen > 256 * 8)
++	return -1;
++
++      /* Fill in the length in units of 8 octets.  */
++      struct ip6_hbh *extp = (struct ip6_hbh *) extbuf;
++
++      /* RFC 2460 requires that the header extension length is the
++	 length of the option header in 8-byte units, not including
++	 the first 8 bytes.  Hence we have to subtract one.  */
++      extp->ip6h_len = extlen / 8 - 1;
++    }
++
++  return sizeof (struct ip6_hbh);
++}
++libc_hidden_def(inet6_opt_init)
++
++
++static void
++add_padding (uint8_t *extbuf, int offset, int npad)
++{
++  if (npad == 1)
++    extbuf[offset] = IP6OPT_PAD1;
++  else if (npad > 0)
++    {
++      struct ip6_opt *pad_opt = (struct ip6_opt *) (extbuf + offset);
++
++      pad_opt->ip6o_type = IP6OPT_PADN;
++      pad_opt->ip6o_len = npad - sizeof (struct ip6_opt);
++      /* Clear the memory used by the padding.  */
++      memset (pad_opt + 1, '\0', pad_opt->ip6o_len);
++    }
++}
++
++
++
++/* RFC 3542, 10.2
++
++   This function returns the updated total length taking into account
++   adding an option with length 'len' and alignment 'align'.  If
++   EXTBUF is not NULL then, in addition to returning the length, the
++   function inserts any needed pad option, initializes the option
++   (setting the type and length fields) and returns a pointer to the
++   location for the option content in databufp.  If the option does
++   not fit in the extension header buffer the function returns -1.  */
++libc_hidden_proto(inet6_opt_append)
++int
++inet6_opt_append (void *extbuf, socklen_t extlen, int offset, uint8_t type,
++		  socklen_t len, uint8_t align, void **databufp)
++{
++  /* Check minimum offset.  */
++  if (offset < sizeof (struct ip6_hbh))
++    return -1;
++
++  /* One cannot add padding options.  */
++  if (type == IP6OPT_PAD1 || type == IP6OPT_PADN)
++    return -1;
++
++  /* The option length must fit in one octet.  */
++  if (len > 255)
++    return -1;
++
++  /* The alignment can only by 1, 2, 4, or 8 and must not exceed the
++     option length.  */
++  if (align == 0 || align > 8 || (align & (align - 1)) != 0 || align > len)
++    return -1;
++
++  /* Determine the needed padding for alignment.  Following the
++     current content of the buffer we have the is the IPv6 option type
++     and length, followed immediately by the data.  The data has the
++     alignment constraints.  Therefore padding must be inserted in the
++     form of padding options before the new option. */
++  int data_offset = offset + sizeof (struct ip6_opt);
++  int npad = (align - data_offset % align) & (align - 1);
++
++  if (extbuf != NULL)
++    {
++      /* Now we can check whether the buffer is large enough.  */
++      if (data_offset + npad + len > extlen)
++	return -1;
++
++      add_padding (extbuf, offset, npad);
++
++      offset += npad;
++
++      /* Now prepare the option itself.  */
++      struct ip6_opt *opt = (struct ip6_opt *) ((uint8_t *) extbuf + offset);
++
++      opt->ip6o_type = type;
++      opt->ip6o_len = len;
++
++      *databufp = opt + 1;
++    }
++  else
++    offset += npad;
++
++  return offset + sizeof (struct ip6_opt) + len;
++}
++libc_hidden_def(inet6_opt_append)
++
++
++/* RFC 3542, 10.3
++
++   This function returns the updated total length taking into account
++   the final padding of the extension header to make it a multiple of
++   8 bytes.  If EXTBUF is not NULL the function also initializes the
++   option by inserting a Pad1 or PadN option of the proper length.  */
++libc_hidden_proto(inet6_opt_finish)
++int
++inet6_opt_finish (void *extbuf, socklen_t extlen, int offset)
++{
++  /* Check minimum offset.  */
++  if (offset < sizeof (struct ip6_hbh))
++    return -1;
++
++  /* Required padding at the end.  */
++  int npad = (8 - (offset & 7)) & 7;
++
++  if (extbuf != NULL)
++    {
++      /* Make sure the buffer is large enough.  */
++      if (offset + npad > extlen)
++	return -1;
++
++      add_padding (extbuf, offset, npad);
++    }
++
++  return offset + npad;
++}
++libc_hidden_def(inet6_opt_finish)
++
++
++/* RFC 3542, 10.4
++
++   This function inserts data items of various sizes in the data
++   portion of the option.  VAL should point to the data to be
++   inserted.  OFFSET specifies where in the data portion of the option
++   the value should be inserted; the first byte after the option type
++   and length is accessed by specifying an offset of zero.  */
++libc_hidden_proto(inet6_opt_set_val)
++int
++inet6_opt_set_val (void *databuf, int offset, void *val, socklen_t vallen)
++{
++  memcpy ((uint8_t *) databuf + offset, val, vallen);
++
++  return offset + vallen;
++}
++libc_hidden_def(inet6_opt_set_val)
++
++
++/* RFC 3542, 10.5
++
++   This function parses received option extension headers returning
++   the next option.  EXTBUF and EXTLEN specifies the extension header.
++   OFFSET should either be zero (for the first option) or the length
++   returned by a previous call to 'inet6_opt_next' or
++   'inet6_opt_find'.  It specifies the position where to continue
++   scanning the extension buffer.  */
++libc_hidden_proto(inet6_opt_next)
++int
++inet6_opt_next (void *extbuf, socklen_t extlen, int offset, uint8_t *typep,
++		socklen_t *lenp, void **databufp)
++{
++  if (offset == 0)
++    offset = sizeof (struct ip6_hbh);
++  else if (offset < sizeof (struct ip6_hbh))
++    return -1;
++
++  while (offset < extlen)
++    {
++      struct ip6_opt *opt = (struct ip6_opt *) ((uint8_t *) extbuf + offset);
++
++      if (opt->ip6o_type == IP6OPT_PAD1)
++	/* Single byte padding.  */
++	++offset;
++      else if (opt->ip6o_type == IP6OPT_PADN)
++	offset += sizeof (struct ip6_opt) + opt->ip6o_len;
++      else
++	{
++	  /* Check whether the option is valid.  */
++	  offset += sizeof (struct ip6_opt) + opt->ip6o_len;
++	  if (offset > extlen)
++	    return -1;
++
++	  *typep = opt->ip6o_type;
++	  *lenp = opt->ip6o_len;
++	  *databufp = opt + 1;
++	  return offset;
++	}
++    }
++
++  return -1;
++}
++libc_hidden_def(inet6_opt_next)
++
++
++/* RFC 3542, 10.6
++
++   This function is similar to the previously described
++   'inet6_opt_next' function, except this function lets the caller
++   specify the option type to be searched for, instead of always
++   returning the next option in the extension header.  */
++libc_hidden_proto(inet6_opt_find)
++int
++inet6_opt_find (void *extbuf, socklen_t extlen, int offset, uint8_t type,
++		socklen_t *lenp, void **databufp)
++{
++  if (offset == 0)
++    offset = sizeof (struct ip6_hbh);
++  else if (offset < sizeof (struct ip6_hbh))
++    return -1;
++
++  while (offset < extlen)
++    {
++      struct ip6_opt *opt = (struct ip6_opt *) ((uint8_t *) extbuf + offset);
++
++      if (opt->ip6o_type == IP6OPT_PAD1)
++	{
++	  /* Single byte padding.  */
++	  ++offset;
++	  if (type == IP6OPT_PAD1)
++	    {
++	      *lenp = 0;
++	      *databufp = (uint8_t *) extbuf + offset;
++	      return offset;
++	    }
++	}
++      else if (opt->ip6o_type != type)
++	offset += sizeof (struct ip6_opt) + opt->ip6o_len;
++      else
++	{
++	  /* Check whether the option is valid.  */
++	  offset += sizeof (struct ip6_opt) + opt->ip6o_len;
++	  if (offset > extlen)
++	    return -1;
++
++	  *lenp = opt->ip6o_len;
++	  *databufp = opt + 1;
++	  return offset;
++	}
++    }
++
++  return -1;
++}
++libc_hidden_def(inet6_opt_find)
++
++
++/* RFC 3542, 10.7
++
++   This function extracts data items of various sizes in the data
++   portion of the option.  */
++libc_hidden_proto(inet6_opt_get_val)
++int
++inet6_opt_get_val (void *databuf, int offset, void *val, socklen_t vallen)
++{
++  memcpy (val, (uint8_t *) databuf + offset, vallen);
++
++  return offset + vallen;
++}
++libc_hidden_def(inet6_opt_get_val)
++
++#endif /* __UCLIBC_HAS_ADVANCED_INET6__ */
+diff -ruN uClibc-0.9.33.2.orig/libc/inet/inet6_rth.c uClibc-0.9.33.2/libc/inet/inet6_rth.c
+--- uClibc-0.9.33.2.orig/libc/inet/inet6_rth.c	1970-01-01 08:00:00.000000000 +0800
++++ uClibc-0.9.33.2/libc/inet/inet6_rth.c	2013-04-01 20:12:10.385633078 +0800
+@@ -0,0 +1,218 @@
++/* Copyright (C) 2006, 2009 Free Software Foundation, Inc.
++   This file is part of the GNU C Library.
++   Contributed by Ulrich Drepper <drepper@redhat.com>, 2006.
++
++   The GNU C Library is free software; you can redistribute it and/or
++   modify it under the terms of the GNU Lesser General Public
++   License as published by the Free Software Foundation; either
++   version 2.1 of the License, or (at your option) any later version.
++
++   The GNU C Library is distributed in the hope that it will be useful,
++   but WITHOUT ANY WARRANTY; without even the implied warranty of
++   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
++   Lesser General Public License for more details.
++
++   You should have received a copy of the GNU Lesser General Public
++   License along with the GNU C Library; if not, write to the Free
++   Software Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA
++   02111-1307 USA.  */
++
++#define __FORCE_GLIBC
++#include <string.h>
++#include <netinet/in.h>
++#include <netinet/ip6.h>
++
++libc_hidden_proto(memcpy)
++libc_hidden_proto(memset)
++libc_hidden_proto(memmove)
++
++#if __UCLIBC_HAS_ADVANCED_INET6__
++
++/* RFC 3542, 7.1
++
++   This function returns the number of bytes required to hold a
++   Routing header of the specified type containing the specified
++   number of segments (addresses).  For an IPv6 Type 0 Routing header,
++   the number of segments must be between 0 and 127, inclusive.  */
++libc_hidden_proto(inet6_rth_space)
++socklen_t
++inet6_rth_space (int type, int segments)
++{
++  switch (type)
++    {
++    case IPV6_RTHDR_TYPE_0:
++      if (segments < 0 || segments > 127)
++	return 0;
++
++      return sizeof (struct ip6_rthdr0) + segments * sizeof (struct in6_addr);
++    }
++
++  return 0;
++}
++libc_hidden_def(inet6_rth_space)
++
++
++/* RFC 3542, 7.2
++
++   This function initializes the buffer pointed to by BP to contain a
++   Routing header of the specified type and sets ip6r_len based on the
++   segments parameter.  */
++libc_hidden_proto(inet6_rth_init)
++void *
++inet6_rth_init (void *bp, socklen_t bp_len, int type, int segments)
++{
++  struct ip6_rthdr *rthdr = (struct ip6_rthdr *) bp;
++
++  switch (type)
++    {
++    case IPV6_RTHDR_TYPE_0:
++      /* Make sure the parameters are valid and the buffer is large enough.  */
++      if (segments < 0 || segments > 127)
++	break;
++
++      socklen_t len = (sizeof (struct ip6_rthdr0)
++		       + segments * sizeof (struct in6_addr));
++      if (len > bp_len)
++	break;
++
++      /* Some implementations seem to initialize the whole memory area.  */
++      memset (bp, '\0', len);
++
++      /* Length in units of 8 octets.  */
++      rthdr->ip6r_len = segments * sizeof (struct in6_addr) / 8;
++      rthdr->ip6r_type = IPV6_RTHDR_TYPE_0;
++      return bp;
++    }
++
++  return NULL;
++}
++libc_hidden_def(inet6_rth_init)
++
++
++/* RFC 3542, 7.3
++
++   This function adds the IPv6 address pointed to by addr to the end of
++   the Routing header being constructed.  */
++libc_hidden_proto(inet6_rth_add)
++int
++inet6_rth_add (void *bp, const struct in6_addr *addr)
++{
++  struct ip6_rthdr *rthdr = (struct ip6_rthdr *) bp;
++
++  switch (rthdr->ip6r_type)
++    {
++      struct ip6_rthdr0 *rthdr0;
++    case IPV6_RTHDR_TYPE_0:
++      rthdr0 = (struct ip6_rthdr0 *) rthdr;
++      if (rthdr0->ip6r0_len * 8 / sizeof (struct in6_addr)
++	  - rthdr0->ip6r0_segleft < 1)
++        return -1;
++
++      memcpy (&rthdr0->ip6r0_addr[rthdr0->ip6r0_segleft++],
++	      addr, sizeof (struct in6_addr));
++
++      return 0;
++    }
++
++  return -1;
++}
++libc_hidden_def(inet6_rth_add)
++
++
++/* RFC 3542, 7.4
++
++   This function takes a Routing header extension header (pointed to by
++   the first argument) and writes a new Routing header that sends
++   datagrams along the reverse of that route.  The function reverses the
++   order of the addresses and sets the segleft member in the new Routing
++   header to the number of segments.  */
++libc_hidden_proto(inet6_rth_reverse)
++int
++inet6_rth_reverse (const void *in, void *out)
++{
++  struct ip6_rthdr *in_rthdr = (struct ip6_rthdr *) in;
++
++  switch (in_rthdr->ip6r_type)
++    {
++      struct ip6_rthdr0 *in_rthdr0;
++      struct ip6_rthdr0 *out_rthdr0;
++    case IPV6_RTHDR_TYPE_0:
++      in_rthdr0 = (struct ip6_rthdr0 *) in;
++      out_rthdr0 = (struct ip6_rthdr0 *) out;
++
++      /* Copy header, not the addresses.  The memory regions can overlap.  */
++      memmove (out_rthdr0, in_rthdr0, sizeof (struct ip6_rthdr0));
++
++      int total = in_rthdr0->ip6r0_len * 8 / sizeof (struct in6_addr);
++      for (int i = 0; i < total / 2; ++i)
++	{
++	  /* Remember, IN_RTHDR0 and OUT_RTHDR0 might overlap.  */
++	  struct in6_addr temp = in_rthdr0->ip6r0_addr[i];
++	  out_rthdr0->ip6r0_addr[i] = in_rthdr0->ip6r0_addr[total - 1 - i];
++	  out_rthdr0->ip6r0_addr[total - 1 - i] = temp;
++	}
++      if (total % 2 != 0 && in != out)
++	out_rthdr0->ip6r0_addr[total / 2] = in_rthdr0->ip6r0_addr[total / 2];
++
++      out_rthdr0->ip6r0_segleft = total;
++
++      return 0;
++    }
++
++  return -1;
++}
++libc_hidden_def(inet6_rth_reverse)
++
++
++/* RFC 3542, 7.5
++
++   This function returns the number of segments (addresses) contained in
++   the Routing header described by BP.  */
++libc_hidden_proto(inet6_rth_segments)
++int
++inet6_rth_segments (const void *bp)
++{
++  struct ip6_rthdr *rthdr = (struct ip6_rthdr *) bp;
++
++  switch (rthdr->ip6r_type)
++    {
++    case IPV6_RTHDR_TYPE_0:
++
++      return rthdr->ip6r_len * 8 / sizeof (struct in6_addr);
++    }
++
++  return -1;
++}
++libc_hidden_def(inet6_rth_segments)
++
++
++/* RFC 3542, 7.6
++
++   This function returns a pointer to the IPv6 address specified by
++   index (which must have a value between 0 and one less than the
++   value returned by 'inet6_rth_segments') in the Routing header
++   described by BP.  */
++libc_hidden_proto(inet6_rth_getaddr)
++struct in6_addr *
++inet6_rth_getaddr (const void *bp, int index)
++{
++  struct ip6_rthdr *rthdr = (struct ip6_rthdr *) bp;
++
++  switch (rthdr->ip6r_type)
++    {
++       struct ip6_rthdr0 *rthdr0;
++    case IPV6_RTHDR_TYPE_0:
++      rthdr0 = (struct ip6_rthdr0 *) rthdr;
++
++      if (index >= rthdr0->ip6r0_len * 8 / sizeof (struct in6_addr))
++	break;
++
++      return &rthdr0->ip6r0_addr[index];
++    }
++
++  return NULL;
++}
++libc_hidden_def(inet6_rth_getaddr)
++
++#endif /* __UCLIBC_HAS_ADVANCED_INET6__ */
++
+diff -ruN uClibc-0.9.33.2.orig/libc/inet/Makefile.in uClibc-0.9.33.2/libc/inet/Makefile.in
+--- uClibc-0.9.33.2.orig/libc/inet/Makefile.in	2012-05-15 15:20:09.000000000 +0800
++++ uClibc-0.9.33.2/libc/inet/Makefile.in	2013-04-01 20:12:10.381648388 +0800
+@@ -20,7 +20,7 @@
+ 	getservice.c getproto.c getnet.c hostid.c \
+ 	inet_net.c herror.c if_index.c gai_strerror.c getaddrinfo.c \
+ 	ifaddrs.c ntop.c
+-CSRC-$(UCLIBC_HAS_IPV6) += in6_addr.c
++CSRC-$(UCLIBC_HAS_IPV6) += in6_addr.c inet6_opt.c inet6_rth.c
+ # multi source addr.c
+ CSRC-$(findstring y,$(UCLIBC_HAS_IPV4)$(UCLIBC_HAS_IPV6)) += \
+ 	inet_aton.c inet_addr.c inet_ntoa.c inet_makeaddr.c \

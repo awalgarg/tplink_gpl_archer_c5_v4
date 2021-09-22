@@ -1,0 +1,12 @@
+prefix=
+exec_prefix=
+libdir=${pcfiledir}
+includedir=/work/Trendchip_89741/tpbsp/apps/public/DLNA_MediaServer/ffmpeg-0.6
+
+Name: libswscale
+Description: FFmpeg image rescaling library
+Version: 0.11.0
+Requires: libavutil = 50.15.1
+Conflicts:
+Libs: ${libdir}/libswscale.a 
+Cflags: -I${includedir}

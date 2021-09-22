@@ -1,0 +1,36 @@
+#!/bin/sh
+#
+#start the moca2 daemon....
+#
+
+start() {
+        echo "Starting moca daemon..."
+        mocad2 br0 -log 0&
+}
+stop() {
+        echo -n "Stopping moca daemon..."
+        killall mocad2
+        rm /tmp/mocad2
+}
+
+restart() {
+        stop
+        start
+}
+
+case "$1" in
+  start)
+        start
+        ;;
+  stop)
+        stop
+        ;;
+  restart|reload)
+        restart
+        ;;
+  *)
+        echo $"Usage: $0 {start|stop|restart}"
+        exit 1
+esac
+
+exit $?

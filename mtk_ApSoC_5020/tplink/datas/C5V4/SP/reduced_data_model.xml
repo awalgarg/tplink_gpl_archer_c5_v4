@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<InternetGatewayDevice t=o r=P s=IGD_OBJ >
+	<DeviceInfo t=o r=P s=IGD_DEV_INFO_OBJ >
+		<Manufacturer t=s r=R l=64 d=TP-Link />
+		<ModelName t=s r=R l=64 d="Archer C5" />
+		<Description t=s r=R l=256 d="AC1200 Wireless Dual Band Gigabit Router " />
+		<AdditionalHardwareVersion t=s r=R l=64 d=00000004 />
+		<X_TP_DevManufacturerURL t=s r=R l=64 d=http://www.tp-link.com nw=1 h=1 />
+		<X_TP_DevModelVersion t=s r=R d=4.0 nw=1 h=1 />
+		<X_TP_HardwareID t=s r=R l=33 al=cli d=4C0BD0D6A661FF193904E181513B2FD0 nw=1 h=1 />
+		<X_TP_OemID t=s r=R l=33 al=cli d=D049A3B7D19D5B580C531086AE1EA4F3 nw=1 h=1 />
+		<X_TP_ProductID t=u r=R d=0x53e8c804 nw=1 h=1 />
+		<X_TP_ProductVersion t=u r=R d=0x0006000c nw=1 h=1 />
+		<X_TP_SoftwareRevision t=u r=R d=0x55aa0310 nw=1 h=1 />
+		<X_TP_SoftwareRevisionMinor t=u r=R d=0x00 nw=1 h=1 />
+		<X_TP_BuildDate t=s r=W l=8 d=110929 nw=1 h=1 />
+		<X_TP_BuildTime t=u r=W d=57600 nw=1 h=1 />
+	</DeviceInfo>
+</InternetGatewayDevice>

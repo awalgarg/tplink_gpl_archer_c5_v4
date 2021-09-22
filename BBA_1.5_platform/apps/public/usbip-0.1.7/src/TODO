@@ -1,0 +1,24 @@
+TODO
+
+- bug fix & clean up
+
+- event notification from kernel to userland (i.e. status change)
+
+- show usb device list in a device server
+	server:# usbip --list
+		 - show what device is exportable (i.e. binded to usbip.ko)
+
+- dynamic bind & unbind of usbip.ko
+	server:# usbip --unbind 1-2
+		 - unbind usb_storage assigned to the usb device of 1-2
+
+	server:# usbip --bind 1-2
+		 - bind usbip.ko to make it exportable
+
+- support multi-configuration device?
+
+- documentaion
+
+- mDNS/DNS-SD or SLP
+
+- gnutls (SRP & TLS) & IPSec?

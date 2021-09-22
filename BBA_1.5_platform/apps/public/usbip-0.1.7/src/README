@@ -1,0 +1,145 @@
+# vim:tw=78:ts=4:expandtab:ai:sw=4
+#
+# README for usbip-utils
+#
+# Copyright (C) 2005-2006 Takahiro Hirofuchi <taka-hir@is.naist.jp>
+
+
+[Note]
+    This is still under early development stage. Need help!
+    This is *experimental*.
+
+
+[Requirements]
+    - sysfsutils >= 2.0.0
+        sysfsutils library
+
+    - libwrap0-dev
+        tcp wrapper library
+
+    - hwdata
+        /usr/share/hwdata/usb.ids
+
+    - usbip device driver 
+        For mainline kernels, it is included under usbip-utils/drivers/.
+
+    - gcc >= 4.0
+
+
+[Install]
+    0. Skip here if you see a configure script.
+        $ aclocal
+        $ autoheader
+        $ automake-1.9 -a -c -f
+        $ autoconf
+
+    1. Compile & install.
+        $ ./configure
+        $ make install
+
+
+[Usage]
+    server:# (Attach your USB device physically.)
+
+    server:# rmmod usb_storage 
+        - Unload the assigned driver of the device.
+        - Otherwise,
+          :# echo [device busid] > /sys/bus/usb/drivers/.../unbind
+          :# echo [device busid] > /sys/bus/usb/drivers/.../bind
+
+          - Find [device busid] in /sys/bus/usb/drivers/<driver_name>/.
+
+    server:# insmod usbip.ko
+        - It is formerly named as stub.ko.
+
+    server:# less /proc/bus/usb/devices
+        - Please make sure that usbip.ko is assigned to the device.
+
+    server:# ./usbipd -D
+        - Exporting the USB device.
+
+
+    client:# insmod vhci-hcd.ko
+        - It is formerly named as vhci.ko.
+
+    client:# ./usbip --list server
+        - List exported usb devices on the server.
+
+    client:# ./usbip --attach server 1-2
+        - Connect the remote USB device.
+
+    client:# ./usbip --port
+        - Show virtual port status.
+
+    client:# ./usbip --detach 0
+        - Detach the usb device.
+
+
+[Output Example]
+--------------------------------------------------------------------------------------------------------
+deux:/WORK/usb/usbip-utils/src# ./usbip --list 10.0.0.3
+- 10.0.0.3
+       1-1: Prolific Technology, Inc. : unknown product (067b:3507)
+          : /sys/devices/pci0000:00/0000:00:1f.2/usb1/1-1
+          : (Defined at Interface level) / unknown subclass / unknown protocol (00/00/00)
+          :  0 - Mass Storage / SCSI / Bulk (Zip) (08/06/50)
+ 
+   1-2.2.1: Apple Computer, Inc. : unknown product (05ac:0203)
+          : /sys/devices/pci0000:00/0000:00:1f.2/usb1/1-2/1-2.2/1-2.2.1
+          : (Defined at Interface level) / unknown subclass / unknown protocol (00/00/00)
+          :  0 - Human Interface Devices / Boot Interface Subclass / Keyboard (03/01/01)
+ 
+   1-2.2.3: OmniVision Technologies, Inc. : OV511+ WebCam (05a9:a511)
+          : /sys/devices/pci0000:00/0000:00:1f.2/usb1/1-2/1-2.2/1-2.2.3
+          : (Defined at Interface level) / unknown subclass / unknown protocol (00/00/00)
+          :  0 - Vendor Specific Class / unknown subclass / unknown protocol (ff/00/00)
+ 
+       3-1: Logitech, Inc. : QuickCam Pro 4000 (046d:08b2)
+          : /sys/devices/pci0000:00/0000:00:1e.0/0000:02:0a.0/usb3/3-1
+          : (Defined at Interface level) / unknown subclass / unknown protocol (00/00/00)
+          :  0 - Data / unknown subclass / unknown protocol (0a/ff/00)
+          :  1 - Audio / Control Device / unknown protocol (01/01/00)
+          :  2 - Audio / Streaming / unknown protocol (01/02/00)
+ 
+       4-1: Logitech, Inc. : QuickCam Express (046d:0870)
+          : /sys/devices/pci0000:00/0000:00:1e.0/0000:02:0a.1/usb4/4-1
+          : Vendor Specific Class / Vendor Specific Subclass / Vendor Specific Protocol (ff/ff/ff)
+          :  0 - Vendor Specific Class / Vendor Specific Subclass / Vendor Specific Protocol (ff/ff/ff)
+ 
+       4-2: Texas Instruments Japan : unknown product (08bb:2702)
+          : /sys/devices/pci0000:00/0000:00:1e.0/0000:02:0a.1/usb4/4-2
+          : (Defined at Interface level) / unknown subclass / unknown protocol (00/00/00)
+          :  0 - Audio / Control Device / unknown protocol (01/01/00)
+          :  1 - Audio / Streaming / unknown protocol (01/02/00)
+ 
+--------------------------------------------------------------------------------------------------------
+deux:/WORK/usb/usbip-utils/src# ./usbip --attach 10.0.0.3 1-1
+port 0 attached
+
+--------------------------------------------------------------------------------------------------------
+deux:/WORK/usb/usbip-utils/src# ./usbip --port
+Port 00: <Port in Use> at Full Speed(12Mbps)
+       Prolific Technology, Inc. : unknown product (067b:3507)
+       6-1 -> usbip://10.0.0.3:3240/1-1  (remote bus/dev 001/004)
+       6-1:1.0 used by usb-storage      
+                      /sys/class/scsi_device/0:0:0:0/device
+                      /sys/class/scsi_host/host0/device
+                      /sys/block/sda/device
+
+--------------------------------------------------------------------------------------------------------
+deux:/WORK/usb/usbip-utils/src# ./usbip --detach 0
+port 0 detached
+
+--------------------------------------------------------------------------------------------------------
+
+
+[Check List]
+    - usbip.ko must be binded to the target device.
+        - See /proc/bus/usb/devices and find "Driver=..." lines of the device.
+    - Shutdown firewall.
+        - usbip now uses TCP port 3240.
+    - Disable SELinux.
+
+
+[Contact]
+    taka-hir@is.naist.jp

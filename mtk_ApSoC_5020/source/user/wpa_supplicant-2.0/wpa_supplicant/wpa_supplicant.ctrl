@@ -1,0 +1,13 @@
+ctrl_interface=/mtd_rwarea
+update_config=1
+device_name=ASUS_PC_INFRA
+device_type=1-0050F204-3
+config_methods=virtual_display virtual_push_button keypad
+
+network={
+	ssid="RT3052_YIWEI"
+	key_mgmt=NONE
+	auth_alg=OPEN
+	wep_key0=0011223344
+	disabled=1
+}

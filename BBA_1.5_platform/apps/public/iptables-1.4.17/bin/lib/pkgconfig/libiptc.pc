@@ -1,0 +1,10 @@
+
+prefix=/home/yangxu/tplink/lettuce/apps/public/iptables-1.4.17/bin
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+includedir=${prefix}/include
+
+Name:		libiptc
+Description:	iptables v4/v6 ruleset ADT and kernel interface
+Version:	1.4.17
+Requires:	libip4tc libip6tc

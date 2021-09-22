@@ -1,0 +1,38 @@
+Description:
+    This document is used to describe how to integrate MoCA API on linux platform.
+
+Directories and files:
+    (1)	Library: lib/
+    (2)	Binary: bin/
+    (3)	Headers of libmoca2: include/
+    (4)	Script of MoCA daemon: etc/mocad2Init
+
+Installation flow:
+    (1)	Install library on linux file system.
+    (2)	Install binary on linux file system.
+    (3)	Install MoCA daemon script on linux file system.    
+    (4)	Modify the script of MoCA daemon if the network interface between host and MoCA device is not ¡§br0¡¨
+        Example: If the network interface between host and MoCA device is ¡§eth0¡¨, modify the start function of script as follow:
+                 mocad2 eth0 -log 0&
+    (5)	Start MoCA daemon before using libmoca2.
+        (Recommend to start MoCA daemon after system power on)
+
+How to start/stop MoCA daemon?
+    1.	Using script: (recommended)
+        1.1 Start daemon: mocad2Init start
+        1.2 Stop daemon: mocad2Init stop
+    2.	Using command in command line:
+        2.1 Start daemon: mocad2 br0 -log 0&
+        2.2 Stop daemon: killall mocad2; rm /tmp/mocad2
+
+How to use libmoca2?
+    Please reference to include/libMoca.h
+
+How to test libmoca2 in command line?
+    Please use command ¡§testMoca2¡¨. ( ¡§testMoca2 -h¡¨ to get more information) 
+
+System requirements:
+    1. libpcap (Please get version 1.0.0 source code form http://www.tcpdump.org/)
+    2. libpthread
+    3. libstdc++
+    4. Kernel support "Unix domain sockets"

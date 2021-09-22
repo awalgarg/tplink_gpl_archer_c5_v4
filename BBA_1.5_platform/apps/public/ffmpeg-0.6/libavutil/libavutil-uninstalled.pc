@@ -1,0 +1,12 @@
+prefix=
+exec_prefix=
+libdir=${pcfiledir}
+includedir=/work/Trendchip_89741/tpbsp/apps/public/DLNA_MediaServer/ffmpeg-0.6
+
+Name: libavutil
+Description: FFmpeg utility library
+Version: 50.15.1
+Requires: 
+Conflicts:
+Libs: ${libdir}/libavutil.a 
+Cflags: -I${includedir}

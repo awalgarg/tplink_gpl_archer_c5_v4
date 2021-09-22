@@ -1,0 +1,37 @@
+﻿TP-LINK GPL code readme
+ 
+1. This package contains all GPL code used by TP-LINK Routers with Linux OS.
+2. All components have been built successfully on Fedora release Linux 14 Workstation. 
+3. Compiling components in this package on platforms other than Fedora release Linux 14 Workstation may cause unexpected results. 
+4. Recommended using "root" or "sudo" command to build the code. 
+5. After building the code, you will get the bootloader and linux kernel image, then you can make rootfs with mksquashfs too, but you can't upgrade these images to your router through web management page. 
+ 
+
+Build Instructions 
+1. All build targets are in ./GPL_ArcherC5V4/BBA_1.5_platform/build/, you should enter this directory to build components. 
+
+Simple Build
+	./buildall.sh
+
+Expert Build
+1. Build toolchain:
+        make env_build
+2. Build components: 
+    1)Build u-boot bootloader
+        make boot_build
+     
+    2)Build linux kernel image
+        make kernel_build
+ 
+    3)Build some kernel modules, such as netfilter, netsched.
+        make modules_build
+  
+    4)Build some application, such as busybox, iptables and so on.
+        make apps_build
+			
+    5)Build rootfs
+        make fs_build
+
+    6)Build image
+        make image_build
+

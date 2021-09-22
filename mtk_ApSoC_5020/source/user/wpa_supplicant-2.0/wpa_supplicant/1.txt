@@ -1,0 +1,790 @@
+wlan1     Scan completed :
+          Cell 01 - Address: 00:24:6C:B3:12:23
+                    Protocol:802.11b/g/n
+                    ESSID:"mtkguest"
+                    Mode:Managed
+                    Frequency:2.462 GHz (Channel 11)
+                    Quality=89/100  Signal level=-55 dBm  Noise level=-92 dBm
+                    Encryption key:off
+                    Bit Rates:130 Mb/s
+          Cell 02 - Address: 24:DB:AC:10:8B:18
+                    Protocol:802.11b/g/n
+                    ESSID:"jayhs"
+                    Mode:Managed
+                    Frequency:2.412 GHz (Channel 1)
+                    Quality=99/100  Signal level=-51 dBm  Noise level=-92 dBm
+                    Encryption key:on
+                    Bit Rates:72 Mb/s
+                    IE: WPA Version 1
+                        Group Cipher : TKIP
+                        Pairwise Ciphers (2) : CCMP TKIP
+                        Authentication Suites (1) : PSK
+                    IE: IEEE 802.11i/WPA2 Version 1
+                        Group Cipher : TKIP
+                        Pairwise Ciphers (2) : CCMP TKIP
+                        Authentication Suites (1) : PSK
+                    IE: Unknown: DD0E0050F204104A0001101044000102
+          Cell 03 - Address: 00:1F:33:E3:41:E2
+                    Protocol:802.11b/g/n
+                    ESSID:"NETGEAR"
+                    Mode:Managed
+                    Frequency:2.412 GHz (Channel 1)
+                    Quality=100/100  Signal level=-49 dBm  Noise level=-92 dBm
+                    Encryption key:on
+                    Bit Rates:300 Mb/s
+                    IE: IEEE 802.11i/WPA2 Version 1
+                        Group Cipher : CCMP
+                        Pairwise Ciphers (1) : CCMP
+                        Authentication Suites (1) : PSK
+                    IE: Unknown: DD0E0050F204104A0001101044000102
+          Cell 04 - Address: 00:22:CF:1F:4E:74
+                    Protocol:802.11b/g/n
+                    ESSID:"planexuser-wps"
+                    Mode:Managed
+                    Frequency:2.412 GHz (Channel 1)
+                    Quality=31/100  Signal level=-77 dBm  Noise level=-82 dBm
+                    Encryption key:on
+                    Bit Rates:150 Mb/s
+                    IE: IEEE 802.11i/WPA2 Version 1
+                        Group Cipher : CCMP
+                        Pairwise Ciphers (1) : CCMP
+                        Authentication Suites (1) : PSK
+                       Preauthentication Supported
+          Cell 05 - Address: 54:E6:FC:A6:E2:BE
+                    Protocol:802.11b/g/n
+                    ESSID:"TP-LINK"
+                    Mode:Managed
+                    Frequency:2.412 GHz (Channel 1)
+                    Quality=52/100  Signal level=-69 dBm  Noise level=-92 dBm
+                    Encryption key:off
+                    Bit Rates:150 Mb/s
+                    IE: Unknown: DD0E0050F204104A0001101044000102
+          Cell 06 - Address: 00:50:43:28:01:D7
+                    Protocol:802.11b
+                    ESSID:"s123456789012"
+                    Mode:Managed
+                    Frequency:2.412 GHz (Channel 1)
+                    Quality=23/100  Signal level=-81 dBm  Noise level=-83 dBm
+                    Encryption key:off
+                    Bit Rates:11 Mb/s
+          Cell 07 - Address: 00:0C:43:10:53:33
+                    Protocol:802.11b/g/n
+                    ESSID:"AAAA"
+                    Mode:Managed
+                    Frequency:2.412 GHz (Channel 1)
+                    Quality=31/100  Signal level=-77 dBm  Noise level=-82 dBm
+                    Encryption key:on
+                    Bit Rates:300 Mb/s
+                    IE: IEEE 802.11i/WPA2 Version 1
+                        Group Cipher : CCMP
+                        Pairwise Ciphers (1) : CCMP
+                        Authentication Suites (1) : PSK
+          Cell 08 - Address: BC:AE:C5:C4:1F:47
+                    Protocol:802.11b/g/n
+                    ESSID:"QA-50M-ASUS"
+                    Mode:Managed
+                    Frequency:2.412 GHz (Channel 1)
+                    Quality=31/100  Signal level=-77 dBm  Noise level=-85 dBm
+                    Encryption key:on
+                    Bit Rates:72 Mb/s
+                    IE: IEEE 802.11i/WPA2 Version 1
+                        Group Cipher : CCMP
+                        Pairwise Ciphers (1) : CCMP
+                        Authentication Suites (1) : PSK
+          Cell 09 - Address: C4:01:7C:18:4A:08
+                    Protocol:802.11b/g/n
+                    ESSID:"WBA-Demo-Example.Com"
+                    Mode:Managed
+                    Frequency:2.412 GHz (Channel 1)
+                    Quality=47/100  Signal level=-71 dBm  Noise level=-75 dBm
+                    Encryption key:on
+                    Bit Rates:130 Mb/s
+                    IE: IEEE 802.11i/WPA2 Version 1
+                        Group Cipher : CCMP
+                        Pairwise Ciphers (1) : CCMP
+                        Authentication Suites (1) : 802.1x
+          Cell 10 - Address: C4:01:7C:58:4A:08
+                    Protocol:802.11b/g/n
+                    ESSID:"WBA-Demo-Ruckus.Com"
+                    Mode:Managed
+                    Frequency:2.412 GHz (Channel 1)
+                    Quality=63/100  Signal level=-65 dBm  Noise level=-92 dBm
+                    Encryption key:on
+                    Bit Rates:130 Mb/s
+                    IE: IEEE 802.11i/WPA2 Version 1
+                        Group Cipher : CCMP
+                        Pairwise Ciphers (1) : CCMP
+                        Authentication Suites (1) : 802.1x
+          Cell 11 - Address: E0:CB:4E:25:03:D5
+                    Protocol:802.11b/g/n
+                    ESSID:"RT-N16"
+                    Mode:Managed
+                    Frequency:2.412 GHz (Channel 1)
+                    Quality=42/100  Signal level=-73 dBm  Noise level=-82 dBm
+                    Encryption key:on
+                    Bit Rates:144 Mb/s
+                    IE: IEEE 802.11i/WPA2 Version 1
+                        Group Cipher : CCMP
+                        Pairwise Ciphers (1) : CCMP
+                        Authentication Suites (1) : PSK
+                    IE: Unknown: DD180050F204104A00011010440001021049000600372A000120
+          Cell 12 - Address: AC:81:12:01:F6:2B
+                    Protocol:802.11b/g
+                    ESSID:""
+                    Mode:Managed
+                    Frequency:2.412 GHz (Channel 1)
+                    Quality=23/100  Signal level=-81 dBm  Noise level=-86 dBm
+                    Encryption key:on
+                    Bit Rates:54 Mb/s
+                    IE: IEEE 802.11i/WPA2 Version 1
+                        Group Cipher : CCMP
+                        Pairwise Ciphers (1) : CCMP
+                        Authentication Suites (1) : PSK
+          Cell 13 - Address: 00:0C:43:44:09:07
+                    Protocol:802.11b/g/n
+                    ESSID:"RalinkWPS"
+                    Mode:Managed
+                    Frequency:2.412 GHz (Channel 1)
+                    Quality=13/100  Signal level=-85 dBm  Noise level=-94 dBm
+                    Encryption key:on
+                    Bit Rates:300 Mb/s
+                    IE: IEEE 802.11i/WPA2 Version 1
+                        Group Cipher : CCMP
+                        Pairwise Ciphers (1) : CCMP
+                        Authentication Suites (1) : PSK
+                    IE: Unknown: DD310050F204104A0001101044000102104700102880288028801880A880000C43440907103C0001011049000600372A000120
+          Cell 14 - Address: 6A:60:BC:0C:7F:37
+                    Protocol:802.11g
+                    ESSID:"YHCHou"
+                    Mode:Managed
+                    Frequency:2.417 GHz (Channel 2)
+                    Quality=23/100  Signal level=-81 dBm  Noise level=-76 dBm
+                    Encryption key:on
+                    Bit Rates:54 Mb/s
+                    IE: IEEE 802.11i/WPA2 Version 1
+                        Group Cipher : CCMP
+                        Pairwise Ciphers (1) : CCMP
+                        Authentication Suites (1) : PSK
+          Cell 15 - Address: 0A:23:F8:75:A1:70
+                    Protocol:802.11b/g
+                    ESSID:"eMemory-WiFi"
+                    Mode:Managed
+                    Frequency:2.422 GHz (Channel 3)
+                    Quality=23/100  Signal level=-81 dBm  Noise level=-83 dBm
+                    Encryption key:on
+                    Bit Rates:54 Mb/s
+                    IE: WPA Version 1
+                        Group Cipher : TKIP
+                        Pairwise Ciphers (1) : TKIP
+                        Authentication Suites (1) : 802.1x
+          Cell 16 - Address: 0A:23:F8:75:A1:6A
+                    Protocol:802.11b/g
+                    ESSID:"eMemory-WiFi"
+                    Mode:Managed
+                    Frequency:2.422 GHz (Channel 3)
+                    Quality=42/100  Signal level=-73 dBm  Noise level=-80 dBm
+                    Encryption key:on
+                    Bit Rates:54 Mb/s
+                    IE: WPA Version 1
+                        Group Cipher : TKIP
+                        Pairwise Ciphers (1) : TKIP
+                        Authentication Suites (1) : 802.1x
+          Cell 17 - Address: 0E:23:F8:75:A1:6A
+                    Protocol:802.11b/g
+                    ESSID:"eMemory-Guest"
+                    Mode:Managed
+                    Frequency:2.422 GHz (Channel 3)
+                    Quality=47/100  Signal level=-71 dBm  Noise level=-75 dBm
+                    Encryption key:on
+                    Bit Rates:54 Mb/s
+          Cell 18 - Address: 00:24:6C:B2:21:40
+                    Protocol:802.11b/g/n
+                    ESSID:"mtklab"
+                    Mode:Managed
+                    Frequency:2.432 GHz (Channel 5)
+                    Quality=47/100  Signal level=-71 dBm  Noise level=-80 dBm
+                    Encryption key:on
+                    Bit Rates:130 Mb/s
+          Cell 19 - Address: 00:24:6C:B2:21:41
+                    Protocol:802.11b/g/n
+                    ESSID:"mtkemp-ms"
+                    Mode:Managed
+                    Frequency:2.432 GHz (Channel 5)
+                    Quality=13/100  Signal level=-85 dBm  Noise level=-87 dBm
+                    Encryption key:off
+                    Bit Rates:130 Mb/s
+          Cell 20 - Address: 00:24:6C:B2:21:43
+                    Protocol:802.11b/g/n
+                    ESSID:"mtkguest"
+                    Mode:Managed
+                    Frequency:2.432 GHz (Channel 5)
+                    Quality=47/100  Signal level=-71 dBm  Noise level=-75 dBm
+                    Encryption key:off
+                    Bit Rates:130 Mb/s
+          Cell 21 - Address: 00:0D:43:44:0B:40
+                    Protocol:802.11b/g/n
+                    ESSID:"mtkwifitestarp"
+                    Mode:Managed
+                    Frequency:2.427 GHz (Channel 4)
+                    Quality=37/100  Signal level=-75 dBm  Noise level=-83 dBm
+                    Encryption key:on
+                    Bit Rates:144 Mb/s
+                    IE: IEEE 802.11i/WPA2 Version 1
+                        Group Cipher : CCMP
+                        Pairwise Ciphers (1) : CCMP
+                        Authentication Suites (1) : 802.1x
+          Cell 22 - Address: 00:0C:43:44:0B:05
+                    Protocol:802.11b/g/n
+                    ESSID:"CHI"
+                    Mode:Managed
+                    Frequency:2.437 GHz (Channel 6)
+                    Quality=68/100  Signal level=-63 dBm  Noise level=-92 dBm
+                    Encryption key:on
+                    Bit Rates:300 Mb/s
+                    IE: IEEE 802.11i/WPA2 Version 1
+                        Group Cipher : CCMP
+                        Pairwise Ciphers (1) : CCMP
+                        Authentication Suites (1) : PSK
+                    IE: Unknown: DD270050F204104A0001101044000102104700102880288028801880A880000C43440B05103C000101
+          Cell 23 - Address: 00:0A:79:D1:BA:30
+                    Protocol:802.11b/g/n
+                    ESSID:"corega"
+                    Mode:Managed
+                    Frequency:2.437 GHz (Channel 6)
+                    Quality=99/100  Signal level=-51 dBm  Noise level=-92 dBm
+                    Encryption key:on
+                    Bit Rates:144 Mb/s
+                    IE: WPA Version 1
+                        Group Cipher : TKIP
+                        Pairwise Ciphers (2) : TKIP CCMP
+                        Authentication Suites (1) : PSK
+                    IE: IEEE 802.11i/WPA2 Version 1
+                        Group Cipher : TKIP
+                        Pairwise Ciphers (2) : TKIP CCMP
+                        Authentication Suites (1) : PSK
+          Cell 24 - Address: 00:0C:43:30:50:30
+                    Protocol:802.11b/g
+                    ESSID:"RT5350_YIWEI"
+                    Mode:Managed
+                    Frequency:2.437 GHz (Channel 6)
+                    Quality=89/100  Signal level=-55 dBm  Noise level=-92 dBm
+                    Encryption key:off
+                    Bit Rates:54 Mb/s
+          Cell 25 - Address: 00:0C:43:43:74:1E
+                    Protocol:802.11b/g/n
+                    ESSID:"RalinkInitAP_43741E"
+                    Mode:Managed
+                    Frequency:2.437 GHz (Channel 6)
+                    Quality=52/100  Signal level=-69 dBm  Noise level=-92 dBm
+                    Encryption key:off
+                    Bit Rates:300 Mb/s
+                    IE: Unknown: DD270050F204104A0001101044000101104700102880288028801880A880000C4343741E103C000101
+          Cell 26 - Address: C0:C1:C0:61:AA:2A
+                    Protocol:802.11b/g/n
+                    ESSID:"4200g"
+                    Mode:Managed
+                    Frequency:2.437 GHz (Channel 6)
+                    Quality=31/100  Signal level=-77 dBm  Noise level=-83 dBm
+                    Encryption key:off
+                    Bit Rates:300 Mb/s
+                    IE: Unknown: DD1D0050F204104A0001101044000102103C0001011049000600372A000120
+          Cell 27 - Address: C4:01:7C:15:B6:48
+                    Protocol:802.11b/g/n
+                    ESSID:"WBA-Demo-Example.Com"
+                    Mode:Managed
+                    Frequency:2.447 GHz (Channel 8)
+                    Quality=47/100  Signal level=-71 dBm  Noise level=-75 dBm
+                    Encryption key:on
+                    Bit Rates:130 Mb/s
+                    IE: IEEE 802.11i/WPA2 Version 1
+                        Group Cipher : CCMP
+                        Pairwise Ciphers (1) : CCMP
+                        Authentication Suites (1) : 802.1x
+          Cell 28 - Address: C4:01:7C:55:B6:48
+                    Protocol:802.11b/g/n
+                    ESSID:"WBA-Demo-Ruckus.Com"
+                    Mode:Managed
+                    Frequency:2.447 GHz (Channel 8)
+                    Quality=42/100  Signal level=-73 dBm  Noise level=-78 dBm
+                    Encryption key:on
+                    Bit Rates:130 Mb/s
+                    IE: IEEE 802.11i/WPA2 Version 1
+                        Group Cipher : CCMP
+                        Pairwise Ciphers (1) : CCMP
+                        Authentication Suites (1) : 802.1x
+          Cell 29 - Address: 02:0C:E7:09:66:33
+                    Protocol:802.11b/g/n
+                    ESSID:"AndroidAPxxx"
+                    Mode:Managed
+                    Frequency:2.442 GHz (Channel 7)
+                    Quality=52/100  Signal level=-69 dBm  Noise level=-92 dBm
+                    Encryption key:on
+                    Bit Rates:72 Mb/s
+                    IE: IEEE 802.11i/WPA2 Version 1
+                        Group Cipher : CCMP
+                        Pairwise Ciphers (1) : CCMP
+                        Authentication Suites (1) : PSK
+          Cell 30 - Address: 00:22:55:F2:51:E0
+                    Protocol:802.11b/g
+                    ESSID:"skynetzero"
+                    Mode:Managed
+                    Frequency:2.442 GHz (Channel 7)
+                    Quality=23/100  Signal level=-81 dBm  Noise level=-85 dBm
+                    Encryption key:on
+                    Bit Rates:54 Mb/s
+                    IE: WPA Version 1
+                        Group Cipher : TKIP
+                        Pairwise Ciphers (1) : TKIP
+                        Authentication Suites (1) : 802.1x
+          Cell 31 - Address: 84:C9:B2:5E:19:8E
+                    Protocol:802.11g/n
+                    ESSID:"Frog"
+                    Mode:Managed
+                    Frequency:2.447 GHz (Channel 8)
+                    Quality=31/100  Signal level=-77 dBm  Noise level=-80 dBm
+                    Encryption key:on
+                    Bit Rates:130 Mb/s
+                    IE: IEEE 802.11i/WPA2 Version 1
+                        Group Cipher : CCMP
+                        Pairwise Ciphers (1) : CCMP
+                        Authentication Suites (1) : PSK
+                    IE: Unknown: DD260050F204104A0001101044000102104900140024E26002000101600000020001600100020001
+          Cell 32 - Address: 00:0C:43:43:70:55
+                    Protocol:802.11b/g/n
+                    ESSID:"alan3050"
+                    Mode:Managed
+                    Frequency:2.452 GHz (Channel 9)
+                    Quality=63/100  Signal level=-65 dBm  Noise level=-92 dBm
+                    Encryption key:off
+                    Bit Rates:300 Mb/s
+                    IE: Unknown: DD270050F204104A0001101044000102104700102880288028801880A880000C43437055103C000101
+          Cell 33 - Address: 00:0C:43:44:0B:EC
+                    Protocol:802.11b/g/n
+                    ESSID:"coex_3883"
+                    Mode:Managed
+                    Frequency:2.452 GHz (Channel 9)
+                    Quality=37/100  Signal level=-75 dBm  Noise level=-79 dBm
+                    Encryption key:on
+                    Bit Rates:130 Mb/s
+                    IE: IEEE 802.11i/WPA2 Version 1
+                        Group Cipher : CCMP
+                        Pairwise Ciphers (1) : CCMP
+                        Authentication Suites (1) : 802.1x
+          Cell 34 - Address: 00:24:6C:B2:21:A0
+                    Protocol:802.11b/g/n
+                    ESSID:"mtklab"
+                    Mode:Managed
+                    Frequency:2.462 GHz (Channel 11)
+                    Quality=37/100  Signal level=-75 dBm  Noise level=-76 dBm
+                    Encryption key:on
+                    Bit Rates:130 Mb/s
+          Cell 35 - Address: 00:24:6C:B2:22:30
+                    Protocol:802.11b/g/n
+                    ESSID:"mtklab"
+                    Mode:Managed
+                    Frequency:2.462 GHz (Channel 11)
+                    Quality=78/100  Signal level=-59 dBm  Noise level=-92 dBm
+                    Encryption key:on
+                    Bit Rates:130 Mb/s
+          Cell 36 - Address: 00:24:6C:B2:22:33
+                    Protocol:802.11b/g/n
+                    ESSID:"mtkguest"
+                    Mode:Managed
+                    Frequency:2.462 GHz (Channel 11)
+                    Quality=57/100  Signal level=-67 dBm  Noise level=-92 dBm
+                    Encryption key:off
+                    Bit Rates:130 Mb/s
+          Cell 37 - Address: 00:24:6C:B3:19:A0
+                    Protocol:802.11b/g/n
+                    ESSID:"mtklab"
+                    Mode:Managed
+                    Frequency:2.462 GHz (Channel 11)
+                    Quality=57/100  Signal level=-67 dBm  Noise level=-92 dBm
+                    Encryption key:on
+                    Bit Rates:130 Mb/s
+          Cell 38 - Address: 00:24:6C:B3:19:A1
+                    Protocol:802.11b/g/n
+                    ESSID:"mtkemp-ms"
+                    Mode:Managed
+                    Frequency:2.462 GHz (Channel 11)
+                    Quality=63/100  Signal level=-65 dBm  Noise level=-92 dBm
+                    Encryption key:off
+                    Bit Rates:130 Mb/s
+          Cell 39 - Address: 00:24:6C:B2:FC:82
+                    Protocol:802.11b/g/n
+                    ESSID:"mtkemp"
+                    Mode:Managed
+                    Frequency:2.462 GHz (Channel 11)
+                    Quality=94/100  Signal level=-53 dBm  Noise level=-92 dBm
+                    Encryption key:on
+                    Bit Rates:130 Mb/s
+                    IE: WPA Version 1
+                        Group Cipher : TKIP
+                        Pairwise Ciphers (2) : TKIP CCMP
+                        Authentication Suites (1) : 802.1x
+                    IE: IEEE 802.11i/WPA2 Version 1
+                        Group Cipher : TKIP
+                        Pairwise Ciphers (2) : TKIP CCMP
+                        Authentication Suites (1) : 802.1x
+          Cell 40 - Address: 00:24:6C:B2:FC:83
+                    Protocol:802.11b/g/n
+                    ESSID:"mtkguest"
+                    Mode:Managed
+                    Frequency:2.462 GHz (Channel 11)
+                    Quality=94/100  Signal level=-53 dBm  Noise level=-92 dBm
+                    Encryption key:off
+                    Bit Rates:130 Mb/s
+          Cell 41 - Address: 00:0C:43:44:0D:00
+                    Protocol:802.11b/g/n
+                    ESSID:"HS2R2_OSU"
+                    Mode:Managed
+                    Frequency:2.462 GHz (Channel 11)
+                    Quality=18/100  Signal level=-83 dBm  Noise level=-84 dBm
+                    Encryption key:on
+                    Bit Rates:144 Mb/s
+                    IE: IEEE 802.11i/WPA2 Version 1
+                        Group Cipher : CCMP
+                        Pairwise Ciphers (1) : CCMP
+                        Authentication Suites (1) : 802.1x
+          Cell 42 - Address: 00:24:6C:B2:21:A1
+                    Protocol:802.11b/g/n
+                    ESSID:"mtkemp-ms"
+                    Mode:Managed
+                    Frequency:2.462 GHz (Channel 11)
+                    Quality=52/100  Signal level=-69 dBm  Noise level=-92 dBm
+                    Encryption key:off
+                    Bit Rates:130 Mb/s
+          Cell 43 - Address: 00:24:6C:B2:21:A2
+                    Protocol:802.11b/g/n
+                    ESSID:"mtkemp"
+                    Mode:Managed
+                    Frequency:2.462 GHz (Channel 11)
+                    Quality=47/100  Signal level=-71 dBm  Noise level=-77 dBm
+                    Encryption key:on
+                    Bit Rates:130 Mb/s
+                    IE: WPA Version 1
+                        Group Cipher : TKIP
+                        Pairwise Ciphers (2) : TKIP CCMP
+                        Authentication Suites (1) : 802.1x
+                    IE: IEEE 802.11i/WPA2 Version 1
+                        Group Cipher : TKIP
+                        Pairwise Ciphers (2) : TKIP CCMP
+                        Authentication Suites (1) : 802.1x
+          Cell 44 - Address: 00:24:6C:B2:21:A3
+                    Protocol:802.11b/g/n
+                    ESSID:"mtkguest"
+                    Mode:Managed
+                    Frequency:2.462 GHz (Channel 11)
+                    Quality=52/100  Signal level=-69 dBm  Noise level=-92 dBm
+                    Encryption key:off
+                    Bit Rates:130 Mb/s
+          Cell 45 - Address: 00:24:6C:B3:15:40
+                    Protocol:802.11b/g/n
+                    ESSID:"mtklab"
+                    Mode:Managed
+                    Frequency:2.462 GHz (Channel 11)
+                    Quality=23/100  Signal level=-81 dBm  Noise level=-89 dBm
+                    Encryption key:on
+                    Bit Rates:130 Mb/s
+          Cell 46 - Address: 00:24:6C:B2:22:32
+                    Protocol:802.11b/g/n
+                    ESSID:"mtkemp"
+                    Mode:Managed
+                    Frequency:2.462 GHz (Channel 11)
+                    Quality=26/100  Signal level=-79 dBm  Noise level=-84 dBm
+                    Encryption key:on
+                    Bit Rates:130 Mb/s
+                    IE: WPA Version 1
+                        Group Cipher : TKIP
+                        Pairwise Ciphers (2) : TKIP CCMP
+                        Authentication Suites (1) : 802.1x
+                    IE: IEEE 802.11i/WPA2 Version 1
+                        Group Cipher : TKIP
+                        Pairwise Ciphers (2) : TKIP CCMP
+                        Authentication Suites (1) : 802.1x
+          Cell 47 - Address: 00:24:6C:B2:22:31
+                    Protocol:802.11b/g/n
+                    ESSID:"mtkemp-ms"
+                    Mode:Managed
+                    Frequency:2.462 GHz (Channel 11)
+                    Quality=57/100  Signal level=-67 dBm  Noise level=-92 dBm
+                    Encryption key:off
+                    Bit Rates:130 Mb/s
+          Cell 48 - Address: 00:24:6C:B2:FC:80
+                    Protocol:802.11b/g/n
+                    ESSID:"mtklab"
+                    Mode:Managed
+                    Frequency:2.462 GHz (Channel 11)
+                    Quality=78/100  Signal level=-59 dBm  Noise level=-92 dBm
+                    Encryption key:on
+                    Bit Rates:130 Mb/s
+          Cell 49 - Address: 00:24:6C:B2:FC:81
+                    Protocol:802.11b/g/n
+                    ESSID:"mtkemp-ms"
+                    Mode:Managed
+                    Frequency:2.462 GHz (Channel 11)
+                    Quality=83/100  Signal level=-57 dBm  Noise level=-92 dBm
+                    Encryption key:off
+                    Bit Rates:130 Mb/s
+          Cell 50 - Address: 00:24:6C:B2:21:50
+                    Protocol:802.11b/g/n
+                    ESSID:"mtklab"
+                    Mode:Managed
+                    Frequency:2.462 GHz (Channel 11)
+                    Quality=31/100  Signal level=-77 dBm  Noise level=-72 dBm
+                    Encryption key:on
+                    Bit Rates:130 Mb/s
+          Cell 51 - Address: 00:24:6C:B2:21:51
+                    Protocol:802.11b/g/n
+                    ESSID:"mtkemp-ms"
+                    Mode:Managed
+                    Frequency:2.462 GHz (Channel 11)
+                    Quality=23/100  Signal level=-81 dBm  Noise level=-90 dBm
+                    Encryption key:off
+                    Bit Rates:130 Mb/s
+          Cell 52 - Address: 00:24:6C:B3:15:D0
+                    Protocol:802.11b/g/n
+                    ESSID:"mtklab"
+                    Mode:Managed
+                    Frequency:2.462 GHz (Channel 11)
+                    Quality=63/100  Signal level=-65 dBm  Noise level=-92 dBm
+                    Encryption key:on
+                    Bit Rates:130 Mb/s
+          Cell 53 - Address: 00:24:6C:B3:12:22
+                    Protocol:802.11b/g/n
+                    ESSID:"mtkemp"
+                    Mode:Managed
+                    Frequency:2.462 GHz (Channel 11)
+                    Quality=63/100  Signal level=-65 dBm  Noise level=-92 dBm
+                    Encryption key:on
+                    Bit Rates:130 Mb/s
+                    IE: WPA Version 1
+                        Group Cipher : TKIP
+                        Pairwise Ciphers (2) : TKIP CCMP
+                        Authentication Suites (1) : 802.1x
+                    IE: IEEE 802.11i/WPA2 Version 1
+                        Group Cipher : TKIP
+                        Pairwise Ciphers (2) : TKIP CCMP
+                        Authentication Suites (1) : 802.1x
+          Cell 54 - Address: 00:24:6C:B3:12:70
+                    Protocol:802.11b/g/n
+                    ESSID:"mtklab"
+                    Mode:Managed
+                    Frequency:2.462 GHz (Channel 11)
+                    Quality=26/100  Signal level=-79 dBm  Noise level=-81 dBm
+                    Encryption key:on
+                    Bit Rates:130 Mb/s
+          Cell 55 - Address: 00:24:6C:B3:12:71
+                    Protocol:802.11b/g/n
+                    ESSID:"mtkemp-ms"
+                    Mode:Managed
+                    Frequency:2.462 GHz (Channel 11)
+                    Quality=23/100  Signal level=-81 dBm  Noise level=-82 dBm
+                    Encryption key:off
+                    Bit Rates:130 Mb/s
+          Cell 56 - Address: 00:24:6C:B3:12:72
+                    Protocol:802.11b/g/n
+                    ESSID:"mtkemp"
+                    Mode:Managed
+                    Frequency:2.462 GHz (Channel 11)
+                    Quality=26/100  Signal level=-79 dBm  Noise level=-88 dBm
+                    Encryption key:on
+                    Bit Rates:130 Mb/s
+                    IE: WPA Version 1
+                        Group Cipher : TKIP
+                        Pairwise Ciphers (2) : TKIP CCMP
+                        Authentication Suites (1) : 802.1x
+                    IE: IEEE 802.11i/WPA2 Version 1
+                        Group Cipher : TKIP
+                        Pairwise Ciphers (2) : TKIP CCMP
+                        Authentication Suites (1) : 802.1x
+          Cell 57 - Address: 00:24:6C:B3:12:73
+                    Protocol:802.11b/g/n
+                    ESSID:"mtkguest"
+                    Mode:Managed
+                    Frequency:2.462 GHz (Channel 11)
+                    Quality=31/100  Signal level=-77 dBm  Noise level=-79 dBm
+                    Encryption key:off
+                    Bit Rates:130 Mb/s
+          Cell 58 - Address: 02:0C:43:35:A2:08
+                    Protocol:802.11g
+                    ESSID:"DIRECT-"
+                    Mode:Ad-Hoc
+                    Frequency:2.412 GHz (Channel 1)
+                    Quality=31/100  Signal level=-77 dBm  Noise level=-80 dBm
+                    Encryption key:on
+                    Bit Rates:54 Mb/s
+                    IE: IEEE 802.11i/WPA2 Version 1
+                        Group Cipher : CCMP
+                        Pairwise Ciphers (1) : CCMP
+                        Authentication Suites (1) : PSK
+                    IE: Unknown: DD5F0050F204104A0001101044000102103B00010010470010BC329E001DD811B28601000C4335A20810210001201023000120102400012010420001201054000800010050F2040001101100094449524543542D6A70100800020188103C000101
+          Cell 59 - Address: 00:0C:43:46:41:C6
+                    Protocol:802.11b/g/n
+                    ESSID:"MT7620_AP"
+                    Mode:Managed
+                    Frequency:2.412 GHz (Channel 1)
+                    Quality=26/100  Signal level=-79 dBm  Noise level=-74 dBm
+                    Encryption key:off
+                    Bit Rates:300 Mb/s
+          Cell 60 - Address: 0E:23:F8:75:A1:70
+                    Protocol:802.11b/g
+                    ESSID:"eMemory-Guest"
+                    Mode:Managed
+                    Frequency:2.422 GHz (Channel 3)
+                    Quality=13/100  Signal level=-85 dBm  Noise level=-80 dBm
+                    Encryption key:on
+                    Bit Rates:54 Mb/s
+          Cell 61 - Address: 14:D6:4D:32:44:EC
+                    Protocol:802.11b/g/n
+                    ESSID:"dlink"
+                    Mode:Managed
+                    Frequency:2.427 GHz (Channel 4)
+                    Quality=23/100  Signal level=-81 dBm  Noise level=-85 dBm
+                    Encryption key:off
+                    Bit Rates:72 Mb/s
+          Cell 62 - Address: 00:24:6C:B2:21:42
+                    Protocol:802.11b/g/n
+                    ESSID:"mtkemp"
+                    Mode:Managed
+                    Frequency:2.432 GHz (Channel 5)
+                    Quality=42/100  Signal level=-73 dBm  Noise level=-78 dBm
+                    Encryption key:on
+                    Bit Rates:130 Mb/s
+                    IE: WPA Version 1
+                        Group Cipher : TKIP
+                        Pairwise Ciphers (2) : TKIP CCMP
+                        Authentication Suites (1) : 802.1x
+                    IE: IEEE 802.11i/WPA2 Version 1
+                        Group Cipher : TKIP
+                        Pairwise Ciphers (2) : TKIP CCMP
+                        Authentication Suites (1) : 802.1x
+          Cell 63 - Address: 00:24:6C:B3:12:20
+                    Protocol:802.11b/g/n
+                    ESSID:"mtklab"
+                    Mode:Managed
+                    Frequency:2.462 GHz (Channel 11)
+                    Quality=94/100  Signal level=-53 dBm  Noise level=-92 dBm
+                    Encryption key:on
+                    Bit Rates:130 Mb/s
+          Cell 64 - Address: 00:24:6C:B3:15:D1
+                    Protocol:802.11b/g/n
+                    ESSID:"mtkemp-ms"
+                    Mode:Managed
+                    Frequency:2.462 GHz (Channel 11)
+                    Quality=57/100  Signal level=-67 dBm  Noise level=-92 dBm
+                    Encryption key:off
+                    Bit Rates:130 Mb/s
+          Cell 65 - Address: 00:24:6C:B3:12:21
+                    Protocol:802.11b/g/n
+                    ESSID:"mtkemp-ms"
+                    Mode:Managed
+                    Frequency:2.462 GHz (Channel 11)
+                    Quality=63/100  Signal level=-65 dBm  Noise level=-92 dBm
+                    Encryption key:off
+                    Bit Rates:130 Mb/s
+          Cell 66 - Address: 00:24:6C:B3:15:41
+                    Protocol:802.11b/g/n
+                    ESSID:"mtkemp-ms"
+                    Mode:Managed
+                    Frequency:2.462 GHz (Channel 11)
+                    Quality=26/100  Signal level=-79 dBm  Noise level=-87 dBm
+                    Encryption key:off
+                    Bit Rates:130 Mb/s
+          Cell 67 - Address: 00:24:6C:B3:19:A2
+                    Protocol:802.11b/g/n
+                    ESSID:"mtkemp"
+                    Mode:Managed
+                    Frequency:2.462 GHz (Channel 11)
+                    Quality=63/100  Signal level=-65 dBm  Noise level=-92 dBm
+                    Encryption key:on
+                    Bit Rates:130 Mb/s
+                    IE: WPA Version 1
+                        Group Cipher : TKIP
+                        Pairwise Ciphers (2) : TKIP CCMP
+                        Authentication Suites (1) : 802.1x
+                    IE: IEEE 802.11i/WPA2 Version 1
+                        Group Cipher : TKIP
+                        Pairwise Ciphers (2) : TKIP CCMP
+                        Authentication Suites (1) : 802.1x
+          Cell 68 - Address: 00:24:6C:B3:19:A3
+                    Protocol:802.11b/g/n
+                    ESSID:"mtkguest"
+                    Mode:Managed
+                    Frequency:2.462 GHz (Channel 11)
+                    Quality=68/100  Signal level=-63 dBm  Noise level=-92 dBm
+                    Encryption key:off
+                    Bit Rates:130 Mb/s
+          Cell 69 - Address: 20:10:7A:63:70:01
+                    Protocol:802.11b/g
+                    ESSID:"Skyrim"
+                    Mode:Managed
+                    Frequency:2.462 GHz (Channel 11)
+                    Quality=7/100  Signal level=-87 dBm  Noise level=-96 dBm
+                    Encryption key:on
+                    Bit Rates:54 Mb/s
+                    IE: IEEE 802.11i/WPA2 Version 1
+                        Group Cipher : CCMP
+                        Pairwise Ciphers (1) : CCMP
+                        Authentication Suites (1) : PSK
+          Cell 70 - Address: 00:24:6C:B3:15:D2
+                    Protocol:802.11b/g/n
+                    ESSID:"mtkemp"
+                    Mode:Managed
+                    Frequency:2.462 GHz (Channel 11)
+                    Quality=57/100  Signal level=-67 dBm  Noise level=-92 dBm
+                    Encryption key:on
+                    Bit Rates:130 Mb/s
+                    IE: WPA Version 1
+                        Group Cipher : TKIP
+                        Pairwise Ciphers (2) : TKIP CCMP
+                        Authentication Suites (1) : 802.1x
+                    IE: IEEE 802.11i/WPA2 Version 1
+                        Group Cipher : TKIP
+                        Pairwise Ciphers (2) : TKIP CCMP
+                        Authentication Suites (1) : 802.1x
+          Cell 71 - Address: 00:24:6C:B3:15:43
+                    Protocol:802.11b/g/n
+                    ESSID:"mtkguest"
+                    Mode:Managed
+                    Frequency:2.462 GHz (Channel 11)
+                    Quality=23/100  Signal level=-81 dBm  Noise level=-87 dBm
+                    Encryption key:off
+                    Bit Rates:130 Mb/s
+          Cell 72 - Address: 00:24:6C:B3:15:42
+                    Protocol:802.11b/g/n
+                    ESSID:"mtkemp"
+                    Mode:Managed
+                    Frequency:2.462 GHz (Channel 11)
+                    Quality=18/100  Signal level=-83 dBm  Noise level=-91 dBm
+                    Encryption key:on
+                    Bit Rates:130 Mb/s
+                    IE: WPA Version 1
+                        Group Cipher : TKIP
+                        Pairwise Ciphers (2) : TKIP CCMP
+                        Authentication Suites (1) : 802.1x
+                    IE: IEEE 802.11i/WPA2 Version 1
+                        Group Cipher : TKIP
+                        Pairwise Ciphers (2) : TKIP CCMP
+                        Authentication Suites (1) : 802.1x
+          Cell 73 - Address: 0A:23:F8:75:A1:71
+                    Protocol:802.11b/g
+                    ESSID:"eMemory-WiFi"
+                    Mode:Managed
+                    Frequency:2.427 GHz (Channel 4)
+                    Quality=42/100  Signal level=-73 dBm  Noise level=-79 dBm
+                    Encryption key:on
+                    Bit Rates:54 Mb/s
+                    IE: WPA Version 1
+                        Group Cipher : TKIP
+                        Pairwise Ciphers (1) : TKIP
+                        Authentication Suites (1) : 802.1x
+          Cell 74 - Address: 00:17:F2:52:74:67
+                    Protocol:802.11b/g
+                    ESSID:"mtkghost"
+                    Mode:Managed
+                    Frequency:2.462 GHz (Channel 11)
+                    Quality=26/100  Signal level=-79 dBm  Noise level=-85 dBm
+                    Encryption key:on
+                    Bit Rates:54 Mb/s
+

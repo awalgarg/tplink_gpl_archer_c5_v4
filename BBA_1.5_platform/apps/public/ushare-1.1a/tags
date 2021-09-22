@@ -1,0 +1,597 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.6	//
+ARG_CONTAINER_ID	src/services.c	37;"	d	file:
+ARG_OBJECT_ID	src/services.c	34;"	d	file:
+BLACK	src/redblack.c	/^enum nodecolour { BLACK, RED };$/;"	e	enum:nodecolour	file:
+BUFFER_DEFAULT_CAPACITY	src/buffer.c	29;"	d	file:
+CC	config.mak	/^CC=mips-linux-uclibc-gcc$/;"	m
+CDS_DESCRIPTION	src/cds.h	25;"	d
+CDS_DESCRIPTION_LEN	src/cds.h	205;"	d
+CDS_H_	src/cds.h	23;"	d
+CDS_LOCATION	src/cds.h	207;"	d
+CDS_SERVICE_ID	src/cds.h	209;"	d
+CDS_SERVICE_TYPE	src/cds.h	210;"	d
+CGI_ACTION	src/presentation.c	35;"	d	file:
+CGI_ACTION_ADD	src/presentation.c	36;"	d	file:
+CGI_ACTION_DEL	src/presentation.c	37;"	d	file:
+CGI_ACTION_REFRESH	src/presentation.c	38;"	d	file:
+CGI_PATH	src/presentation.c	39;"	d	file:
+CGI_SHARE	src/presentation.c	40;"	d	file:
+CMS_DESCRIPTION	src/cms.h	25;"	d
+CMS_DESCRIPTION_LEN	src/cms.h	159;"	d
+CMS_H_	src/cms.h	23;"	d
+CMS_LOCATION	src/cms.h	161;"	d
+CMS_SERVICE_ID	src/cms.h	163;"	d
+CMS_SERVICE_TYPE	src/cms.h	164;"	d
+CONF_FILE	scripts/Makefile	/^CONF_FILE  = "ushare.conf"$/;"	m
+CTRL_CLIENT_RECV_BUFFER_SIZE	src/ctrl_telnet.h	26;"	d
+CTRL_TELNET_BACKLOG	src/ctrl_telnet.h	24;"	d
+CTRL_TELNET_PORT	src/ctrl_telnet.h	23;"	d
+CTRL_TELNET_SHARED_BUFFER_SIZE	src/ctrl_telnet.h	25;"	d
+Container_MIME_Type	src/metadata.c	/^static struct mime_type_t Container_MIME_Type =$/;"	v	typeref:struct:mime_type_t	file:
+DEBUG	config.mak	/^DEBUG=no$/;"	m
+DEFAULT_USHARE_IFACE	src/cfgparser.h	41;"	d
+DEFAULT_USHARE_IFACE	src/cfgparser.h	43;"	d
+DEFAULT_USHARE_NAME	src/cfgparser.h	38;"	d
+DEFAULT_UUID	src/ushare.h	40;"	d
+DIDL_CONTAINER	src/cds.c	139;"	d	file:
+DIDL_CONTAINER_CHILDS	src/cds.c	148;"	d	file:
+DIDL_CONTAINER_CLASS	src/cds.c	157;"	d	file:
+DIDL_CONTAINER_ID	src/cds.c	142;"	d	file:
+DIDL_CONTAINER_PARENT_ID	src/cds.c	145;"	d	file:
+DIDL_CONTAINER_RESTRICTED	src/cds.c	151;"	d	file:
+DIDL_CONTAINER_SEARCH	src/cds.c	154;"	d	file:
+DIDL_CONTAINER_TITLE	src/cds.c	160;"	d	file:
+DIDL_ITEM	src/cds.c	112;"	d	file:
+DIDL_ITEM_CLASS	src/cds.c	124;"	d	file:
+DIDL_ITEM_ID	src/cds.c	115;"	d	file:
+DIDL_ITEM_PARENT_ID	src/cds.c	118;"	d	file:
+DIDL_ITEM_RESTRICTED	src/cds.c	121;"	d	file:
+DIDL_ITEM_TITLE	src/cds.c	127;"	d	file:
+DIDL_LITE	src/cds.c	109;"	d	file:
+DIDL_NAMESPACE	src/cds.c	103;"	d	file:
+DIDL_RES	src/cds.c	130;"	d	file:
+DIDL_RES_INFO	src/cds.c	133;"	d	file:
+DIDL_RES_SIZE	src/cds.c	136;"	d	file:
+DISTFILE	Makefile	/^DISTFILE = ushare-$(VERSION).tar.bz2$/;"	m
+DOMAIN	po/Makefile	/^DOMAIN = ushare$/;"	m
+EXTRADIST	Makefile	/^EXTRADIST = AUTHORS \\$/;"	m
+EXTRADIST	po/Makefile	/^EXTRADIST = $(POFILES) $(GMOFILES) \\$/;"	m
+EXTRADIST	scripts/Makefile	/^EXTRADIST = $(CONF_FILE) $(INITD_FILE)$/;"	m
+EXTRADIST	src/Makefile	/^EXTRADIST = ushare.1 \\$/;"	m
+EXTRALIBS	config.mak	/^EXTRALIBS= -lixml -lthreadutil -lpthread -lupnp -ldlna -lavformat -lavcodec -lavutil -lm$/;"	m
+FILE_LOCAL	src/http.c	/^    FILE_LOCAL,$/;"	e	enum:web_file_t::__anon3	file:
+FILE_MEMORY	src/http.c	/^    FILE_MEMORY$/;"	e	enum:web_file_t::__anon3	file:
+GMOFILES	po/Makefile	/^GMOFILES = $(addsuffix .gmo,$(LANGS))$/;"	m
+GMSGFMT	po/Makefile	/^GMSGFMT = \/usr\/bin\/msgfmt$/;"	m
+INITD_FILE	scripts/Makefile	/^INITD_FILE = "ushare"$/;"	m
+INSTALL	config.mak	/^INSTALL=\/usr\/bin\/install -c$/;"	m
+INSTALLSTRIP	config.mak	/^INSTALLSTRIP=-s$/;"	m
+LANGS	po/Makefile	/^LANGS = fr de$/;"	m
+LDFLAGS	config.mak	/^LDFLAGS=-L\/work\/Trendchip_89741\/tpbsp\/apps\/public\/DLNA_MediaServer\/libdlna-0.2.3-fixed\/src -L\/work\/Trendchip_89741\/tpbsp\/apps\/private\/user\/clibs\/upnp_libs\/libs -L\/work\/Trendchip_89741\/tpbsp\/apps\/public\/DLNA_MediaServer\/ffmpeg-0.6\/libavcodec\/ -L\/work\/Trendchip_89741\/tpbsp\/apps\/public\/DLNA_MediaServer\/ffmpeg-0.6\/libavformat\/ -L\/work\/Trendchip_89741\/tpbsp\/apps\/public\/DLNA_MediaServer\/ffmpeg-0.6\/libavdevice\/ -L\/work\/Trendchip_89741\/tpbsp\/apps\/public\/DLNA_MediaServer\/ffmpeg-0.6\/libavutil\/$/;"	m
+LN	config.mak	/^LN=ln$/;"	m
+LOCALEDIR	config.h	6;"	d
+MAKE	config.mak	/^MAKE=make$/;"	m
+MAX	src/minmax.h	25;"	d
+MAX_URL_SIZE	src/metadata.c	42;"	d	file:
+MIME_Type_List	src/mime.c	/^const struct mime_type_t MIME_Type_List[] = {$/;"	v	typeref:struct:mime_type_t
+MIN	src/minmax.h	29;"	d
+MSGCONV	po/Makefile	/^MSGCONV = msgconv$/;"	m
+MSGFILTER	po/Makefile	/^MSGFILTER = msgfilter$/;"	m
+MSGINIT	po/Makefile	/^MSGINIT = msginit$/;"	m
+MSGMERGE	po/Makefile	/^MSGMERGE = msgmerge$/;"	m
+MSGMERGE_UPDATE	po/Makefile	/^MSGMERGE_UPDATE = \/usr\/bin\/msgmerge --update$/;"	m
+MSR_DESCRIPTION	src/msr.h	24;"	d
+MSR_DESCRIPTION_LEN	src/msr.h	114;"	d
+MSR_H_	src/msr.h	22;"	d
+MSR_LOCATION	src/msr.h	116;"	d
+MSR_SERVICE_ID	src/msr.h	118;"	d
+MSR_SERVICE_TYPE	src/msr.h	119;"	d
+OBJS	src/Makefile	/^OBJS = $(SRCS:.c=.o)$/;"	m
+OPTFLAGS	config.mak	/^OPTFLAGS=-I\/work\/Trendchip_89741\/tpbsp\/apps\/public\/DLNA_MediaServer\/ushare-1.1a -I\/work\/Trendchip_89741\/tpbsp\/apps\/public\/DLNA_MediaServer\/ushare-1.1a\/src -I\/work\/Trendchip_89741\/tpbsp\/apps\/public\/DLNA_MediaServer\/ffmpeg-0.6\/libavcodec\/ -I\/work\/Trendchip_89741\/tpbsp\/apps\/public\/DLNA_MediaServer\/ffmpeg-0.6\/libavformat\/ -I\/work\/Trendchip_89741\/tpbsp\/apps\/public\/DLNA_MediaServer\/ffmpeg-0.6\/libavdevice\/ -I\/work\/Trendchip_89741\/tpbsp\/apps\/public\/DLNA_MediaServer\/ffmpeg-0.6\/libavutil\/ -I\/work\/Trendchip_89741\/tpbsp\/apps\/public\/DLNA_MediaServer\/libdlna-0.2.3-fixed\/src -I\/work\/Trendchip_89741\/tpbsp\/apps\/private\/user\/clibs\/upnp_libs\/inc -W -Wall -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -D_REENTRANT -D_GNU_SOURCE -O3 -DHAVE_LOCALE_H -DHAVE_SETLOCALE -DHAVE_IFADDRS_H -DHAVE_LANGINFO_H -DHAVE_LANGINFO_CODESET -DHAVE_DLNA$/;"	m
+PACKAGE	config.h	3;"	d
+PACKAGE_NAME	config.h	4;"	d
+POFILES	po/Makefile	/^POFILES = $(addsuffix .po,$(LANGS))$/;"	m
+POTFILES	po/Makefile	/^POTFILES = $(shell for f in `cat POTFILES`; do echo -n "$(top_srcdir)\/$$f "; done)$/;"	m
+PREFIX	config.mak	/^PREFIX=\/usr\/local$/;"	m
+PRESENTATION_PAGE_CONTENT_TYPE	src/presentation.h	25;"	d
+PROG	src/Makefile	/^PROG = ushare$/;"	m
+PROTOCOL_TYPE_PRE_SZ	src/http.c	46;"	d	file:
+PROTOCOL_TYPE_SUFF_SZ	src/http.c	47;"	d	file:
+RBLIST	src/redblack.h	79;"	d
+RBNULL	src/redblack.c	67;"	d	file:
+RB_CMP	src/redblack.h	43;"	d
+RB_ENTRY	src/redblack.c	/^RB_STATIC const RB_ENTRY(data_t) * $/;"	f
+RB_ENTRY	src/redblack.c	/^RB_STATIC const RB_ENTRY(data_t) *$/;"	f
+RB_ENTRY	src/redblack.c	/^RB_STATIC struct RB_ENTRY(tree) *$/;"	f
+RB_ENTRY	src/redblack.c	/^static const RB_ENTRY(data_t) * $/;"	f	file:
+RB_ENTRY	src/redblack.c	/^static struct RB_ENTRY(node) *$/;"	f	file:
+RB_ENTRY	src/redblack.c	/^static struct RB_ENTRY(node) *RB_ENTRY(_alloc)() {return (struct RB_ENTRY(node) *) malloc(sizeof(struct RB_ENTRY(node)));}$/;"	f	file:
+RB_ENTRY	src/redblack.c	/^struct RB_ENTRY(node)$/;"	f
+RB_ENTRY	src/redblack.c	918;"	d	file:
+RB_ENTRY	src/redblack.h	/^struct RB_ENTRY(lists) { $/;"	f
+RB_ENTRY	src/redblack.h	/^struct RB_ENTRY(tree) {$/;"	f
+RB_ENTRY	src/redblack.h	45;"	d
+RB_GET	src/redblack.c	50;"	d	file:
+RB_INLINE	src/redblack.h	44;"	d
+RB_LUEQUAL	src/redblack.h	54;"	d
+RB_LUFIRST	src/redblack.h	61;"	d
+RB_LUGREAT	src/redblack.h	58;"	d
+RB_LUGTEQ	src/redblack.h	55;"	d
+RB_LULAST	src/redblack.h	62;"	d
+RB_LULESS	src/redblack.h	57;"	d
+RB_LULTEQ	src/redblack.h	56;"	d
+RB_LUNEXT	src/redblack.h	59;"	d
+RB_LUPREV	src/redblack.h	60;"	d
+RB_NONE	src/redblack.h	53;"	d
+RB_SET	src/redblack.c	51;"	d	file:
+RB_STATIC	src/redblack.h	49;"	d
+RED	src/redblack.c	/^enum nodecolour { BLACK, RED };$/;"	e	enum:nodecolour	file:
+SEARCH_AND	src/cds.c	175;"	d	file:
+SEARCH_CLASS_DERIVED_KEYWORD	src/cds.c	166;"	d	file:
+SEARCH_CLASS_MATCH_KEYWORD	src/cds.c	163;"	d	file:
+SEARCH_OBJECT_KEYWORD	src/cds.c	172;"	d	file:
+SEARCH_PROTOCOL_CONTAINS_KEYWORD	src/cds.c	169;"	d	file:
+SERVICE_CDS_ACTION_BROWSE	src/cds.c	45;"	d	file:
+SERVICE_CDS_ACTION_SEARCH	src/cds.c	48;"	d	file:
+SERVICE_CDS_ACTION_SEARCH_CAPS	src/cds.c	36;"	d	file:
+SERVICE_CDS_ACTION_SORT_CAPS	src/cds.c	39;"	d	file:
+SERVICE_CDS_ACTION_UPDATE_ID	src/cds.c	42;"	d	file:
+SERVICE_CDS_ARG_BROWSE_FLAG	src/cds.c	72;"	d	file:
+SERVICE_CDS_ARG_FILTER	src/cds.c	69;"	d	file:
+SERVICE_CDS_ARG_OBJECT_ID	src/cds.c	66;"	d	file:
+SERVICE_CDS_ARG_REQUEST_COUNT	src/cds.c	63;"	d	file:
+SERVICE_CDS_ARG_SEARCH_CAPS	src/cds.c	51;"	d	file:
+SERVICE_CDS_ARG_SEARCH_CRIT	src/cds.c	78;"	d	file:
+SERVICE_CDS_ARG_SORT_CAPS	src/cds.c	54;"	d	file:
+SERVICE_CDS_ARG_SORT_CRIT	src/cds.c	75;"	d	file:
+SERVICE_CDS_ARG_START_INDEX	src/cds.c	60;"	d	file:
+SERVICE_CDS_ARG_UPDATE_ID	src/cds.c	57;"	d	file:
+SERVICE_CDS_BROWSE_CHILDREN	src/cds.c	87;"	d	file:
+SERVICE_CDS_BROWSE_METADATA	src/cds.c	84;"	d	file:
+SERVICE_CDS_DIDL_NUM_RETURNED	src/cds.c	93;"	d	file:
+SERVICE_CDS_DIDL_RESULT	src/cds.c	90;"	d	file:
+SERVICE_CDS_DIDL_TOTAL_MATCH	src/cds.c	96;"	d	file:
+SERVICE_CDS_DIDL_UPDATE_ID	src/cds.c	99;"	d	file:
+SERVICE_CDS_ROOT_OBJECT_ID	src/cds.c	81;"	d	file:
+SERVICE_CMS_ACTION_CON_ID	src/cms.c	34;"	d	file:
+SERVICE_CMS_ACTION_CON_INFO	src/cms.c	37;"	d	file:
+SERVICE_CMS_ACTION_PROT_INFO	src/cms.c	31;"	d	file:
+SERVICE_CMS_ARG_CONNECTION_ID	src/cms.c	49;"	d	file:
+SERVICE_CMS_ARG_CONNECTION_IDS	src/cms.c	46;"	d	file:
+SERVICE_CMS_ARG_DIRECTION	src/cms.c	67;"	d	file:
+SERVICE_CMS_ARG_PEER_CON_ID	src/cms.c	64;"	d	file:
+SERVICE_CMS_ARG_PEER_CON_MANAGER	src/cms.c	61;"	d	file:
+SERVICE_CMS_ARG_PROT_INFO	src/cms.c	58;"	d	file:
+SERVICE_CMS_ARG_RCS_ID	src/cms.c	52;"	d	file:
+SERVICE_CMS_ARG_SINK	src/cms.c	43;"	d	file:
+SERVICE_CMS_ARG_SOURCE	src/cms.c	40;"	d	file:
+SERVICE_CMS_ARG_STATUS	src/cms.c	70;"	d	file:
+SERVICE_CMS_ARG_TRANSPORT_ID	src/cms.c	55;"	d	file:
+SERVICE_CMS_DEFAULT_CON_ID	src/cms.c	73;"	d	file:
+SERVICE_CMS_OUTPUT	src/cms.c	79;"	d	file:
+SERVICE_CMS_STATUS_OK	src/cms.c	82;"	d	file:
+SERVICE_CMS_UNKNOW_ID	src/cms.c	76;"	d	file:
+SERVICE_CONTENT_TYPE	src/services.h	40;"	d
+SERVICE_MSR_ACTION_IS_AUTHORIZED	src/msr.c	28;"	d	file:
+SERVICE_MSR_ACTION_IS_VALIDATED	src/msr.c	34;"	d	file:
+SERVICE_MSR_ACTION_REGISTER_DEVICE	src/msr.c	31;"	d	file:
+SERVICE_MSR_ARG_DEVICE_ID	src/msr.c	37;"	d	file:
+SERVICE_MSR_ARG_REGISTRATION_REQUEST_MSG	src/msr.c	43;"	d	file:
+SERVICE_MSR_ARG_REGISTRATION_RESPONSE_MSG	src/msr.c	46;"	d	file:
+SERVICE_MSR_ARG_RESULT	src/msr.c	40;"	d	file:
+SERVICE_MSR_STATUS_OK	src/msr.c	49;"	d	file:
+SHUTDOWN_MSG	src/ushare.c	744;"	d	file:
+SRCS	src/Makefile	/^SRCS = \\$/;"	m
+STARTING_ENTRY_ID_DEFAULT	src/ushare.h	44;"	d
+STARTING_ENTRY_ID_XBOX360	src/ushare.h	45;"	d
+STR	src/ctrl_telnet.c	20;"	d	file:
+STRIP	config.mak	/^STRIP=mips-linux-uclibc-strip$/;"	m
+SUBDIRS	Makefile	/^SUBDIRS = po \\$/;"	m
+SYSCONFDIR	config.h	5;"	d
+TITLE_UNKNOWN	src/metadata.c	40;"	d	file:
+ULOG_ERROR	src/trace.h	/^  ULOG_ERROR = 2,$/;"	e	enum:__anon1
+ULOG_NORMAL	src/trace.h	/^  ULOG_NORMAL = 1,$/;"	e	enum:__anon1
+ULOG_VERBOSE	src/trace.h	/^  ULOG_VERBOSE = 3,$/;"	e	enum:__anon1
+UPNP_AUDIO	src/mime.c	29;"	d	file:
+UPNP_DESCRIPTION	src/ushare.h	47;"	d
+UPNP_MAX_CONTENT_LENGTH	src/ushare.h	42;"	d
+UPNP_PHOTO	src/mime.c	30;"	d	file:
+UPNP_PLAYLIST	src/mime.c	31;"	d	file:
+UPNP_TEXT	src/mime.c	32;"	d	file:
+UPNP_VIDEO	src/mime.c	28;"	d	file:
+UPnPBreak	src/ushare.c	/^UPnPBreak (int s __attribute__ ((unused)))$/;"	f	file:
+USHARE_CGI	src/presentation.h	26;"	d
+USHARE_CONFIG_FILE	src/cfgparser.h	37;"	d
+USHARE_DIR	src/cfgparser.h	30;"	d
+USHARE_DIR_DELIM	src/cfgparser.c	35;"	d	file:
+USHARE_ENABLE_DLNA	src/cfgparser.h	35;"	d
+USHARE_ENABLE_TELNET	src/cfgparser.h	33;"	d
+USHARE_ENABLE_WEB	src/cfgparser.h	32;"	d
+USHARE_ENABLE_XBOX	src/cfgparser.h	34;"	d
+USHARE_IFACE	src/cfgparser.h	27;"	d
+USHARE_NAME	src/cfgparser.h	26;"	d
+USHARE_OVERRIDE_ICONV_ERR	src/cfgparser.h	31;"	d
+USHARE_PORT	src/cfgparser.h	28;"	d
+USHARE_PRESENTATION_PAGE	src/presentation.h	24;"	d
+USHARE_TELNET_PORT	src/cfgparser.h	29;"	d
+UTF8	src/util_iconv.h	29;"	d
+VERSION	config.h	2;"	d
+VERSION	config.mak	/^VERSION=1.1a$/;"	m
+VIRTUAL_DIR	src/ushare.h	38;"	d
+VISIT	src/redblack.h	/^VISIT;$/;"	t	typeref:enum:__anon7
+XBOX_MODEL_NAME	src/ushare.h	39;"	d
+XGETTEXT	po/Makefile	/^XGETTEXT = \/usr\/bin\/xgettext$/;"	m
+_	src/gettext.h	22;"	d
+_CONFIG_PARSER_H_	src/cfgparser.h	22;"	d
+_CONTENT_H_	src/content.h	22;"	d
+_CTRL_TELNET_H_	src/ctrl_telnet.h	21;"	d
+_HTTP_H_	src/http.h	23;"	d
+_LIBGETTEXT_H	src/gettext.h	20;"	d
+_METADATA_H_	src/metadata.h	22;"	d
+_MIME_H_	src/mime.h	22;"	d
+_MINMAX_H_	src/minmax.h	20;"	d
+_OS_DEP_H_	src/osdep.h	22;"	d
+_PRESENTATION_H_	src/presentation.h	22;"	d
+_REDBLACK_H	src/redblack.h	135;"	d
+_SERVICES_H_	src/services.h	23;"	d
+_STR	src/ctrl_telnet.c	21;"	d	file:
+_STRING_BUFFER_H_	src/buffer.h	22;"	d
+_TRACE_H_	src/trace.h	22;"	d
+_USHARE_H_	src/ushare.h	23;"	d
+_UTIL_ICONV_H_	src/util_iconv.h	22;"	d
+__STR	src/ctrl_telnet.c	22;"	d	file:
+_delete	src/redblack.c	/^RB_ENTRY(_delete)(struct RB_ENTRY(node) **rootp, struct RB_ENTRY(node) *z)$/;"	f	file:
+_delete_fix	src/redblack.c	/^RB_ENTRY(_delete_fix)(struct RB_ENTRY(node) **rootp, struct RB_ENTRY(node) *x)$/;"	f	file:
+_destroy	src/redblack.c	/^RB_ENTRY(_destroy)(struct RB_ENTRY(node) *x)$/;"	f	file:
+_free	src/redblack.c	/^RB_ENTRY(_free)(struct RB_ENTRY(node) *x)$/;"	f	file:
+_free	src/redblack.c	/^static void RB_ENTRY(_free)(struct RB_ENTRY(node) *x) {free(x);}$/;"	f	file:
+_left_rotate	src/redblack.c	/^RB_ENTRY(_left_rotate)(struct RB_ENTRY(node) **rootp, struct RB_ENTRY(node) *x)$/;"	f	file:
+_m_femms	configure	/^_m_femms();$/;"	f
+_openlist	src/redblack.c	/^RB_ENTRY(_openlist)(const struct RB_ENTRY(node) *rootp)$/;"	f	file:
+_right_rotate	src/redblack.c	/^RB_ENTRY(_right_rotate)(struct RB_ENTRY(node) **rootp, struct RB_ENTRY(node) *y)$/;"	f	file:
+_upnp_entry_free	src/metadata.c	/^_upnp_entry_free (struct upnp_entry_t *entry)$/;"	f	file:
+_walk	src/redblack.c	/^RB_ENTRY(_walk)(const struct RB_ENTRY(node) *x, void (*action)(const RB_ENTRY(data_t) *, const VISIT, const int, void *), void *arg, int level)$/;"	f	file:
+action_event_t	src/ushare.h	/^struct action_event_t {$/;"	s
+actions	src/services.h	/^  struct service_action_t *actions;$/;"	m	struct:service_t	typeref:struct:service_t::service_action_t
+add_cflags	configure	/^add_cflags(){$/;"	f
+add_clog	configure	/^add_clog(){$/;"	f
+add_clog_str	configure	/^add_clog_str(){$/;"	f
+add_extralibs	configure	/^add_extralibs(){$/;"	f
+add_ldflags	configure	/^add_ldflags(){$/;"	f
+aix	configure	/^aix()     { issystem "AIX"     ; return "$?" ; }$/;"	f
+amigaos	configure	/^amigaos() { issystem "AmigaOS" ; return "$?" ; }$/;"	f
+append	configure	/^append(){$/;"	f
+append_config	configure	/^append_config(){$/;"	f
+append_var	configure	/^append_var(){$/;"	f
+assert	src/redblack.c	32;"	d	file:
+banner	src/ctrl_telnet.c	/^banner (ctrl_telnet_client *client,$/;"	f	file:
+beos	configure	/^beos()    { issystem "BEOS"    ; return "$?" ; }$/;"	f
+bind_textdomain_codeset	src/gettext.h	68;"	d
+bindir	config.mak	/^bindir=$(DESTDIR)${PREFIX}\/bin$/;"	m
+bindtextdomain	src/gettext.h	67;"	d
+bsd	configure	/^bsd()     { freebsd || netbsd || bsdos || openbsd ; return "$?" ; }$/;"	f
+bsdos	configure	/^bsdos()   { issystem "BSD\/OS"  ; return "$?" ; }$/;"	f
+buf	src/buffer.h	/^  char *buf;$/;"	m	struct:buffer_t
+buffer_append	src/buffer.c	/^buffer_append (struct buffer_t *buffer, const char *str)$/;"	f
+buffer_appendf	src/buffer.c	/^buffer_appendf (struct buffer_t *buffer, const char *format, ...)$/;"	f
+buffer_free	src/buffer.c	/^buffer_free (struct buffer_t *buffer)$/;"	f
+buffer_new	src/buffer.c	/^buffer_new (void)$/;"	f
+buffer_recv	src/ctrl_telnet.h	/^  char buffer_recv[CTRL_CLIENT_RECV_BUFFER_SIZE];$/;"	m	struct:ctrl_telnet_client_t
+buffer_recv_current	src/ctrl_telnet.h	/^  int buffer_recv_current;$/;"	m	struct:ctrl_telnet_client_t
+buffer_t	src/buffer.h	/^struct buffer_t {$/;"	s
+build_metadata_list	src/metadata.c	/^build_metadata_list (struct ushare_t *ut)$/;"	f
+build_presentation_page	src/presentation.c	/^build_presentation_page (struct ushare_t *ut)$/;"	f
+capacity	src/buffer.h	/^  size_t capacity;$/;"	m	struct:buffer_t
+cd	src/util_iconv.c	/^static iconv_t cd = 0;$/;"	v	file:
+cds_browse	src/cds.c	/^cds_browse (struct action_event_t *event)$/;"	f	file:
+cds_browse_directchildren	src/cds.c	/^cds_browse_directchildren (struct action_event_t *event,$/;"	f	file:
+cds_browse_metadata	src/cds.c	/^cds_browse_metadata (struct action_event_t *event, struct buffer_t *out,$/;"	f	file:
+cds_get_search_capabilities	src/cds.c	/^cds_get_search_capabilities (struct action_event_t *event)$/;"	f	file:
+cds_get_sort_capabilities	src/cds.c	/^cds_get_sort_capabilities (struct action_event_t *event)$/;"	f	file:
+cds_get_system_update_id	src/cds.c	/^cds_get_system_update_id (struct action_event_t *event)$/;"	f	file:
+cds_search	src/cds.c	/^cds_search (struct action_event_t *event)$/;"	f	file:
+cds_search_directchildren	src/cds.c	/^cds_search_directchildren (struct action_event_t *event,$/;"	f	file:
+cds_search_directchildren_recursive	src/cds.c	/^cds_search_directchildren_recursive (struct buffer_t *out, int count,$/;"	f	file:
+cds_service_actions	src/cds.c	/^struct service_action_t cds_service_actions[] = {$/;"	v	typeref:struct:service_action_t
+cfg_file	src/ushare.h	/^  char *cfg_file;$/;"	m	struct:ushare_t
+charac	src/metadata.h	/^  char charac;$/;"	m	struct:xml_convert_s
+check_cc	configure	/^check_cc(){$/;"	f
+check_cflags	configure	/^check_cflags(){$/;"	f
+check_cmd	configure	/^check_cmd(){$/;"	f
+check_cpp	configure	/^check_cpp(){$/;"	f
+check_exec	configure	/^check_exec(){$/;"	f
+check_func	configure	/^check_func(){$/;"	f
+check_header	configure	/^check_header(){$/;"	f
+check_ld	configure	/^check_ld(){$/;"	f
+check_ldflags	configure	/^check_ldflags(){$/;"	f
+check_lib	configure	/^check_lib(){$/;"	f
+check_lib_version	configure	/^check_lib_version() {$/;"	f
+child_count	src/metadata.h	/^  int child_count;$/;"	m	struct:upnp_entry_t
+childs	src/metadata.h	/^  struct upnp_entry_t **childs;$/;"	m	struct:upnp_entry_t	typeref:struct:upnp_entry_t::upnp_entry_t
+clean	configure	/^clean(){$/;"	f
+clients	src/ctrl_telnet.c	/^  ctrl_telnet_client *clients;$/;"	m	struct:telnet_thread_data_t	file:
+closelist	src/redblack.c	/^RB_ENTRY(closelist)(RBLIST *rblistp)$/;"	f
+cms_get_current_connection_ids	src/cms.c	/^cms_get_current_connection_ids (struct action_event_t *event)$/;"	f	file:
+cms_get_current_connection_info	src/cms.c	/^cms_get_current_connection_info (struct action_event_t *event)$/;"	f	file:
+cms_get_protocol_info	src/cms.c	/^cms_get_protocol_info (struct action_event_t *event)$/;"	f	file:
+cms_service_actions	src/cms.c	/^struct service_action_t cms_service_actions[] = {$/;"	v	typeref:struct:service_action_t
+configline	src/cfgparser.c	/^static u_configline_t configline[] = {$/;"	v	file:
+content	src/content.h	/^  char **content;$/;"	m	struct:content_list
+content_add	src/content.c	/^content_add(content_list *list, const char *item)$/;"	f
+content_del	src/content.c	/^content_del(content_list *list, int n)$/;"	f
+content_free	src/content.c	/^content_free(content_list *list)$/;"	f
+content_list	src/content.h	/^typedef struct content_list {$/;"	s
+content_list	src/content.h	/^} content_list;$/;"	t	typeref:struct:content_list
+contentlist	src/ushare.h	/^  content_list *contentlist;$/;"	m	struct:ushare_t
+contents	src/http.c	/^      char *contents;$/;"	m	struct:web_file_t::__anon4::__anon6	file:
+convert_xml	src/metadata.c	/^convert_xml (const char *title)$/;"	f	file:
+count	src/content.h	/^  int count;$/;"	m	struct:content_list
+create_udn	src/ushare.c	/^create_udn (char *interface)$/;"	f	file:
+ctrl_telnet_client	src/ctrl_telnet.h	/^} ctrl_telnet_client;$/;"	t	typeref:struct:ctrl_telnet_client_t
+ctrl_telnet_client_add	src/ctrl_telnet.c	/^ctrl_telnet_client_add (ctrl_telnet_client *client)$/;"	f	file:
+ctrl_telnet_client_execute	src/ctrl_telnet.c	/^ctrl_telnet_client_execute (ctrl_telnet_client *client)$/;"	f	file:
+ctrl_telnet_client_execute_line	src/ctrl_telnet.c	/^ctrl_telnet_client_execute_line (ctrl_telnet_client *client, char *line)$/;"	f	file:
+ctrl_telnet_client_execute_line_safe	src/ctrl_telnet.c	/^ctrl_telnet_client_execute_line_safe (ctrl_telnet_client *client, char *line)$/;"	f	file:
+ctrl_telnet_client_recv	src/ctrl_telnet.c	/^ctrl_telnet_client_recv (ctrl_telnet_client *client)$/;"	f	file:
+ctrl_telnet_client_remove	src/ctrl_telnet.c	/^ctrl_telnet_client_remove (ctrl_telnet_client *client)$/;"	f	file:
+ctrl_telnet_client_send	src/ctrl_telnet.c	/^ctrl_telnet_client_send (const ctrl_telnet_client *client, const char *string)$/;"	f
+ctrl_telnet_client_sendf	src/ctrl_telnet.c	/^ctrl_telnet_client_sendf (const ctrl_telnet_client *client,$/;"	f
+ctrl_telnet_client_sendsf	src/ctrl_telnet.c	/^ctrl_telnet_client_sendsf (const ctrl_telnet_client *client,$/;"	f
+ctrl_telnet_client_t	src/ctrl_telnet.h	/^typedef struct ctrl_telnet_client_t$/;"	s
+ctrl_telnet_command_ptr	src/ctrl_telnet.h	/^typedef void (* ctrl_telnet_command_ptr) (ctrl_telnet_client *, int, char **);$/;"	t
+ctrl_telnet_exit	src/ctrl_telnet.c	/^ctrl_telnet_exit (ctrl_telnet_client *client,$/;"	f	file:
+ctrl_telnet_fix_fdset	src/ctrl_telnet.c	/^ctrl_telnet_fix_fdset (fd_set *readable)$/;"	f	file:
+ctrl_telnet_register	src/ctrl_telnet.c	/^ctrl_telnet_register (const char *funcname,$/;"	f
+ctrl_telnet_register_internals	src/ctrl_telnet.c	/^ctrl_telnet_register_internals (void)$/;"	f	file:
+ctrl_telnet_start	src/ctrl_telnet.c	/^ctrl_telnet_start (int port)$/;"	f
+ctrl_telnet_stop	src/ctrl_telnet.c	/^ctrl_telnet_stop (void)$/;"	f
+ctrl_telnet_thread	src/ctrl_telnet.c	/^ctrl_telnet_thread (void *a __attribute__ ((unused)))$/;"	f	file:
+ctrl_telnet_tokenize	src/ctrl_telnet.c	/^ctrl_telnet_tokenize (char *raw, int *argc, char ***argv)$/;"	f	file:
+cygwin	configure	/^cygwin()  { issystem "CYGWIN"  ; return "$?" ; }$/;"	f
+daemon	src/ushare.h	/^  bool daemon;$/;"	m	struct:ushare_t
+darwin	configure	/^darwin()  { issystem "Darwin"  ; return "$?" ; }$/;"	f
+dcgettext	src/gettext.h	59;"	d
+dcngettext	src/gettext.h	64;"	d
+description	src/ctrl_telnet.c	/^  char *description;$/;"	m	struct:telnet_function_list_t	file:
+destroy	src/redblack.c	/^RB_ENTRY(destroy)(struct RB_ENTRY(tree) *rbinfo)$/;"	f
+detail	src/http.c	/^  } detail;$/;"	m	struct:web_file_t	typeref:union:web_file_t::__anon4	file:
+dev	src/ushare.h	/^  UpnpDevice_Handle dev;$/;"	m	struct:ushare_t
+device_callback_event_handler	src/ushare.c	/^device_callback_event_handler (Upnp_EventType type, void *event,$/;"	f	file:
+dgettext	src/gettext.h	58;"	d
+didl_add_container	src/cds.c	/^didl_add_container (struct buffer_t *out, int id, int parent_id,$/;"	f	file:
+didl_add_footer	src/cds.c	/^didl_add_footer (struct buffer_t *out)$/;"	f	file:
+didl_add_header	src/cds.c	/^didl_add_header (struct buffer_t *out)$/;"	f	file:
+didl_add_item	src/cds.c	/^didl_add_item (struct buffer_t *out, int item_id,$/;"	f	file:
+didl_add_param	src/cds.c	/^didl_add_param (struct buffer_t *out, char *param, char *value)$/;"	f	file:
+didl_add_tag	src/cds.c	/^didl_add_tag (struct buffer_t *out, char *tag, char *value)$/;"	f	file:
+didl_add_value	src/cds.c	/^didl_add_value (struct buffer_t *out, char *param, off_t value)$/;"	f	file:
+die	configure	/^die(){$/;"	f
+display_headers	src/ushare.c	/^display_headers (void)$/;"	f
+display_usage	src/cfgparser.c	/^display_usage (void)$/;"	f	file:
+dist	Makefile	/^	dist=$(shell pwd)\/ushare-$(VERSION) && \\$/;"	m
+dlna	src/ushare.h	/^  dlna_t *dlna;$/;"	m	struct:ushare_t
+dlna_enabled	src/ushare.h	/^  bool dlna_enabled;$/;"	m	struct:ushare_t
+dlna_flags	src/ushare.h	/^  dlna_org_flags_t dlna_flags;$/;"	m	struct:ushare_t
+dlna_profile	src/metadata.h	/^  dlna_profile_t *dlna_profile;$/;"	m	struct:upnp_entry_t
+dngettext	src/gettext.h	62;"	d
+echo	src/ctrl_telnet.c	/^echo (ctrl_telnet_client *client, int argc, char **argv)$/;"	f	file:
+echod	src/ctrl_telnet.c	/^echod (ctrl_telnet_client *client, int argc, char **argv)$/;"	f	file:
+echolog	configure	/^echolog(){$/;"	f
+enabled	configure	/^enabled(){$/;"	f
+endorder	src/redblack.h	/^  endorder,$/;"	e	enum:__anon7
+entry	src/http.c	/^      struct upnp_entry_t *entry;$/;"	m	struct:web_file_t::__anon4::__anon5	typeref:struct:web_file_t::__anon4::__anon5::upnp_entry_t	file:
+entry_ptr	src/metadata.c	/^  struct upnp_entry_t *entry_ptr;$/;"	m	struct:upnp_entry_lookup_t	typeref:struct:upnp_entry_lookup_t::upnp_entry_t	file:
+exiting	src/ctrl_telnet.h	/^  int exiting;$/;"	m	struct:ctrl_telnet_client_t
+expand_var	configure	/^expand_var(){$/;"	f
+extension	src/mime.h	/^  char *extension;$/;"	m	struct:mime_type_t
+fd	src/http.c	/^      int fd;$/;"	m	struct:web_file_t::__anon4::__anon5	file:
+fd	src/metadata.h	/^  int fd;$/;"	m	struct:upnp_entry_t
+filter_has_val	src/cds.c	/^filter_has_val (const char *filter, const char *val)$/;"	f	file:
+find_service_action	src/services.c	/^find_service_action (struct Upnp_Action_Request *request,$/;"	f
+finish_iconv	src/util_iconv.c	/^finish_iconv (void)$/;"	f
+finish_upnp	src/ushare.c	/^finish_upnp (struct ushare_t *ut)$/;"	f	file:
+flags_saved	configure	/^flags_saved(){$/;"	f
+free_metadata_list	src/metadata.c	/^free_metadata_list (struct ushare_t *ut)$/;"	f
+freebsd	configure	/^freebsd() { issystem "FreeBSD" || issystem "GNU\/kFreeBSD"; return "$?" ; }$/;"	f
+fullpath	src/http.c	/^  char *fullpath;$/;"	m	struct:web_file_t	file:
+fullpath	src/metadata.h	/^  char *fullpath;$/;"	m	struct:upnp_entry_t
+function	src/ctrl_telnet.c	/^  ctrl_telnet_command_ptr function;$/;"	m	struct:telnet_function_list_t	file:
+function	src/services.h	/^  bool (*function) (struct action_event_t *);$/;"	m	struct:service_action_t
+functions	src/ctrl_telnet.c	/^static telnet_function_list* functions = NULL;$/;"	v	file:
+functions_lock	src/ctrl_telnet.c	/^static pthread_mutex_t functions_lock = PTHREAD_MUTEX_INITIALIZER;$/;"	v	file:
+getExtension	src/metadata.c	/^getExtension (const char *filename)$/;"	f	file:
+getMimeType	src/metadata.c	/^getMimeType (const char *extension)$/;"	f	file:
+get_file_memory	src/http.c	/^get_file_memory (const char *fullpath, const char *description,$/;"	f	file:
+get_iface_address	src/ushare.c	/^get_iface_address (char *interface)$/;"	f	file:
+get_list_length	src/metadata.c	/^get_list_length (void *list)$/;"	f	file:
+get_xmlconvert	src/metadata.c	/^get_xmlconvert (int c)$/;"	f	file:
+getline	src/osdep.c	/^getline (char **lineptr, size_t *n, FILE *stream)$/;"	f
+gettext	src/gettext.h	57;"	d
+gettext_noop	src/gettext.h	79;"	d
+gnu	configure	/^gnu()     { issystem "GNU"     ; return "$?" ; }$/;"	f
+handle_action_request	src/ushare.c	/^handle_action_request (struct Upnp_Action_Request *request)$/;"	f	file:
+has_iface	src/ushare.c	/^has_iface (char *interface)$/;"	f	file:
+help	src/ctrl_telnet.c	/^help (ctrl_telnet_client *client, int argc, char **argv)$/;"	f	file:
+hpux	configure	/^hpux()    { issystem "HP-UX"   ; return "$?" ; }$/;"	f
+http_close	src/http.c	/^http_close (UpnpWebFileHandle fh)$/;"	f	file:
+http_get_info	src/http.c	/^http_get_info (const char *filename, struct File_Info *info)$/;"	f	file:
+http_open	src/http.c	/^http_open (const char *filename, enum UpnpOpenFileMode mode)$/;"	f	file:
+http_read	src/http.c	/^http_read (UpnpWebFileHandle fh, char *buf, size_t buflen)$/;"	f	file:
+http_seek	src/http.c	/^http_seek (UpnpWebFileHandle fh, off_t offset, int origin)$/;"	f	file:
+http_write	src/http.c	/^http_write (UpnpWebFileHandle fh __attribute__((unused)),$/;"	f	file:
+iconv_convert	src/util_iconv.c	/^iconv_convert (const char *input)$/;"	f
+id	src/metadata.c	/^  int id;$/;"	m	struct:upnp_entry_lookup_t	file:
+id	src/metadata.h	/^  int id;$/;"	m	struct:upnp_entry_t
+id	src/services.h	/^  char *id;$/;"	m	struct:service_t
+ignore_line	src/cfgparser.c	/^ignore_line (const char *line)$/;"	f	file:
+init	src/ushare.h	/^  int init;$/;"	m	struct:ushare_t
+init_upnp	src/ushare.c	/^init_upnp (struct ushare_t *ut)$/;"	f	file:
+interface	src/ushare.h	/^  char *interface;$/;"	m	struct:ushare_t
+ip	src/ushare.h	/^  char *ip;$/;"	m	struct:ushare_t
+irix	configure	/^irix()    { issystem "IRIX"    ; return "$?" ; }$/;"	f
+is_valid_extension	src/metadata.c	/^is_valid_extension (const char *extension)$/;"	f	file:
+issystem	configure	/^issystem() {$/;"	f
+killer	src/ctrl_telnet.c	/^  int killer[2];$/;"	m	struct:telnet_thread_data_t	file:
+leaf	src/redblack.h	/^  leaf$/;"	e	enum:__anon7
+len	src/buffer.h	/^  size_t len;$/;"	m	struct:buffer_t
+len	src/http.c	/^      off_t len;$/;"	m	struct:web_file_t::__anon4::__anon6	file:
+linux	configure	/^linux()   { issystem "Linux" || issystem "uClinux" ; return "$?" ; }$/;"	f
+listener	src/ctrl_telnet.c	/^  int listener;$/;"	m	struct:telnet_thread_data_t	file:
+local	src/http.c	/^    } local;$/;"	m	union:web_file_t::__anon4	typeref:struct:web_file_t::__anon4::__anon5	file:
+local_address	src/ctrl_telnet.c	/^  struct sockaddr_in local_address;$/;"	m	struct:telnet_thread_data_t	typeref:struct:telnet_thread_data_t::sockaddr_in	file:
+localedir	config.mak	/^localedir=$(DESTDIR)${PREFIX}\/share\/locale$/;"	m
+log	configure	/^log(){$/;"	f
+log_error	src/trace.h	44;"	d
+log_file	configure	/^log_file(){$/;"	f
+log_info	src/trace.h	37;"	d
+log_level	src/trace.h	/^} log_level;$/;"	t	typeref:enum:__anon1
+log_verbose	src/trace.h	51;"	d
+main	src/ushare.c	/^main (int argc, char **argv)$/;"	f
+matches_search	src/cds.c	/^matches_search (char *search_criteria, struct upnp_entry_t *entry)$/;"	f	file:
+memory	src/http.c	/^    } memory;$/;"	m	union:web_file_t::__anon4	typeref:struct:web_file_t::__anon4::__anon6	file:
+metadata_add_container	src/metadata.c	/^metadata_add_container (struct ushare_t *ut,$/;"	f	file:
+metadata_add_file	src/metadata.c	/^metadata_add_file (struct ushare_t *ut, struct upnp_entry_t *entry,$/;"	f	file:
+mime_class	src/mime.h	/^  char *mime_class;$/;"	m	struct:mime_type_t
+mime_get_protocol	src/mime.c	/^char *mime_get_protocol (struct mime_type_t *mime)$/;"	f
+mime_protocol	src/mime.h	/^  char *mime_protocol;$/;"	m	struct:mime_type_t
+mime_type	src/metadata.h	/^  struct mime_type_t *mime_type;$/;"	m	struct:upnp_entry_t	typeref:struct:upnp_entry_t::mime_type_t
+mime_type_t	src/mime.h	/^struct mime_type_t {$/;"	s
+mingw32	configure	/^mingw32() { issystem "MINGW32" ; return "$?" ; }$/;"	f
+model_name	src/ushare.h	/^  char *model_name;$/;"	m	struct:ushare_t
+morphos	configure	/^morphos() { issystem "MorphOS" ; return "$?" ; }$/;"	f
+msr_is_authorized	src/msr.c	/^msr_is_authorized (struct action_event_t *event)$/;"	f	file:
+msr_is_validated	src/msr.c	/^msr_is_validated (struct action_event_t *event)$/;"	f	file:
+msr_register_device	src/msr.c	/^msr_register_device (struct action_event_t *event)$/;"	f	file:
+msr_service_actions	src/msr.c	/^struct service_action_t msr_service_actions[] = {$/;"	v	typeref:struct:service_action_t
+name	src/cfgparser.h	/^  char *name;$/;"	m	struct:__anon2
+name	src/ctrl_telnet.c	/^  char *name;$/;"	m	struct:telnet_function_list_t	file:
+name	src/services.h	/^  char *name;$/;"	m	struct:service_action_t
+name	src/ushare.h	/^  char *name;$/;"	m	struct:ushare_t
+netbsd	configure	/^netbsd()  { issystem "NetBSD"  ; return "$?" ; }$/;"	f
+next	src/ctrl_telnet.c	/^  struct telnet_function_list_t *next;$/;"	m	struct:telnet_function_list_t	typeref:struct:telnet_function_list_t::telnet_function_list_t	file:
+next	src/ctrl_telnet.h	/^  struct ctrl_telnet_client_t* next;$/;"	m	struct:ctrl_telnet_client_t	typeref:struct:ctrl_telnet_client_t::ctrl_telnet_client_t
+ngettext	src/gettext.h	60;"	d
+nodecolour	src/redblack.c	/^enum nodecolour { BLACK, RED };$/;"	g	file:
+nr_entries	src/ushare.h	/^  int nr_entries;$/;"	m	struct:ushare_t
+openbsd	configure	/^openbsd() { issystem "OpenBSD" ; return "$?" ; }$/;"	f
+openlist	src/redblack.c	/^RB_ENTRY(openlist)(const struct RB_ENTRY(tree) *rbinfo)$/;"	f
+override_iconv_err	src/ushare.h	/^  bool override_iconv_err;$/;"	m	struct:ushare_t
+parent	src/metadata.h	/^  struct upnp_entry_t *parent;$/;"	m	struct:upnp_entry_t	typeref:struct:upnp_entry_t::upnp_entry_t
+parse_command_line	src/cfgparser.c	/^parse_command_line (struct ushare_t *ut, int argc, char **argv)$/;"	f
+parse_config_file	src/cfgparser.c	/^parse_config_file (struct ushare_t *ut)$/;"	f
+parse_config_line	src/cfgparser.c	/^parse_config_line (struct ushare_t *ut, const char *line,$/;"	f	file:
+port	src/ushare.h	/^  unsigned short port;$/;"	m	struct:ushare_t
+pos	src/http.c	/^  off_t pos;$/;"	m	struct:web_file_t	file:
+postorder	src/redblack.h	/^  postorder,$/;"	e	enum:__anon7
+prefix	config.mak	/^prefix=$(DESTDIR)$(PREFIX)$/;"	m
+preorder	src/redblack.h	/^  preorder,$/;"	e	enum:__anon7
+presentation	src/ushare.h	/^  struct buffer_t *presentation;$/;"	m	struct:ushare_t	typeref:struct:ushare_t::buffer_t
+print_log	src/trace.c	/^print_log (log_level level, const char *format, ...)$/;"	f
+process_cgi	src/presentation.c	/^process_cgi (struct ushare_t *ut, char *cgiargs)$/;"	f
+pthread_mutex_lock	src/ctrl_telnet.c	42;"	d	file:
+pthread_mutex_unlock	src/ctrl_telnet.c	43;"	d	file:
+qnx	configure	/^qnx()     { issystem "QNX"     ; return "$?" ; }$/;"	f
+rb	src/ushare.h	/^  struct rbtree *rb;$/;"	m	struct:ushare_t	typeref:struct:ushare_t::rbtree
+rb_closelist	src/redblack.c	/^rb_closelist(RBLIST *rblistp)$/;"	f	file:
+rb_compare	src/metadata.c	/^rb_compare (const void *pa, const void *pb,$/;"	f
+rbdata_t	src/redblack.h	42;"	d
+rbmax	src/redblack.h	133;"	d
+rbmin	src/redblack.h	132;"	d
+rcsid	src/redblack.c	/^static char rcsid[]="$Id: redblack.c,v 1.9 2003\/10\/24 01:31:21 damo Exp $";$/;"	v	file:
+ready	src/ctrl_telnet.h	/^  int ready; \/* True if this client has a complete line, ready to be parsed *\/$/;"	m	struct:ctrl_telnet_client_t
+reload_config	src/ushare.c	/^reload_config (int s __attribute__ ((unused)))$/;"	f	file:
+remote_address	src/ctrl_telnet.h	/^  struct sockaddr_in remote_address;$/;"	m	struct:ctrl_telnet_client_t	typeref:struct:ctrl_telnet_client_t::sockaddr_in
+request	src/ushare.h	/^  struct Upnp_Action_Request *request;$/;"	m	struct:action_event_t	typeref:struct:action_event_t::Upnp_Action_Request
+restart_upnp	src/ushare.c	/^restart_upnp (struct ushare_t *ut)$/;"	f	file:
+restore_flags	configure	/^restore_flags(){$/;"	f
+root_entry	src/ushare.h	/^  struct upnp_entry_t *root_entry;$/;"	m	struct:ushare_t	typeref:struct:ushare_t::upnp_entry_t
+save_flags	configure	/^save_flags(){$/;"	f
+service	src/ushare.h	/^  struct service_t *service;$/;"	m	struct:action_event_t	typeref:struct:action_event_t::service_t
+service_action_t	src/services.h	/^struct service_action_t {$/;"	s
+service_t	src/services.h	/^struct service_t {$/;"	s
+services	src/services.c	/^static struct service_t services[] = {$/;"	v	typeref:struct:service_t	file:
+set_info_file	src/http.c	/^set_info_file (struct File_Info *info, const size_t length,$/;"	f	file:
+set_var	src/cfgparser.h	/^  void (*set_var) (struct ushare_t*, const char*);$/;"	m	struct:__anon2
+setup_i18n	src/ushare.c	/^setup_i18n(void)$/;"	f	file:
+setup_iconv	src/util_iconv.c	/^setup_iconv (void)$/;"	f
+shared_buffer	src/ctrl_telnet.c	/^  char shared_buffer[CTRL_TELNET_SHARED_BUFFER_SIZE];$/;"	m	struct:telnet_thread_data_t	file:
+shared_lock	src/ctrl_telnet.c	/^static pthread_mutex_t shared_lock = PTHREAD_MUTEX_INITIALIZER;$/;"	v	file:
+show_help	configure	/^show_help(){$/;"	f
+size	src/metadata.h	/^  off_t size;$/;"	m	struct:upnp_entry_t
+socket	src/ctrl_telnet.h	/^  int socket;$/;"	m	struct:ctrl_telnet_client_t
+start_log	src/trace.c	/^start_log (void)$/;"	f
+started	src/ctrl_telnet.c	/^static int started = 0;$/;"	v	file:
+starting_id	src/ushare.h	/^  int starting_id;$/;"	m	struct:ushare_t
+startstop_lock	src/ctrl_telnet.c	/^static pthread_mutex_t startstop_lock = PTHREAD_MUTEX_INITIALIZER;$/;"	v	file:
+status	src/ushare.h	/^  bool status;$/;"	m	struct:action_event_t
+strdup_trim	src/cfgparser.c	/^strdup_trim (const char *s)$/;"	f	file:
+strndup	src/osdep.c	/^strndup (const char *s, size_t n)$/;"	f
+sunos	configure	/^sunos()   { issystem "SunOS"   ; return "$?" ; }$/;"	f
+sysconfdir	config.mak	/^sysconfdir=$(DESTDIR)${PREFIX}\/etc$/;"	m
+telnet_function_list	src/ctrl_telnet.c	/^} telnet_function_list;$/;"	t	typeref:struct:telnet_function_list_t	file:
+telnet_function_list_t	src/ctrl_telnet.c	/^typedef struct telnet_function_list_t$/;"	s	file:
+telnet_port	src/ushare.h	/^  unsigned short telnet_port;$/;"	m	struct:ushare_t
+telnet_thread_data	src/ctrl_telnet.c	/^} telnet_thread_data;$/;"	t	typeref:struct:telnet_thread_data_t	file:
+telnet_thread_data_t	src/ctrl_telnet.c	/^typedef struct telnet_thread_data_t$/;"	s	file:
+temp_append	configure	/^temp_append(){$/;"	f
+temp_cflags	configure	/^temp_cflags(){$/;"	f
+temp_extralibs	configure	/^temp_extralibs(){$/;"	f
+temp_ldflags	configure	/^temp_ldflags(){$/;"	f
+termination_cond	src/ushare.h	/^  pthread_cond_t termination_cond;$/;"	m	struct:ushare_t
+termination_mutex	src/ushare.h	/^  pthread_mutex_t termination_mutex;$/;"	m	struct:ushare_t
+textdomain	src/gettext.h	66;"	d
+thread	src/ctrl_telnet.c	/^  pthread_t thread;$/;"	m	struct:telnet_thread_data_t	file:
+title	src/metadata.h	/^  char *title;$/;"	m	struct:upnp_entry_t
+top_srcdir	po/Makefile	/^top_srcdir = ..$/;"	m
+ttd	src/ctrl_telnet.c	/^static telnet_thread_data ttd;$/;"	v	file:
+type	src/http.c	/^  } type;$/;"	m	struct:web_file_t	typeref:enum:web_file_t::__anon3	file:
+type	src/services.h	/^  char *type;$/;"	m	struct:service_t
+u_configline_t	src/cfgparser.h	/^} u_configline_t;$/;"	t	typeref:struct:__anon2
+udn	src/ushare.h	/^  char *udn;$/;"	m	struct:ushare_t
+upnp_add_response	src/services.c	/^upnp_add_response (struct action_event_t *event, char *key, const char *value)$/;"	f
+upnp_entry_add_child	src/metadata.c	/^upnp_entry_add_child (struct ushare_t *ut,$/;"	f	file:
+upnp_entry_free	src/metadata.c	/^upnp_entry_free (struct ushare_t *ut, struct upnp_entry_t *entry)$/;"	f
+upnp_entry_lookup_t	src/metadata.c	/^struct upnp_entry_lookup_t {$/;"	s	file:
+upnp_entry_new	src/metadata.c	/^upnp_entry_new (struct ushare_t *ut, const char *name, const char *fullpath,$/;"	f	file:
+upnp_entry_t	src/metadata.h	/^struct upnp_entry_t {$/;"	s
+upnp_get_entry	src/metadata.c	/^upnp_get_entry (struct ushare_t *ut, int id)$/;"	f
+upnp_get_string	src/services.c	/^upnp_get_string (struct Upnp_Action_Request *request, const char *key)$/;"	f
+upnp_get_ui4	src/services.c	/^upnp_get_ui4 (struct Upnp_Action_Request *request, const char *key)$/;"	f
+url	src/metadata.h	/^  char *url;$/;"	m	struct:upnp_entry_t
+use_presentation	src/ushare.h	/^  bool use_presentation;$/;"	m	struct:ushare_t
+use_telnet	src/ushare.h	/^  bool use_telnet;$/;"	m	struct:ushare_t
+ushare_add_contentdir	src/cfgparser.c	/^ushare_add_contentdir (struct ushare_t *ut, const char *dir)$/;"	f	file:
+ushare_free	src/ushare.c	/^ushare_free (struct ushare_t *ut)$/;"	f	file:
+ushare_kill	src/ushare.c	/^ushare_kill (ctrl_telnet_client *client,$/;"	f	file:
+ushare_new	src/ushare.c	/^ushare_new (void)$/;"	f	file:
+ushare_set_cfg_file	src/cfgparser.c	/^ushare_set_cfg_file (struct ushare_t *ut, const char *file)$/;"	f	file:
+ushare_set_dir	src/cfgparser.c	/^ushare_set_dir (struct ushare_t *ut, const char *dirlist)$/;"	f	file:
+ushare_set_interface	src/cfgparser.c	/^ushare_set_interface (struct ushare_t *ut, const char *iface)$/;"	f	file:
+ushare_set_name	src/cfgparser.c	/^ushare_set_name (struct ushare_t *ut, const char *name)$/;"	f	file:
+ushare_set_override_iconv_err	src/cfgparser.c	/^ushare_set_override_iconv_err (struct ushare_t *ut, const char *arg)$/;"	f	file:
+ushare_set_port	src/cfgparser.c	/^ushare_set_port (struct ushare_t *ut, const char *port)$/;"	f	file:
+ushare_set_telnet_port	src/cfgparser.c	/^ushare_set_telnet_port (struct ushare_t *ut, const char *port)$/;"	f	file:
+ushare_signal_exit	src/ushare.c	/^ushare_signal_exit (void)$/;"	f	file:
+ushare_t	src/ushare.h	/^struct ushare_t {$/;"	s
+ushare_use_dlna	src/cfgparser.c	/^ushare_use_dlna (struct ushare_t *ut, const char *val)$/;"	f	file:
+ushare_use_telnet	src/cfgparser.c	/^ushare_use_telnet (struct ushare_t *ut, const char *val)$/;"	f	file:
+ushare_use_web	src/cfgparser.c	/^ushare_use_web (struct ushare_t *ut, const char *val)$/;"	f	file:
+ushare_use_xbox	src/cfgparser.c	/^ushare_use_xbox (struct ushare_t *ut, const char *val)$/;"	f	file:
+ut	src/ushare.c	/^struct ushare_t *ut = NULL;$/;"	v	typeref:struct:ushare_t
+verbose	src/ushare.h	/^  bool verbose;$/;"	m	struct:ushare_t
+virtual_dir_callbacks	src/http.c	/^struct UpnpVirtualDirCallbacks virtual_dir_callbacks =$/;"	v	typeref:struct:UpnpVirtualDirCallbacks
+virtual_dir_callbacks	src/http.h	/^struct UpnpVirtualDirCallbacks virtual_dir_callbacks;$/;"	v	typeref:struct:UpnpVirtualDirCallbacks
+walk	src/redblack.c	/^RB_ENTRY(walk)(const struct RB_ENTRY(tree) *rbinfo, void (*action)(const RB_ENTRY(data_t) *, const VISIT, const int, void *), void *arg)$/;"	f
+web_file_t	src/http.c	/^struct web_file_t {$/;"	s	file:
+win32	configure	/^win32()   { cygwin || mingw32  ; return "$?" ; }$/;"	f
+xbox360	src/ushare.h	/^  bool xbox360;$/;"	m	struct:ushare_t
+xml	src/metadata.h	/^  char *xml;$/;"	m	struct:xml_convert_s
+xml_convert	src/metadata.c	/^static xml_convert_t xml_convert[] = {$/;"	v	file:
+xml_convert_s	src/metadata.h	/^typedef struct xml_convert_s {$/;"	s
+xml_convert_t	src/metadata.h	/^} xml_convert_t;$/;"	t	typeref:struct:xml_convert_s
+yes	src/ctrl_telnet.c	/^static int yes = 1;$/;"	v	file:

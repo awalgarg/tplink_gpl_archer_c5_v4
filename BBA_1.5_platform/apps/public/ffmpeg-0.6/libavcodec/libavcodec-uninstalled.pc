@@ -1,0 +1,12 @@
+prefix=
+exec_prefix=
+libdir=${pcfiledir}
+includedir=/work/Trendchip_89741/tpbsp/apps/public/DLNA_MediaServer/ffmpeg-0.6
+
+Name: libavcodec
+Description: FFmpeg codec library
+Version: 52.72.2
+Requires: libavutil = 50.15.1
+Conflicts:
+Libs: ${libdir}/libavcodec.a   -pthread -lm -ldl
+Cflags: -I${includedir}

@@ -1,0 +1,49 @@
+ctrl_interface=/var/run/wpa_supplicant
+update_config=1
+config_methods=virtual_display virtual_push_button keypad
+p2p_go_intent=15
+country=US
+p2p_oper_reg_class=81
+p2p_listen_reg_class=81
+p2p_oper_channel=1
+p2p_listen_channel=1
+device_name=WOODY_WPS_DEVICE
+manufacturer=Mediatek
+model_name=7688
+model_number=123
+serial_number=12345
+device_type=1-0050F204-1
+os_version=01020300
+
+network={
+	ssid="WPA2PSK_AES_AP"
+	key_mgmt=WPA-PSK
+	pairwise=CCMP
+	group=CCMP
+	psk="12345678"	
+	proto=RSN
+	disabled=1
+}
+
+network={
+	ssid="WPAPSK_TKIP_AP"
+	key_mgmt=WPA-PSK
+	pairwise=TKIP
+	group=TKIP
+	psk="12345678"	
+	proto=WPA
+	disabled=1
+}
+
+network={
+	ssid="456"
+	key_mgmt=NONE
+	disabled=1
+}
+
+network={
+	ssid="WEP_AP"
+	key_mgmt=NONE
+	wep_key0="1234567890123"
+	disabled=1
+}

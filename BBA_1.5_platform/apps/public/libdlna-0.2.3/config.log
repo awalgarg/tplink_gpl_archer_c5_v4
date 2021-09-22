@@ -1,0 +1,253 @@
+# ./configure --cross-compile --cross-prefix=mips-linux-uclibc- --disable-shared --with-ffmpeg-dir=/work/Trendchip_89741/tpbsp/apps/public/DLNA_MediaServer/ffmpeg-0.6 --enable-static --disable-debug
+AR=/opt/trendchip/mips-linux-uclibc/usr/bin/mips-linux-uclibc-ar
+BASH=/bin/sh
+BASH_ARGC=([0]="6")
+BASH_ARGV=([0]="--disable-debug" [1]="--enable-static" [2]="--with-ffmpeg-dir=/work/Trendchip_89741/tpbsp/apps/public/DLNA_MediaServer/ffmpeg-0.6" [3]="--disable-shared" [4]="--cross-prefix=mips-linux-uclibc-" [5]="--cross-compile")
+BASH_LINENO=([0]="0")
+BASH_SOURCE=([0]="./configure")
+BASH_VERSINFO=([0]="3" [1]="1" [2]="17" [3]="1" [4]="release" [5]="i686-redhat-linux-gnu")
+BASH_VERSION='3.1.17(1)-release'
+CC=/opt/trendchip/mips-linux-uclibc/usr/bin/mips-linux-uclibc-gcc
+CONFIGFILE=config.mak
+CVS_RSH=ssh
+CXX=/opt/trendchip/mips-linux-uclibc/usr/bin/mips-linux-g++
+DIRSTACK=()
+DST=/work/Trendchip_89741/jackie_branches/web_server/
+EUID=0
+GROUPS=()
+G_BROKEN_FILENAMES=1
+HISTSIZE=1000
+HOME=/root
+HOSTNAME=localhost.localdomain
+HOSTTYPE=i686
+IFS=' 	
+'
+INPUTRC=/etc/inputrc
+INSTALL='/usr/bin/install -c'
+LANG=en_US.UTF-8
+LD=/opt/trendchip/mips-linux-uclibc/usr/bin/mips-linux-uclibc-ld
+LDFLAGS='-L/work/Trendchip_89741/tpbsp/apps/public/DLNA_MediaServer/ffmpeg-0.6/libavcodec/ -L/work/Trendchip_89741/tpbsp/apps/public/DLNA_MediaServer/ffmpeg-0.6/libavformat/ -L/work/Trendchip_89741/tpbsp/apps/public/DLNA_MediaServer/ffmpeg-0.6/libavdevice/ -L/work/Trendchip_89741/tpbsp/apps/public/DLNA_MediaServer/ffmpeg-0.6/libavutil/'
+LESSOPEN='|/usr/bin/lesspipe.sh %s'
+LOGNAME=root
+LS_COLORS='no=00:fi=00:di=00;34:ln=00;36:pi=40;33:so=00;35:bd=40;33;01:cd=40;33;01:or=01;05;37;41:mi=01;05;37;41:ex=00;32:*.cmd=00;32:*.exe=00;32:*.com=00;32:*.btm=00;32:*.bat=00;32:*.sh=00;32:*.csh=00;32:*.tar=00;31:*.tgz=00;31:*.arj=00;31:*.taz=00;31:*.lzh=00;31:*.zip=00;31:*.z=00;31:*.Z=00;31:*.gz=00;31:*.bz2=00;31:*.bz=00;31:*.tz=00;31:*.rpm=00;31:*.cpio=00;31:*.jpg=00;35:*.gif=00;35:*.bmp=00;35:*.xbm=00;35:*.xpm=00;35:*.png=00;35:*.tif=00;35:'
+MACHTYPE=i686-redhat-linux-gnu
+MAIL=/var/spool/mail/root
+MY_KERNEL_SRC=/usr/src/kernels/linux-2.6.22.15/
+NM=/opt/trendchip/mips-linux-uclibc/usr/bin/mips-linux-uclibc-nm
+OPTERR=1
+OPTIND=1
+OSTYPE=linux-gnu
+PATH=/usr/kerberos/sbin:/usr/kerberos/bin:/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin:/usr/bin/:/sbin/:/usr/local/bin:/usr/share/firmware/:/opt/trendchip/mips-linux-uclibc/usr/bin/:/opt/trendchip/mips-linux26/bin/:/root/bin
+PIPESTATUS=([0]="0")
+POSIXLY_CORRECT=y
+PPID=21549
+PREFIX=/usr/local
+PS4='+ '
+PWD=/work/Trendchip_89741/tpbsp/apps/public/DLNA_MediaServer/libdlna-0.2.3-fixed
+RANDOM=2930
+RANLIB=/opt/trendchip/mips-linux-uclibc/usr/bin/mips-linux-uclibc-ranlib
+SHELL=/bin/bash
+SHELLOPTS=braceexpand:hashall:interactive-comments:posix
+SHLVL=2
+SSH_ASKPASS=/usr/libexec/openssh/gnome-ssh-askpass
+SSH_CLIENT='192.168.1.111 2232 22'
+SSH_CONNECTION='192.168.1.111 2232 192.168.1.100 22'
+SSH_TTY=/dev/pts/0
+TERM=xterm
+TMPC=/tmp/libdlna-1783-31065-23633.c
+TMPDIR1=/tmp
+TMPE=/tmp/libdlna-23737-31065-3803
+TMPO=/tmp/libdlna-9963-31065-21029.o
+TMPS=/tmp/libdlna-30382-31065-2930.S
+UID=0
+USER=root
+VERSION=
+_=--disable-debug
+ar=mips-linux-uclibc-ar
+cc=mips-linux-uclibc-gcc
+cpu=x86
+cross_compile=yes
+cross_prefix=mips-linux-uclibc-
+debug=no
+dostrip=yes
+extralibs=
+ffmpegdir=/work/Trendchip_89741/tpbsp/apps/public/DLNA_MediaServer/ffmpeg-0.6
+includedir='$(PREFIX)/include'
+installstrip=-s
+libdir='$(PREFIX)/lib'
+logfile=config.log
+logging=yes
+make=make
+opt=--disable-debug
+optimize=yes
+optval=--disable-debug
+ranlib=mips-linux-uclibc-ranlib
+shared=no
+static=yes
+strip=mips-linux-uclibc-strip
+Checking for compiler available...
+check_ld
+check_cc
+BEGIN /tmp/libdlna-1783-31065-23633.c
+     1	int main(){
+     2	    return 0;
+     3	}
+END /tmp/libdlna-1783-31065-23633.c
+mips-linux-uclibc-gcc -c -o /tmp/libdlna-9963-31065-21029.o /tmp/libdlna-1783-31065-23633.c
+mips-linux-uclibc-gcc -L/work/Trendchip_89741/tpbsp/apps/public/DLNA_MediaServer/ffmpeg-0.6/libavcodec/ -L/work/Trendchip_89741/tpbsp/apps/public/DLNA_MediaServer/ffmpeg-0.6/libavformat/ -L/work/Trendchip_89741/tpbsp/apps/public/DLNA_MediaServer/ffmpeg-0.6/libavdevice/ -L/work/Trendchip_89741/tpbsp/apps/public/DLNA_MediaServer/ffmpeg-0.6/libavutil/ -o /tmp/libdlna-23737-31065-3803 /tmp/libdlna-9963-31065-21029.o
+check_header altivec.h
+check_cpp
+BEGIN /tmp/libdlna-1783-31065-23633.c
+     1	#include <altivec.h>
+     2	int x;
+END /tmp/libdlna-1783-31065-23633.c
+mips-linux-uclibc-gcc -E -o /tmp/libdlna-9963-31065-21029.o /tmp/libdlna-1783-31065-23633.c
+/tmp/libdlna-1783-31065-23633.c:1:21: error: altivec.h: No such file or directory
+check_cc -msse
+BEGIN /tmp/libdlna-1783-31065-23633.c
+     1	#include <xmmintrin.h>
+     2	int main(void) {
+     3	#if __GNUC__ > 3 || (__GNUC__ == 3 && __GNUC_MINOR__ >= 2)
+     4	return 0;
+     5	#else
+     6	#error no vector builtins
+     7	#endif
+     8	}
+END /tmp/libdlna-1783-31065-23633.c
+mips-linux-uclibc-gcc -msse -c -o /tmp/libdlna-9963-31065-21029.o /tmp/libdlna-1783-31065-23633.c
+cc1: error: unrecognized command line option "-msse"
+check_cc -march=athlon
+BEGIN /tmp/libdlna-1783-31065-23633.c
+     1	#include <mm3dnow.h>
+     2	int main(void) {
+     3	__m64 b1;
+     4	b1 = _m_pswapd(b1);
+     5	_m_femms();
+     6	return 0;
+     7	}
+END /tmp/libdlna-1783-31065-23633.c
+mips-linux-uclibc-gcc -march=athlon -c -o /tmp/libdlna-9963-31065-21029.o /tmp/libdlna-1783-31065-23633.c
+cc1: error: unrecognized command line option "-march=athlon"
+check_cflags -W
+check_cc -W
+BEGIN /tmp/libdlna-1783-31065-23633.c
+     1	int x;
+END /tmp/libdlna-1783-31065-23633.c
+mips-linux-uclibc-gcc -W -c -o /tmp/libdlna-9963-31065-21029.o /tmp/libdlna-1783-31065-23633.c
+check_cflags -Wall
+check_cc -Wall
+BEGIN /tmp/libdlna-1783-31065-23633.c
+     1	int x;
+END /tmp/libdlna-1783-31065-23633.c
+mips-linux-uclibc-gcc -W -Wall -c -o /tmp/libdlna-9963-31065-21029.o /tmp/libdlna-1783-31065-23633.c
+check_cflags -D_LARGEFILE_SOURCE
+check_cc -D_LARGEFILE_SOURCE
+BEGIN /tmp/libdlna-1783-31065-23633.c
+     1	int x;
+END /tmp/libdlna-1783-31065-23633.c
+mips-linux-uclibc-gcc -W -Wall -D_LARGEFILE_SOURCE -c -o /tmp/libdlna-9963-31065-21029.o /tmp/libdlna-1783-31065-23633.c
+check_cflags -D_FILE_OFFSET_BITS=64
+check_cc -D_FILE_OFFSET_BITS=64
+BEGIN /tmp/libdlna-1783-31065-23633.c
+     1	int x;
+END /tmp/libdlna-1783-31065-23633.c
+mips-linux-uclibc-gcc -W -Wall -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -c -o /tmp/libdlna-9963-31065-21029.o /tmp/libdlna-1783-31065-23633.c
+check_cflags -D_REENTRANT
+check_cc -D_REENTRANT
+BEGIN /tmp/libdlna-1783-31065-23633.c
+     1	int x;
+END /tmp/libdlna-1783-31065-23633.c
+mips-linux-uclibc-gcc -W -Wall -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -D_REENTRANT -c -o /tmp/libdlna-9963-31065-21029.o /tmp/libdlna-1783-31065-23633.c
+check_cflags -I/work/Trendchip_89741/tpbsp/apps/public/DLNA_MediaServer/ffmpeg-0.6
+check_cc -I/work/Trendchip_89741/tpbsp/apps/public/DLNA_MediaServer/ffmpeg-0.6
+BEGIN /tmp/libdlna-1783-31065-23633.c
+     1	int x;
+END /tmp/libdlna-1783-31065-23633.c
+mips-linux-uclibc-gcc -W -Wall -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -D_REENTRANT -O3 -I/work/Trendchip_89741/tpbsp/apps/public/DLNA_MediaServer/ffmpeg-0.6 -c -o /tmp/libdlna-9963-31065-21029.o /tmp/libdlna-1783-31065-23633.c
+check_ldflags -L/work/Trendchip_89741/tpbsp/apps/public/DLNA_MediaServer/ffmpeg-0.6
+check_ld -L/work/Trendchip_89741/tpbsp/apps/public/DLNA_MediaServer/ffmpeg-0.6
+check_cc
+BEGIN /tmp/libdlna-1783-31065-23633.c
+     1	int main(){
+     2	    return 0;
+     3	}
+END /tmp/libdlna-1783-31065-23633.c
+mips-linux-uclibc-gcc -W -Wall -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -D_REENTRANT -O3 -I/work/Trendchip_89741/tpbsp/apps/public/DLNA_MediaServer/ffmpeg-0.6 -c -o /tmp/libdlna-9963-31065-21029.o /tmp/libdlna-1783-31065-23633.c
+mips-linux-uclibc-gcc -L/work/Trendchip_89741/tpbsp/apps/public/DLNA_MediaServer/ffmpeg-0.6/libavcodec/ -L/work/Trendchip_89741/tpbsp/apps/public/DLNA_MediaServer/ffmpeg-0.6/libavformat/ -L/work/Trendchip_89741/tpbsp/apps/public/DLNA_MediaServer/ffmpeg-0.6/libavdevice/ -L/work/Trendchip_89741/tpbsp/apps/public/DLNA_MediaServer/ffmpeg-0.6/libavutil/ -L/work/Trendchip_89741/tpbsp/apps/public/DLNA_MediaServer/ffmpeg-0.6 -o /tmp/libdlna-23737-31065-3803 /tmp/libdlna-9963-31065-21029.o
+Checking for libavformat ...
+check_lib libavformat/avformat.h av_register_all -lavformat -lavcodec -lavutil -lm -lpthread
+check_header libavformat/avformat.h
+check_cpp
+BEGIN /tmp/libdlna-1783-31065-23633.c
+     1	#include <libavformat/avformat.h>
+     2	int x;
+END /tmp/libdlna-1783-31065-23633.c
+mips-linux-uclibc-gcc -W -Wall -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -D_REENTRANT -O3 -I/work/Trendchip_89741/tpbsp/apps/public/DLNA_MediaServer/ffmpeg-0.6 -E -o /tmp/libdlna-9963-31065-21029.o /tmp/libdlna-1783-31065-23633.c
+check_func av_register_all
+check_ld
+check_cc
+BEGIN /tmp/libdlna-1783-31065-23633.c
+     1	extern int av_register_all();
+     2	int main(){
+     3	    av_register_all();
+     4	    return 0;
+     5	}
+END /tmp/libdlna-1783-31065-23633.c
+mips-linux-uclibc-gcc -W -Wall -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -D_REENTRANT -O3 -I/work/Trendchip_89741/tpbsp/apps/public/DLNA_MediaServer/ffmpeg-0.6 -c -o /tmp/libdlna-9963-31065-21029.o /tmp/libdlna-1783-31065-23633.c
+mips-linux-uclibc-gcc -L/work/Trendchip_89741/tpbsp/apps/public/DLNA_MediaServer/ffmpeg-0.6/libavcodec/ -L/work/Trendchip_89741/tpbsp/apps/public/DLNA_MediaServer/ffmpeg-0.6/libavformat/ -L/work/Trendchip_89741/tpbsp/apps/public/DLNA_MediaServer/ffmpeg-0.6/libavdevice/ -L/work/Trendchip_89741/tpbsp/apps/public/DLNA_MediaServer/ffmpeg-0.6/libavutil/ -o /tmp/libdlna-23737-31065-3803 /tmp/libdlna-9963-31065-21029.o -lavformat -lavcodec -lavutil -lm -lpthread
+Checking for libavcodec ...
+check_lib libavcodec/avcodec.h avcodec_register_all -lavcodec -lavutil -lm -lpthread
+check_header libavcodec/avcodec.h
+check_cpp
+BEGIN /tmp/libdlna-1783-31065-23633.c
+     1	#include <libavcodec/avcodec.h>
+     2	int x;
+END /tmp/libdlna-1783-31065-23633.c
+mips-linux-uclibc-gcc -W -Wall -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -D_REENTRANT -O3 -I/work/Trendchip_89741/tpbsp/apps/public/DLNA_MediaServer/ffmpeg-0.6 -E -o /tmp/libdlna-9963-31065-21029.o /tmp/libdlna-1783-31065-23633.c
+check_func avcodec_register_all
+check_ld
+check_cc
+BEGIN /tmp/libdlna-1783-31065-23633.c
+     1	extern int avcodec_register_all();
+     2	int main(){
+     3	    avcodec_register_all();
+     4	    return 0;
+     5	}
+END /tmp/libdlna-1783-31065-23633.c
+mips-linux-uclibc-gcc -W -Wall -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -D_REENTRANT -O3 -I/work/Trendchip_89741/tpbsp/apps/public/DLNA_MediaServer/ffmpeg-0.6 -c -o /tmp/libdlna-9963-31065-21029.o /tmp/libdlna-1783-31065-23633.c
+mips-linux-uclibc-gcc -L/work/Trendchip_89741/tpbsp/apps/public/DLNA_MediaServer/ffmpeg-0.6/libavcodec/ -L/work/Trendchip_89741/tpbsp/apps/public/DLNA_MediaServer/ffmpeg-0.6/libavformat/ -L/work/Trendchip_89741/tpbsp/apps/public/DLNA_MediaServer/ffmpeg-0.6/libavdevice/ -L/work/Trendchip_89741/tpbsp/apps/public/DLNA_MediaServer/ffmpeg-0.6/libavutil/ -o /tmp/libdlna-23737-31065-3803 /tmp/libdlna-9963-31065-21029.o -lavformat -lavcodec -lavutil -lm -lpthread
+check_ld
+check_cc
+BEGIN /tmp/libdlna-1783-31065-23633.c
+     1	#include <stdio.h>
+     2	#include <dlna.h>
+     3	int main(){
+     4	  printf(DLNA_STRINGIFY(LIBDLNA_VERSION));
+     5	  printf("\n");
+     6	  return 0;
+     7	}
+END /tmp/libdlna-1783-31065-23633.c
+mips-linux-uclibc-gcc -W -Wall -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -D_REENTRANT -O3 -I/work/Trendchip_89741/tpbsp/apps/public/DLNA_MediaServer/ffmpeg-0.6 -Isrc -c -o /tmp/libdlna-9963-31065-21029.o /tmp/libdlna-1783-31065-23633.c
+mips-linux-uclibc-gcc -L/work/Trendchip_89741/tpbsp/apps/public/DLNA_MediaServer/ffmpeg-0.6/libavcodec/ -L/work/Trendchip_89741/tpbsp/apps/public/DLNA_MediaServer/ffmpeg-0.6/libavformat/ -L/work/Trendchip_89741/tpbsp/apps/public/DLNA_MediaServer/ffmpeg-0.6/libavdevice/ -L/work/Trendchip_89741/tpbsp/apps/public/DLNA_MediaServer/ffmpeg-0.6/libavutil/ -o /tmp/libdlna-23737-31065-3803 /tmp/libdlna-9963-31065-21029.o -lavformat -lavcodec -lavutil -lm -lpthread
+
+libdlna: configure is OK
+  version            
+configuration:
+  install prefix     /usr/local
+  C compiler         mips-linux-uclibc-gcc
+  AR                 mips-linux-uclibc-ar
+  RANLIB             mips-linux-uclibc-ranlib
+  STRIP              mips-linux-uclibc-strip
+  make               make
+  CPU                x86 ()
+  debug symbols      no
+  strip symbols      yes
+  optimize           yes
+  static             yes
+  shared             no
+
+  CFLAGS              -W -Wall -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -D_REENTRANT -O3 -I/work/Trendchip_89741/tpbsp/apps/public/DLNA_MediaServer/ffmpeg-0.6
+  LDFLAGS            -L/work/Trendchip_89741/tpbsp/apps/public/DLNA_MediaServer/ffmpeg-0.6/libavcodec/ -L/work/Trendchip_89741/tpbsp/apps/public/DLNA_MediaServer/ffmpeg-0.6/libavformat/ -L/work/Trendchip_89741/tpbsp/apps/public/DLNA_MediaServer/ffmpeg-0.6/libavdevice/ -L/work/Trendchip_89741/tpbsp/apps/public/DLNA_MediaServer/ffmpeg-0.6/libavutil/
+  extralibs           -lavformat -lavcodec -lavutil -lm -lpthread
+
+Creating config.mak ...

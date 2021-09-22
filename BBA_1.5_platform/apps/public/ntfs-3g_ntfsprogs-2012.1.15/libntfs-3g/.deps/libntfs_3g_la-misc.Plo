@@ -1,0 +1,98 @@
+libntfs_3g_la-misc.lo: misc.c ../config.h \
+  /home/work/8970/8970/lantiq/staging_dir/toolchain-mips_r2_gcc-4.3.3+cs_uClibc-0.9.30.1_2_6_32/usr/lib/gcc/mips-linux-uclibc/4.3.3/../../../../mips-linux-uclibc/sys-include/stdlib.h \
+  /home/work/8970/8970/lantiq/staging_dir/toolchain-mips_r2_gcc-4.3.3+cs_uClibc-0.9.30.1_2_6_32/usr/lib/gcc/mips-linux-uclibc/4.3.3/../../../../mips-linux-uclibc/sys-include/features.h \
+  /home/work/8970/8970/lantiq/staging_dir/toolchain-mips_r2_gcc-4.3.3+cs_uClibc-0.9.30.1_2_6_32/usr/lib/gcc/mips-linux-uclibc/4.3.3/../../../../mips-linux-uclibc/sys-include/bits/uClibc_config.h \
+  /home/work/8970/8970/lantiq/staging_dir/toolchain-mips_r2_gcc-4.3.3+cs_uClibc-0.9.30.1_2_6_32/usr/lib/gcc/mips-linux-uclibc/4.3.3/../../../../mips-linux-uclibc/sys-include/bits/uClibc_arch_features.h \
+  /home/work/8970/8970/lantiq/staging_dir/toolchain-mips_r2_gcc-4.3.3+cs_uClibc-0.9.30.1_2_6_32/usr/lib/gcc/mips-linux-uclibc/4.3.3/../../../../mips-linux-uclibc/sys-include/sys/cdefs.h \
+  /home/work/8970/8970/lantiq/staging_dir/toolchain-mips_r2_gcc-4.3.3+cs_uClibc-0.9.30.1_2_6_32/usr/lib/gcc/mips-linux-uclibc/4.3.3/include/stddef.h \
+  /home/work/8970/8970/lantiq/staging_dir/toolchain-mips_r2_gcc-4.3.3+cs_uClibc-0.9.30.1_2_6_32/usr/lib/gcc/mips-linux-uclibc/4.3.3/../../../../mips-linux-uclibc/sys-include/bits/waitflags.h \
+  /home/work/8970/8970/lantiq/staging_dir/toolchain-mips_r2_gcc-4.3.3+cs_uClibc-0.9.30.1_2_6_32/usr/lib/gcc/mips-linux-uclibc/4.3.3/../../../../mips-linux-uclibc/sys-include/bits/waitstatus.h \
+  /home/work/8970/8970/lantiq/staging_dir/toolchain-mips_r2_gcc-4.3.3+cs_uClibc-0.9.30.1_2_6_32/usr/lib/gcc/mips-linux-uclibc/4.3.3/../../../../mips-linux-uclibc/sys-include/endian.h \
+  /home/work/8970/8970/lantiq/staging_dir/toolchain-mips_r2_gcc-4.3.3+cs_uClibc-0.9.30.1_2_6_32/usr/lib/gcc/mips-linux-uclibc/4.3.3/../../../../mips-linux-uclibc/sys-include/bits/endian.h \
+  /home/work/8970/8970/lantiq/staging_dir/toolchain-mips_r2_gcc-4.3.3+cs_uClibc-0.9.30.1_2_6_32/usr/lib/gcc/mips-linux-uclibc/4.3.3/../../../../mips-linux-uclibc/sys-include/sys/types.h \
+  /home/work/8970/8970/lantiq/staging_dir/toolchain-mips_r2_gcc-4.3.3+cs_uClibc-0.9.30.1_2_6_32/usr/lib/gcc/mips-linux-uclibc/4.3.3/../../../../mips-linux-uclibc/sys-include/bits/types.h \
+  /home/work/8970/8970/lantiq/staging_dir/toolchain-mips_r2_gcc-4.3.3+cs_uClibc-0.9.30.1_2_6_32/usr/lib/gcc/mips-linux-uclibc/4.3.3/../../../../mips-linux-uclibc/sys-include/bits/wordsize.h \
+  /home/work/8970/8970/lantiq/staging_dir/toolchain-mips_r2_gcc-4.3.3+cs_uClibc-0.9.30.1_2_6_32/usr/lib/gcc/mips-linux-uclibc/4.3.3/../../../../mips-linux-uclibc/sys-include/bits/kernel_types.h \
+  /home/work/8970/8970/lantiq/staging_dir/toolchain-mips_r2_gcc-4.3.3+cs_uClibc-0.9.30.1_2_6_32/usr/lib/gcc/mips-linux-uclibc/4.3.3/../../../../mips-linux-uclibc/sys-include/bits/typesizes.h \
+  /home/work/8970/8970/lantiq/staging_dir/toolchain-mips_r2_gcc-4.3.3+cs_uClibc-0.9.30.1_2_6_32/usr/lib/gcc/mips-linux-uclibc/4.3.3/../../../../mips-linux-uclibc/sys-include/bits/pthreadtypes.h \
+  /home/work/8970/8970/lantiq/staging_dir/toolchain-mips_r2_gcc-4.3.3+cs_uClibc-0.9.30.1_2_6_32/usr/lib/gcc/mips-linux-uclibc/4.3.3/../../../../mips-linux-uclibc/sys-include/bits/sched.h \
+  /home/work/8970/8970/lantiq/staging_dir/toolchain-mips_r2_gcc-4.3.3+cs_uClibc-0.9.30.1_2_6_32/usr/lib/gcc/mips-linux-uclibc/4.3.3/../../../../mips-linux-uclibc/sys-include/time.h \
+  /home/work/8970/8970/lantiq/staging_dir/toolchain-mips_r2_gcc-4.3.3+cs_uClibc-0.9.30.1_2_6_32/usr/lib/gcc/mips-linux-uclibc/4.3.3/../../../../mips-linux-uclibc/sys-include/sys/select.h \
+  /home/work/8970/8970/lantiq/staging_dir/toolchain-mips_r2_gcc-4.3.3+cs_uClibc-0.9.30.1_2_6_32/usr/lib/gcc/mips-linux-uclibc/4.3.3/../../../../mips-linux-uclibc/sys-include/bits/select.h \
+  /home/work/8970/8970/lantiq/staging_dir/toolchain-mips_r2_gcc-4.3.3+cs_uClibc-0.9.30.1_2_6_32/usr/lib/gcc/mips-linux-uclibc/4.3.3/../../../../mips-linux-uclibc/sys-include/bits/sigset.h \
+  /home/work/8970/8970/lantiq/staging_dir/toolchain-mips_r2_gcc-4.3.3+cs_uClibc-0.9.30.1_2_6_32/usr/lib/gcc/mips-linux-uclibc/4.3.3/../../../../mips-linux-uclibc/sys-include/bits/time.h \
+  /home/work/8970/8970/lantiq/staging_dir/toolchain-mips_r2_gcc-4.3.3+cs_uClibc-0.9.30.1_2_6_32/usr/lib/gcc/mips-linux-uclibc/4.3.3/../../../../mips-linux-uclibc/sys-include/sys/sysmacros.h \
+  /home/work/8970/8970/lantiq/staging_dir/toolchain-mips_r2_gcc-4.3.3+cs_uClibc-0.9.30.1_2_6_32/usr/lib/gcc/mips-linux-uclibc/4.3.3/../../../../mips-linux-uclibc/sys-include/alloca.h \
+  /home/work/8970/8970/lantiq/staging_dir/toolchain-mips_r2_gcc-4.3.3+cs_uClibc-0.9.30.1_2_6_32/usr/lib/gcc/mips-linux-uclibc/4.3.3/../../../../mips-linux-uclibc/sys-include/string.h \
+  ../include/ntfs-3g/types.h \
+  /home/work/8970/8970/lantiq/staging_dir/toolchain-mips_r2_gcc-4.3.3+cs_uClibc-0.9.30.1_2_6_32/usr/lib/gcc/mips-linux-uclibc/4.3.3/../../../../mips-linux-uclibc/sys-include/stdint.h \
+  /home/work/8970/8970/lantiq/staging_dir/toolchain-mips_r2_gcc-4.3.3+cs_uClibc-0.9.30.1_2_6_32/usr/lib/gcc/mips-linux-uclibc/4.3.3/../../../../mips-linux-uclibc/sys-include/bits/wchar.h \
+  ../include/ntfs-3g/misc.h ../include/ntfs-3g/logging.h \
+  /home/work/8970/8970/lantiq/staging_dir/toolchain-mips_r2_gcc-4.3.3+cs_uClibc-0.9.30.1_2_6_32/usr/lib/gcc/mips-linux-uclibc/4.3.3/include/stdarg.h \
+  ../include/ntfs-3g/types.h
+
+../config.h:
+
+/home/work/8970/8970/lantiq/staging_dir/toolchain-mips_r2_gcc-4.3.3+cs_uClibc-0.9.30.1_2_6_32/usr/lib/gcc/mips-linux-uclibc/4.3.3/../../../../mips-linux-uclibc/sys-include/stdlib.h:
+
+/home/work/8970/8970/lantiq/staging_dir/toolchain-mips_r2_gcc-4.3.3+cs_uClibc-0.9.30.1_2_6_32/usr/lib/gcc/mips-linux-uclibc/4.3.3/../../../../mips-linux-uclibc/sys-include/features.h:
+
+/home/work/8970/8970/lantiq/staging_dir/toolchain-mips_r2_gcc-4.3.3+cs_uClibc-0.9.30.1_2_6_32/usr/lib/gcc/mips-linux-uclibc/4.3.3/../../../../mips-linux-uclibc/sys-include/bits/uClibc_config.h:
+
+/home/work/8970/8970/lantiq/staging_dir/toolchain-mips_r2_gcc-4.3.3+cs_uClibc-0.9.30.1_2_6_32/usr/lib/gcc/mips-linux-uclibc/4.3.3/../../../../mips-linux-uclibc/sys-include/bits/uClibc_arch_features.h:
+
+/home/work/8970/8970/lantiq/staging_dir/toolchain-mips_r2_gcc-4.3.3+cs_uClibc-0.9.30.1_2_6_32/usr/lib/gcc/mips-linux-uclibc/4.3.3/../../../../mips-linux-uclibc/sys-include/sys/cdefs.h:
+
+/home/work/8970/8970/lantiq/staging_dir/toolchain-mips_r2_gcc-4.3.3+cs_uClibc-0.9.30.1_2_6_32/usr/lib/gcc/mips-linux-uclibc/4.3.3/include/stddef.h:
+
+/home/work/8970/8970/lantiq/staging_dir/toolchain-mips_r2_gcc-4.3.3+cs_uClibc-0.9.30.1_2_6_32/usr/lib/gcc/mips-linux-uclibc/4.3.3/../../../../mips-linux-uclibc/sys-include/bits/waitflags.h:
+
+/home/work/8970/8970/lantiq/staging_dir/toolchain-mips_r2_gcc-4.3.3+cs_uClibc-0.9.30.1_2_6_32/usr/lib/gcc/mips-linux-uclibc/4.3.3/../../../../mips-linux-uclibc/sys-include/bits/waitstatus.h:
+
+/home/work/8970/8970/lantiq/staging_dir/toolchain-mips_r2_gcc-4.3.3+cs_uClibc-0.9.30.1_2_6_32/usr/lib/gcc/mips-linux-uclibc/4.3.3/../../../../mips-linux-uclibc/sys-include/endian.h:
+
+/home/work/8970/8970/lantiq/staging_dir/toolchain-mips_r2_gcc-4.3.3+cs_uClibc-0.9.30.1_2_6_32/usr/lib/gcc/mips-linux-uclibc/4.3.3/../../../../mips-linux-uclibc/sys-include/bits/endian.h:
+
+/home/work/8970/8970/lantiq/staging_dir/toolchain-mips_r2_gcc-4.3.3+cs_uClibc-0.9.30.1_2_6_32/usr/lib/gcc/mips-linux-uclibc/4.3.3/../../../../mips-linux-uclibc/sys-include/sys/types.h:
+
+/home/work/8970/8970/lantiq/staging_dir/toolchain-mips_r2_gcc-4.3.3+cs_uClibc-0.9.30.1_2_6_32/usr/lib/gcc/mips-linux-uclibc/4.3.3/../../../../mips-linux-uclibc/sys-include/bits/types.h:
+
+/home/work/8970/8970/lantiq/staging_dir/toolchain-mips_r2_gcc-4.3.3+cs_uClibc-0.9.30.1_2_6_32/usr/lib/gcc/mips-linux-uclibc/4.3.3/../../../../mips-linux-uclibc/sys-include/bits/wordsize.h:
+
+/home/work/8970/8970/lantiq/staging_dir/toolchain-mips_r2_gcc-4.3.3+cs_uClibc-0.9.30.1_2_6_32/usr/lib/gcc/mips-linux-uclibc/4.3.3/../../../../mips-linux-uclibc/sys-include/bits/kernel_types.h:
+
+/home/work/8970/8970/lantiq/staging_dir/toolchain-mips_r2_gcc-4.3.3+cs_uClibc-0.9.30.1_2_6_32/usr/lib/gcc/mips-linux-uclibc/4.3.3/../../../../mips-linux-uclibc/sys-include/bits/typesizes.h:
+
+/home/work/8970/8970/lantiq/staging_dir/toolchain-mips_r2_gcc-4.3.3+cs_uClibc-0.9.30.1_2_6_32/usr/lib/gcc/mips-linux-uclibc/4.3.3/../../../../mips-linux-uclibc/sys-include/bits/pthreadtypes.h:
+
+/home/work/8970/8970/lantiq/staging_dir/toolchain-mips_r2_gcc-4.3.3+cs_uClibc-0.9.30.1_2_6_32/usr/lib/gcc/mips-linux-uclibc/4.3.3/../../../../mips-linux-uclibc/sys-include/bits/sched.h:
+
+/home/work/8970/8970/lantiq/staging_dir/toolchain-mips_r2_gcc-4.3.3+cs_uClibc-0.9.30.1_2_6_32/usr/lib/gcc/mips-linux-uclibc/4.3.3/../../../../mips-linux-uclibc/sys-include/time.h:
+
+/home/work/8970/8970/lantiq/staging_dir/toolchain-mips_r2_gcc-4.3.3+cs_uClibc-0.9.30.1_2_6_32/usr/lib/gcc/mips-linux-uclibc/4.3.3/../../../../mips-linux-uclibc/sys-include/sys/select.h:
+
+/home/work/8970/8970/lantiq/staging_dir/toolchain-mips_r2_gcc-4.3.3+cs_uClibc-0.9.30.1_2_6_32/usr/lib/gcc/mips-linux-uclibc/4.3.3/../../../../mips-linux-uclibc/sys-include/bits/select.h:
+
+/home/work/8970/8970/lantiq/staging_dir/toolchain-mips_r2_gcc-4.3.3+cs_uClibc-0.9.30.1_2_6_32/usr/lib/gcc/mips-linux-uclibc/4.3.3/../../../../mips-linux-uclibc/sys-include/bits/sigset.h:
+
+/home/work/8970/8970/lantiq/staging_dir/toolchain-mips_r2_gcc-4.3.3+cs_uClibc-0.9.30.1_2_6_32/usr/lib/gcc/mips-linux-uclibc/4.3.3/../../../../mips-linux-uclibc/sys-include/bits/time.h:
+
+/home/work/8970/8970/lantiq/staging_dir/toolchain-mips_r2_gcc-4.3.3+cs_uClibc-0.9.30.1_2_6_32/usr/lib/gcc/mips-linux-uclibc/4.3.3/../../../../mips-linux-uclibc/sys-include/sys/sysmacros.h:
+
+/home/work/8970/8970/lantiq/staging_dir/toolchain-mips_r2_gcc-4.3.3+cs_uClibc-0.9.30.1_2_6_32/usr/lib/gcc/mips-linux-uclibc/4.3.3/../../../../mips-linux-uclibc/sys-include/alloca.h:
+
+/home/work/8970/8970/lantiq/staging_dir/toolchain-mips_r2_gcc-4.3.3+cs_uClibc-0.9.30.1_2_6_32/usr/lib/gcc/mips-linux-uclibc/4.3.3/../../../../mips-linux-uclibc/sys-include/string.h:
+
+../include/ntfs-3g/types.h:
+
+/home/work/8970/8970/lantiq/staging_dir/toolchain-mips_r2_gcc-4.3.3+cs_uClibc-0.9.30.1_2_6_32/usr/lib/gcc/mips-linux-uclibc/4.3.3/../../../../mips-linux-uclibc/sys-include/stdint.h:
+
+/home/work/8970/8970/lantiq/staging_dir/toolchain-mips_r2_gcc-4.3.3+cs_uClibc-0.9.30.1_2_6_32/usr/lib/gcc/mips-linux-uclibc/4.3.3/../../../../mips-linux-uclibc/sys-include/bits/wchar.h:
+
+../include/ntfs-3g/misc.h:
+
+../include/ntfs-3g/logging.h:
+
+/home/work/8970/8970/lantiq/staging_dir/toolchain-mips_r2_gcc-4.3.3+cs_uClibc-0.9.30.1_2_6_32/usr/lib/gcc/mips-linux-uclibc/4.3.3/include/stdarg.h:
+
+../include/ntfs-3g/types.h:

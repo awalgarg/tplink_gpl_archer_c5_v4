@@ -1,0 +1,3 @@
+export WFA_ENV_AGENT_IPADDR=192.168.250.77
+export WFA_ENV_AGENT_PORT=8000
+./ca/wfa_ca eth1 9999

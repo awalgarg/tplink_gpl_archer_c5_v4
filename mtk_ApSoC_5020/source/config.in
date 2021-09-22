@@ -1,0 +1,102 @@
+mainmenu_name 'Ralink Embedded Linux Configuration'
+mainmenu_option next_comment
+comment 'Select the Product you wish to target'
+choice 'Ralink Products' "MT7620 CONFIG_DEFAULTS_MEDIATEK_MT7620\
+                           MT7621 CONFIG_DEFAULTS_MEDIATEK_MT7621\
+                           MT7628 CONFIG_DEFAULTS_MEDIATEK_MT7628\
+                           MT7623 CONFIG_DEFAULTS_MEDIATEK_MT7623
+                         "
+if [ $CONFIG_DEFAULTS_MEDIATEK_MT7620 = "y" ]; then
+choice   'Default Configuration File'\
+         "2M/16M(AP)	  CONFIG_DEFSETTING_2M16M\
+           4M/32M(AP+NAS)	  CONFIG_DEFSETTING_4M32M\
+           8M/64M(VOIP/TR069)	  CONFIG_DEFSETTING_8M32M_VOIP\
+           8M/64M(FULL)	  CONFIG_DEFSETTING_8M64M
+	  "
+elif [ $CONFIG_DEFAULTS_MEDIATEK_MT7621 = "y" ]; then
+choice   'Default Configuration File'\
+         "8M/32M(STA)		CONFIG_DEFSETTING_8M32M\
+           8M/64M(AP)		CONFIG_DEFSETTING_8M64M\
+           8M/64M(VOIP/TR069)	CONFIG_DEFSETTING_8M16M\
+           8M/128M(MT7621+MT7615)	CONFIG_DEFSETTING_8M128M\
+           128M/128M(AP+NAS)	CONFIG_DEFSETTING_128M128M
+	  "
+elif [ $CONFIG_DEFAULTS_MEDIATEK_MT7628 = "y" ]; then
+choice   'Default Configuration File'\
+         "2M/8M(MT7628KN)  CONFIG_DEFSETTING_2M8M\
+           4M/16M(AP)	  CONFIG_DEFSETTING_4M16M\
+           4M/32M(AP+NAS)	  CONFIG_DEFSETTING_4M32M\
+           8M/64M(FULL)	  CONFIG_DEFSETTING_8M64M
+	  "
+elif [ $CONFIG_DEFAULTS_MEDIATEK_MT7623 = "y" ]; then
+choice   'Default Configuration File'\
+          "128M/128M(MT7623A+MT7615_NAND)	CONFIG_DEFSETTING_128M128M\
+            256M/256M(MT7623A+MT7615_eMMC)	CONFIG_DEFSETTING_256M256M\
+            8G/1G(MT7623N+MT7615_eMMC)	CONFIG_DEFSETTING_8G1G
+	  "
+fi
+endmenu
+mainmenu_option next_comment
+comment 'Kernel/Library/Defaults Selection'
+if [ $CONFIG_DEFAULTS_MEDIATEK_MT7620 = "y" ]; then
+choice   'Linux Kernel Version'\
+         "2.6.36 CONFIG_DEFAULTS_KERNEL_2_6_36\
+           3.10.14 CONFIG_DEFAULTS_KERNEL_3_10_14 
+    "2.6.36 
+elif [ $CONFIG_DEFAULTS_MEDIATEK_MT7621 = "y" ]; then
+choice   'Linux Kernel Version'\
+         "2.6.36 CONFIG_DEFAULTS_KERNEL_2_6_36\
+           3.10.14 CONFIG_DEFAULTS_KERNEL_3_10_14 
+    "2.6.36 
+elif [ $CONFIG_DEFAULTS_MEDIATEK_MT7628 = "y" ]; then
+choice   'Linux Kernel Version'\
+         "2.6.36 CONFIG_DEFAULTS_KERNEL_2_6_36\
+           3.10.14 CONFIG_DEFAULTS_KERNEL_3_10_14 
+    "2.6.36 
+elif [ $CONFIG_DEFAULTS_MEDIATEK_MT7623 = "y" ]; then
+ define_bool CONFIG_DEFAULTS_KERNEL_3_10_20 y
+fi
+if [ $CONFIG_DEFAULTS_KERNEL_3_10_14 = "y" -o $CONFIG_DEFAULTS_MEDIATEK_MT7621 = "y" -o $CONFIG_DEFAULTS_MEDIATEK_MT7628 = "y" ]; then
+define_bool CONFIG_UCLIBC_0_9_33_2 y
+comment 'uClibc version: 0.9.33.2'
+define_string CONFIG_CROSS_COMPILER_PATH /opt/buildroot-gcc463/usr/bin
+comment 'Cross Compiler Path: /opt/buildroot-gcc463/usr/bin'
+elif [ $CONFIG_DEFAULTS_MEDIATEK_MT7623 = "y" ]; then
+define_bool CONFIG_UCLIBC_0_9_33_2 y
+comment 'uClibc version: 0.9.33.2'
+define_string CONFIG_CROSS_COMPILER_PATH /opt/buildroot-gcc483_arm/usr/bin
+comment 'Cross Compiler Path: /opt/buildroot-gcc483_arm/usr/bin'
+elif [ $CONFIG_DEFAULTS_MEDIATEK_MT7620 = "y" -a $CONFIG_DEFSETTING_8M32M = "y" ]; then
+define_bool CONFIG_UCLIBC_0_9_33_2 y
+comment 'uClibc version: 0.9.33.2'
+define_string CONFIG_CROSS_COMPILER_PATH /opt/buildroot-gcc463/usr/bin
+comment 'Cross Compiler Path: /opt/buildroot-gcc463/usr/bin'
+elif [ $CONFIG_DEFAULTS_MEDIATEK_MT7620 = "y" -a $CONFIG_DEFSETTING_8M32M_VOIP = "y" ]; then
+define_bool CONFIG_UCLIBC_0_9_33_2 y
+comment 'uClibc version: 0.9.33.2'
+define_string CONFIG_CROSS_COMPILER_PATH /opt/buildroot-gcc463/usr/bin
+else 
+define_bool CONFIG_UCLIBC_0_9_28 y
+comment 'uClibc version: 0.9.28'
+define_string CONFIG_CROSS_COMPILER_PATH /opt/buildroot-gcc342/bin
+comment 'Cross Compiler Path: /opt/buildroot-gcc342/bin'
+fi
+bool 'Have glibc only Apps'       CONFIG_HAVE_GLIBC_APP
+if [ $CONFIG_HAVE_GLIBC_APP = "y" ]; then
+if [ $CONFIG_DEFAULTS_MEDIATEK_MT7623 = "y" ]; then
+define_string CONFIG_CROSS_GLIBC_COMPILER_PATH /opt/buildroot-gcc492_arm_glibc/usr/bin
+comment 'glibc Cross-Compiler Path: /opt/buildroot-gcc492_arm_glibc/usr/bin'
+else
+define_string CONFIG_CROSS_GLIBC_COMPILER_PATH /opt/buildroot-gcc491_mips_glibc/usr/bin
+comment 'glibc Cross-Compiler Path: /opt/buildroot-gcc491_mips_glibc/usr/bin'
+fi
+fi
+comment ' '
+bool 'Default all settings (lose changes)'	CONFIG_DEFAULTS_OVERRIDE
+bool 'Customize Kernel Settings'			CONFIG_DEFAULTS_KERNEL
+bool 'Customize Vendor/User Settings'		CONFIG_DEFAULTS_VENDOR
+bool 'Customize Busybox Settings'			CONFIG_DEFAULTS_BUSYBOX
+bool 'Customize uClibc Settings'			CONFIG_DEFAULTS_UCLIBC
+bool 'Customize uClibc++ Settings'		CONFIG_DEFAULTS_UCLIBC_PLUS_PLUS
+bool 'Update Default Vendor Settings'		CONFIG_DEFAULTS_VENDOR_UPDATE
+endmenu

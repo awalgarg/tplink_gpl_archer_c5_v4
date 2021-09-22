@@ -1,0 +1,104 @@
+ctrl_interface=/var/run/wpa_supplicant
+update_config=1
+device_name=YF_P2P_DEVICE
+device_type=1-0050F204-3
+config_methods=virtual_display virtual_push_button keypad
+
+network={
+	ssid="YF_SOFT_AP"
+	scan_ssid=1
+	psk="12345678"
+	group=CCMP TKIP
+	disabled=1
+}
+
+network={
+	ssid="YF_SOFT_AP"
+	key_mgmt=NONE
+}
+
+network={
+	ssid="NETGEAR74"
+	scan_ssid=1
+	psk="remotes only"
+	proto=RSN
+	key_mgmt=WPA-PSK
+	pairwise=CCMP
+	group=CCMP TKIP
+	disabled=1
+}
+
+network={
+	ssid="130"
+	key_mgmt=WPA-EAP
+	group=CCMP TKIP
+	eap=TLS
+	identity="wifi-user"
+	ca_cert="/home/jerryko/wifiuser/cas.pem"
+	client_cert="/home/jerryko/wifiuser/wifiuser.pem"
+	private_key="/home/jerryko/wifiuser/wifiuser.pem"
+	private_key_passwd="test%11"
+	disabled=1
+}
+
+network={
+	ssid="roaming"
+	scan_ssid=1
+	proto=RSN
+	key_mgmt=WPA-EAP
+	pairwise=CCMP
+	group=CCMP TKIP
+	eap=PEAP
+	identity="wifi-user"
+	password="test%11"
+	disabled=1
+}
+
+network={
+	ssid="215-0"
+	key_mgmt=NONE
+	auth_alg=OPEN
+	wep_key0=1234567890
+	disabled=1
+}
+
+network={
+	ssid="130-2"
+	key_mgmt=NONE
+	auth_alg=SHARED
+	wep_key2="zxcvbnm,./asd"
+	wep_tx_keyidx=2
+	disabled=1
+}
+
+network={
+	ssid="197"
+	key_mgmt=IEEE8021X
+	eap=TLS
+	identity="wifi-user"
+	ca_cert="/home/ralink/7603U_TGN/wifiuser/cas.pem"
+	client_cert="/home/ralink/7603U_TGN/wifiuser/wifiuser.pem"
+	private_key="/home/ralink/7603U_TGN/wifiuser/wifiuser.pem"
+	private_key_passwd="test%11"
+	disabled=1
+}
+
+network={
+	ssid="MarvellAP95"
+	psk="kBtkVkHP/h2MzBXGmqu8nA"
+	proto=RSN
+	key_mgmt=WPA-PSK
+	pairwise=CCMP
+	auth_alg=OPEN
+	disabled=1
+}
+
+network={
+	ssid="MarvellAP95"
+	psk="eSlTUr/znq+12qKjt18QSw"
+	proto=RSN
+	key_mgmt=WPA-PSK
+	pairwise=CCMP
+	auth_alg=OPEN
+	disabled=1
+}

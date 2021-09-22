@@ -1,0 +1,1 @@
+较新版本的openvpn已经于easy-rsa分离，形成两个项目。我这里为了便于开发，把easy-rsa再次放到openvpn目录下。

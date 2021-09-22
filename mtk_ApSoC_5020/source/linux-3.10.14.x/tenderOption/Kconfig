@@ -1,0 +1,9 @@
+menu "TPLINK Tender Option"
+
+config LAN_WLAN_STA_RATE
+	bool "Wireless Negotiating Speed of Clients"
+	default n
+	help
+	  This option can be selected to show the wireless transmit rate.
+
+endmenu

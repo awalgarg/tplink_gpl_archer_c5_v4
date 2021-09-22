@@ -1,0 +1,3 @@
+./configure --enable-static --enable-nonfree --enable-gpl --enable-pthreads --disable-shared --disable-encoders --disable-decoders --disable-debug --enable-cross-compile --cross-prefix=mips-linux-uclibc- --arch=mips --target-os=linux
+make
+
